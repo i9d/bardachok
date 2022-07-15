@@ -1,0 +1,21 @@
+uuid: d0bfe326-b8a4-464e-b4fc-381d164afb19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_algorithm_steps
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_algorithm_steps
+field_name: field_algorithm_steps
+entity_type: node
+bundle: landing_page
+label: 'Algorithm Steps'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

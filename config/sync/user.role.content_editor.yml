@@ -1,10 +1,11 @@
-uuid: 72051f9a-787e-445c-93e7-1136b7ef210b
+uuid: 3ccd0249-eb45-43c3-a458-7f7dd8cdbdd6
 langcode: en
 status: true
 dependencies:
   config:
     - taxonomy.vocabulary.tags
   module:
+    - comment
     - contextual
     - file
     - node
@@ -29,6 +30,7 @@ permissions:
   - 'administer url aliases'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'edit own comments'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'

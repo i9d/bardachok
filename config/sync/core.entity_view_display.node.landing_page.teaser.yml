@@ -1,9 +1,10 @@
-uuid: b0a814fc-70e9-4c02-ba8b-07738a7e49d0
+uuid: 99592d3b-7e04-4e27-894b-3ea955504842
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.landing_page.field_algorithm_steps
     - node.type.landing_page
   module:
     - user
@@ -17,4 +18,5 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_algorithm_steps: true

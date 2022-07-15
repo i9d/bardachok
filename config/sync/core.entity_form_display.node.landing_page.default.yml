@@ -1,11 +1,13 @@
-uuid: 8997ded1-1093-4ee3-980b-6a4db703b671
+uuid: 86caf59f-0a75-4a27-9a5c-42cd7d47a191
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_algorithm_steps
     - node.type.landing_page
   module:
     - path
+    - text
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -16,6 +18,14 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_algorithm_steps:
+    type: text_textarea
+    weight: 121
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

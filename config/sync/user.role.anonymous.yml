@@ -1,10 +1,12 @@
-uuid: a1b1fb7a-e03d-427a-b298-cfae64dc3d56
+uuid: eb8ca6df-aff4-436d-b747-3babd7837417
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.restricted_html
   module:
+    - comment
+    - contact
     - filter
     - media
     - search
@@ -16,7 +18,9 @@ label: 'Anonymous user'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
+  - 'access site-wide contact form'
   - 'search content'
   - 'use text format restricted_html'
   - 'view media'

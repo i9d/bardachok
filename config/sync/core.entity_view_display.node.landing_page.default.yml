@@ -1,16 +1,25 @@
-uuid: 9189258d-dbe5-4e60-82ac-caa14c84ee3d
+uuid: 4a41517b-1af3-452f-bc9f-d68a26cfeec7
 langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.landing_page.field_algorithm_steps
     - node.type.landing_page
   module:
+    - text
     - user
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
 mode: default
 content:
+  field_algorithm_steps:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
