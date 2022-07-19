@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.algorithm.field_annotation
+    - field.field.node.algorithm.field_content
+    - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
     - user
@@ -17,5 +20,13 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  tg_comments:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
+  field_annotation: true
+  field_content: true
+  field_image: true
   langcode: true

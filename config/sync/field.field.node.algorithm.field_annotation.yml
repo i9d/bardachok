@@ -1,0 +1,21 @@
+uuid: be65f5fc-4670-40e6-b022-39d062c890aa
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annotation
+    - node.type.algorithm
+  module:
+    - text
+id: node.algorithm.field_annotation
+field_name: field_annotation
+entity_type: node
+bundle: algorithm
+label: Аннотация
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
