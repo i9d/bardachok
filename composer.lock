@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4cb89dc4cfb256a5952e5f22c78aa514",
+    "content-hash": "e0f762a65356d2beed145f7f369f8a47",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2816,6 +2816,50 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/tg_integration",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tg_integration.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tg_integration-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "a1f145607a4caef799f49377a50f9ae1761e4702"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1658005725",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Skymen",
+                    "homepage": "https://www.drupal.org/user/1207954"
+                }
+            ],
+            "description": "Crosspost an announcements of content entities to the Telegram. Displaying Telegram comments on content entities.",
+            "homepage": "https://www.drupal.org/project/tg_integration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tg_integration"
             }
         },
         {

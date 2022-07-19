@@ -5,66 +5,17 @@ dependencies:
   config:
     - field.field.node.landing_page.field_algorithm_steps
     - node.type.landing_page
+    - views.view.comments_recent
   module:
     - layout_builder
     - layout_discovery
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
-    enabled: true
+    enabled: false
     allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          7070643a-b33e-4996-88c1-a83d6b850c9c:
-            uuid: 7070643a-b33e-4996-88c1-a83d6b850c9c
-            region: content
-            configuration:
-              id: 'extra_field_block:node:landing_page:links'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 0
-            additional: {  }
-          dd25880e-d78b-4066-be20-e362e96f64f8:
-            uuid: dd25880e-d78b-4066-be20-e362e96f64f8
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:field_algorithm_steps'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          50d52d62-a286-48d8-a438-daee54611875:
-            uuid: 50d52d62-a286-48d8-a438-daee54611875
-            region: content
-            configuration:
-              id: 'field_block:node:landing_page:uid'
-              label: 'Authored by'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-        third_party_settings: {  }
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page

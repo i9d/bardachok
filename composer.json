@@ -26,6 +26,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.10",
         "drupal/redirect": "^1.7",
+        "drupal/tg_integration": "^1.0",
         "drupal/webform": "^6.1",
         "drush/drush": "^11.0"
     },
