@@ -1,5 +1,5 @@
 uuid: 5cd07597-032c-486f-80f1-fe0a78784ff4
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -7,6 +7,7 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -24,6 +25,12 @@ content:
   language:
     weight: 0
     region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
     region: content
@@ -35,4 +42,5 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  langcode: true

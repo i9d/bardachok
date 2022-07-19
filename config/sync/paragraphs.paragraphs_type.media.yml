@@ -1,0 +1,10 @@
+uuid: c11ffd34-d68e-4641-bf93-6320bd3d2a4e
+langcode: ru
+status: true
+dependencies: {  }
+id: media
+label: Медиа
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

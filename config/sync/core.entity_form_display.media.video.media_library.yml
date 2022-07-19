@@ -1,5 +1,5 @@
 uuid: 6415e3a3-1050-4072-91ef-33d53e48fdd6
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -12,7 +12,14 @@ id: media.video.media_library
 targetEntityType: media
 bundle: video
 mode: media_library
-content: {  }
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_video_file: true

@@ -1,0 +1,10 @@
+uuid: 6e05c78c-052d-4331-9ef6-c229a020d1ea
+langcode: en
+status: true
+dependencies: {  }
+id: two_col
+label: 'Две колонки'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

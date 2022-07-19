@@ -1,5 +1,5 @@
 uuid: 57dfb81e-9351-4551-81c2-7f837a0cfca0
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -27,6 +27,13 @@ content:
     region: content
     settings:
       progress_indicator: throbber
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
     third_party_settings: {  }
   path:
     type: path

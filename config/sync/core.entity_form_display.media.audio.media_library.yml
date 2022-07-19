@@ -1,5 +1,5 @@
 uuid: cd71f91f-8b4c-4a1b-93e4-4b5b58570dd4
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
@@ -12,7 +12,14 @@ id: media.audio.media_library
 targetEntityType: media
 bundle: audio
 mode: media_library
-content: {  }
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
 hidden:
   created: true
   field_media_audio_file: true

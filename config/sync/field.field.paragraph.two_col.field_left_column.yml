@@ -1,0 +1,29 @@
+uuid: 1e3136d3-51ec-4df8-9825-4938c6ae87dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_column
+    - paragraphs.paragraphs_type.two_col
+  module:
+    - entity_reference_revisions
+id: paragraph.two_col.field_left_column
+field_name: field_left_column
+entity_type: paragraph
+bundle: two_col
+label: 'Левая колонка'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 1
+    target_bundles_drag_drop:
+      two_col:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

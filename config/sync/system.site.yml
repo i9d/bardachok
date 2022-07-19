@@ -1,8 +1,8 @@
 _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
-langcode: en
+langcode: ru
 uuid: c2aa74b6-b585-4352-bace-b9b89734c3c3
-name: Bardachok
+name: Бардачок
 mail: profatilo.nikita.a@gmail.com
 slogan: ''
 page:
@@ -11,4 +11,5 @@ page:
   front: /node
 admin_compact_mode: false
 weight_select_max: 100
-default_langcode: en
+default_langcode: ru
+mail_notification: ''

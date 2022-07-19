@@ -1,38 +1,67 @@
 uuid: 3ccd0249-eb45-43c3-a458-7f7dd8cdbdd6
-langcode: en
+langcode: ru
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.tags
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
   module:
     - comment
     - contextual
-    - file
+    - filter
+    - media
     - node
     - path
     - system
     - taxonomy
     - toolbar
     - tour
+    - webform
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
 label: 'Content editor'
-weight: 2
+weight: -8
 is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content overview'
   - 'access contextual links'
-  - 'access files overview'
+  - 'access media overview'
+  - 'access taxonomy overview'
   - 'access toolbar'
   - 'access tour'
-  - 'administer url aliases'
-  - 'create terms in tags'
+  - 'change own username'
+  - 'create audio media'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create remote_video media'
   - 'create url aliases'
+  - 'create video media'
+  - 'delete media'
+  - 'delete own audio media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'edit own audio media'
   - 'edit own comments'
-  - 'edit terms in tags'
-  - 'revert all revisions'
-  - 'view all revisions'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
   - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
   - 'view the administration theme'

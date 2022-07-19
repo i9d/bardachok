@@ -1,0 +1,31 @@
+uuid: 012e6a98-90ca-42a9-9a6d-0ac040e92f6e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_caption
+    - field.field.paragraph.media.field_media
+    - paragraphs.paragraphs_type.media
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

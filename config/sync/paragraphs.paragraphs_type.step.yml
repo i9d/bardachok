@@ -1,0 +1,10 @@
+uuid: 5864bf9c-2466-4e84-81d3-c44dbbbaa107
+langcode: en
+status: true
+dependencies: {  }
+id: step
+label: Шаг
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

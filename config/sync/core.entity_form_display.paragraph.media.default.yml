@@ -1,0 +1,36 @@
+uuid: e4a5f3b5-034a-4c50-85b1-c3b087ffb9c5
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_caption
+    - field.field.paragraph.media.field_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - media_library
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_caption:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types:
+        - image
+        - remote_video
+        - video
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
