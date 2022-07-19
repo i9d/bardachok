@@ -1,0 +1,22 @@
+uuid: dbc7d745-d3b8-4b8e-8066-4831de3437b3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.algorithm
+id: node.algorithm.promote
+field_name: promote
+entity_type: node
+bundle: algorithm
+label: 'Помещено на главную страницу'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Вкл
+  off_label: Выкл
+field_type: boolean

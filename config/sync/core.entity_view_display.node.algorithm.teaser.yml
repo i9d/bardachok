@@ -1,0 +1,21 @@
+uuid: 1fe3baab-a30e-43b9-a135-b08376b81d37
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.algorithm
+  module:
+    - user
+id: node.algorithm.teaser
+targetEntityType: node
+bundle: algorithm
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

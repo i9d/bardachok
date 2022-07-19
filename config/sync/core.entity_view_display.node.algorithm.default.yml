@@ -1,0 +1,20 @@
+uuid: 697785be-8533-477f-8617-24c5a08bcadc
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.algorithm
+  module:
+    - user
+id: node.algorithm.default
+targetEntityType: node
+bundle: algorithm
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
