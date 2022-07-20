@@ -1,15 +1,16 @@
-uuid: c37e4ca4-49e5-4155-96db-e5f989c8b00a
-langcode: en
+uuid: 8d5a2df9-57b3-4288-8eca-e335c8811edf
+langcode: ru
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.tags.field_image
-    - taxonomy.vocabulary.tags
+    - field.field.taxonomy_term.categories.field_description
+    - field.field.taxonomy_term.categories.field_image
+    - taxonomy.vocabulary.categories
   module:
     - text
-id: taxonomy_term.tags.default
+id: taxonomy_term.categories.default
 targetEntityType: taxonomy_term
-bundle: tags
+bundle: categories
 mode: default
 content:
   description:
@@ -18,6 +19,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
     type: entity_reference_entity_view

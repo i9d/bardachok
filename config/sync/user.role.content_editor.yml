@@ -12,7 +12,6 @@ dependencies:
     - media.type.remote_video
     - media.type.video
   module:
-    - comment
     - contextual
     - filter
     - media
@@ -52,7 +51,6 @@ permissions:
   - 'delete own remote_video media'
   - 'delete own video media'
   - 'edit own audio media'
-  - 'edit own comments'
   - 'edit own document media'
   - 'edit own image media'
   - 'edit own remote_video media'

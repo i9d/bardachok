@@ -3,18 +3,16 @@ langcode: ru
 status: true
 dependencies:
   module:
-    - comment
     - media
     - search
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
-label: 'Anonymous user'
+label: 'Анонимный пользователь'
 weight: -10
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access user profiles'
   - 'search content'

@@ -6,7 +6,6 @@ silent_mode: 0
 disable_link_preview: 0
 content_types:
   node|algorithm: node|algorithm
-  comment|comment: 0
   node|landing_page: 0
-  taxonomy_term|tags: 0
+  taxonomy_term|categories: 0
   webform_submission|contact: 0

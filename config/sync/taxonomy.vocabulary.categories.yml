@@ -1,0 +1,8 @@
+uuid: b131e72d-9e68-43de-ab1e-4a92ff8edc42
+langcode: und
+status: true
+dependencies: {  }
+name: Категории
+vid: categories
+description: ''
+weight: 0

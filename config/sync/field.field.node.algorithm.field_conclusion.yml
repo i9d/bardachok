@@ -1,0 +1,21 @@
+uuid: 074cb3e0-9bb5-4d2e-814b-47cf4824d79a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_conclusion
+    - node.type.algorithm
+  module:
+    - text
+id: node.algorithm.field_conclusion
+field_name: field_conclusion
+entity_type: node
+bundle: algorithm
+label: Заключение
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

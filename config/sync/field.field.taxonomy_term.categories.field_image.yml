@@ -1,15 +1,15 @@
-uuid: 6f922b17-dc64-4e91-9937-0f844c878a8e
-langcode: en
+uuid: 502606ef-2f88-4f47-87ed-3eea80fe5147
+langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.taxonomy_term.field_image
     - media.type.image
-    - taxonomy.vocabulary.tags
-id: taxonomy_term.tags.field_image
+    - taxonomy.vocabulary.categories
+id: taxonomy_term.categories.field_image
 field_name: field_image
 entity_type: taxonomy_term
-bundle: tags
+bundle: categories
 label: Изображение
 description: ''
 required: false
