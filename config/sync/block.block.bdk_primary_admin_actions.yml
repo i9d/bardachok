@@ -1,20 +1,20 @@
-uuid: c2a17c1e-9bb8-4045-86ef-34a1929c40b8
+uuid: f46f7283-af9c-4d95-adc0-fe8e3134f04c
 langcode: ru
 status: true
 dependencies:
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: olivero_primary_admin_actions
-theme: olivero
-region: highlighted
+id: bdk_primary_admin_actions
+theme: bdk
+region: header
 weight: -5
 provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
-  label: 'Primary admin actions'
+  label: 'Основные действия администратора'
   label_display: '0'
   provider: core
 visibility: {  }

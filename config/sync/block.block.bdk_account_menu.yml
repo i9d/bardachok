@@ -1,4 +1,4 @@
-uuid: ad2773fa-b3da-46df-9cf9-248908598d69
+uuid: 47e75ef6-1965-43bc-8ed6-1e36f09ccd3d
 langcode: ru
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
-id: olivero_account_menu
-theme: olivero
-region: secondary_menu
+id: bdk_account_menu
+theme: bdk
+region: header
 weight: -4
 provider: null
 plugin: 'system_menu_block:account'
 settings:
   id: 'system_menu_block:account'
-  label: 'User account menu'
+  label: 'Меню учётной записи пользователя'
   label_display: '0'
   provider: system
   level: 1

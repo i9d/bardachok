@@ -1,22 +1,22 @@
-uuid: 83803e4b-f2ae-4a49-ad58-56a94b07cc7a
+uuid: d2b03b7f-a18c-4a71-a103-4eaa5ed4e9f1
 langcode: ru
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: olivero_content
-theme: olivero
+id: bdk_content
+theme: bdk
 region: content
 weight: 0
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
-  label: 'Main page content'
+  label: 'Содержимое страницы'
   label_display: '0'
   provider: system
 visibility: {  }

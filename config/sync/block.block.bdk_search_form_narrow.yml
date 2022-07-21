@@ -1,22 +1,22 @@
-uuid: 08da3efb-a220-445e-9a0c-2dd817ea9fa9
+uuid: 468ff23f-548d-482f-860f-11020d2be428
 langcode: ru
 status: true
 dependencies:
   module:
     - search
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
-id: olivero_search_form_narrow
-theme: olivero
-region: primary_menu
+id: bdk_search_form_narrow
+theme: bdk
+region: header
 weight: -4
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Search form (narrow)'
+  label: 'Форма поиска (узкая)'
   label_display: '0'
   provider: search
   page_id: ''

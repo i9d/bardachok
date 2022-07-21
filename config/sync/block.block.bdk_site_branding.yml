@@ -1,22 +1,22 @@
-uuid: 433686ca-7728-4539-82cc-928453cdd95b
+uuid: 744a2dcc-fd44-4da5-b736-ffe414f85e60
 langcode: ru
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
-id: olivero_site_branding
-theme: olivero
+id: bdk_site_branding
+theme: bdk
 region: header
 weight: 0
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Брендинг сайта'
   label_display: '0'
   provider: system
   use_site_logo: true

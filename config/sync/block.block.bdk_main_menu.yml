@@ -1,4 +1,4 @@
-uuid: 5d16887b-6d0c-4b58-9801-6ac041d64a98
+uuid: 7dec6378-68d1-4f77-bc53-b7be22983eee
 langcode: ru
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: olivero_main_menu
-theme: olivero
-region: primary_menu
+id: bdk_main_menu
+theme: bdk
+region: header
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Основная навигация'
   label_display: '0'
   provider: system
   level: 1

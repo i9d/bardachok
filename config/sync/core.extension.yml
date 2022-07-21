@@ -65,5 +65,5 @@ module:
 theme:
   claro: 0
   stark: 0
-  olivero: 0
+  bdk: 0
 profile: standard

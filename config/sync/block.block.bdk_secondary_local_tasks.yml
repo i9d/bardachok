@@ -1,14 +1,14 @@
-uuid: 704ef81e-950c-4dfc-95d3-a19bbd32d7e2
+uuid: 3949d4c1-81c8-41fc-85c0-b1ac45cc4060
 langcode: ru
 status: true
 dependencies:
   theme:
-    - olivero
+    - bdk
 _core:
   default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
-id: olivero_secondary_local_tasks
-theme: olivero
-region: highlighted
+id: bdk_secondary_local_tasks
+theme: bdk
+region: header
 weight: -2
 provider: null
 plugin: local_tasks_block
