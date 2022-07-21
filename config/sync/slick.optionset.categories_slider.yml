@@ -1,0 +1,71 @@
+uuid: 68b80625-823f-4929-9aa2-5ed701b44bd2
+langcode: ru
+status: false
+dependencies:
+  enforced:
+    module:
+      - slick
+_core:
+  default_config_hash: jHmfPBU2oNraKWjKwqYODaPOKQQM2sczj5TlDlN8Om8
+id: categories_slider
+name: categories_slider
+weight: -10
+label: 'Categories Slider'
+group: ''
+skin: default
+breakpoints: 4
+optimized: true
+options:
+  options__active_tab: edit-options-responsives
+  settings:
+    autoplay: true
+    arrows: false
+    centerMode: true
+    lazyLoad: ondemand
+    slidesToShow: 4
+    speed: 2000
+    swipeToSlide: true
+  responsives:
+    responsive:
+      -
+        breakpoint: 1200
+        unslick: false
+        settings:
+          autoplay: true
+          arrows: false
+          centerMode: true
+          draggable: false
+          slidesToShow: 3
+          swipeToSlide: true
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 850
+        unslick: false
+        settings:
+          arrows: false
+          centerMode: true
+          draggable: false
+          slidesToShow: 2
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: 750
+        unslick: false
+        settings:
+          arrows: false
+          centerMode: true
+          draggable: false
+          infinite: false
+          touchMove: false
+          waitForAnimate: false
+      -
+        breakpoint: null
+        unslick: false
+        settings:
+          arrows: false
+          draggable: false
+          infinite: false
+          swipe: false
+          touchMove: false
+          waitForAnimate: false

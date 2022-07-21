@@ -1,0 +1,10 @@
+uuid: f87f279f-3b33-4ea2-8ae1-4a8bce7562a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.categories_teaser
+label: 'Categories Teaser'
+targetEntityType: media
+cache: true

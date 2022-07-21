@@ -3,7 +3,6 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.categories.field_description
     - field.field.taxonomy_term.categories.field_image
     - taxonomy.vocabulary.categories
   module:
@@ -20,16 +19,9 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_description:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_image:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
