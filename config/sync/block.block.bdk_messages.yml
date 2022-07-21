@@ -1,4 +1,4 @@
-uuid: 7078259a-3f98-4f74-8a2b-e639fbfd3882
+uuid: c0647f8f-9270-4ec4-b4e1-2a603a8c8ba8
 langcode: ru
 status: true
 dependencies:
@@ -10,8 +10,8 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: bdk_messages
 theme: bdk
-region: header
-weight: -5
+region: highlighted
+weight: -1
 provider: null
 plugin: system_messages_block
 settings:

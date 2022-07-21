@@ -1,0 +1,219 @@
+/**
+ * @file
+ * Mixin links.
+*/
+
+@mixin link-top-menu {
+  font-weight: bold;
+  font-size: 14px;
+  color: $c-white;
+  line-height: 16px;
+}
+
+@mixin link-arrow-main-menu {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  color: #000000;
+  font-weight: bold;
+
+  &::after {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 12px;
+    height: 13px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more-black.svg);
+
+    @include breakpoint(laptop) {
+      display: inline-block;
+    }
+  }
+}
+
+@mixin link-arrow-dropdown-menu {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 25px;
+  color: $text-primary;
+
+
+  &::after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 12px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more.svg);
+    flex-shrink: 0;
+
+    @include breakpoint(laptop) {
+      display: inline-block;
+    }
+  }
+}
+
+@mixin link-more-arrow {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: $blue-primary;
+  font-weight: bold;
+
+  @include print-color-text;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 13px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more-blue.svg);
+
+    @media print {
+      background-image: none;
+      content: url(../../../assets/images/arrow-more-black.svg);
+      height: 19px;
+    }
+  }
+}
+
+@mixin link-more-share {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  line-height: 30px;
+  color: $text-primary;
+  font-weight: 400;
+
+  @include print-color-text;
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 38px;
+    height: 38px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more.svg);
+  }
+}
+
+
+
+@mixin link-more-tooltip {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: $text-primary;
+  font-weight: bold;
+
+  @include print-color-text;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    width: 12px;
+    height: 13px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more.svg);
+
+    @media print {
+      background-image: none;
+      content: url(../../../assets/images/arrow-more-black.svg);
+      height: 19px;
+    }
+  }
+
+}
+
+@mixin link-more-arrow-before {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  color: $blue-primary;
+  font-weight: bold;
+  margin-bottom: 7px;
+
+  @include breakpoint(tablet) {
+    align-items: flex-start;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 12px;
+    height: 13px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/arrow-more-blue.svg);
+
+    @include breakpoint(tablet) {
+      margin-top: 3px;
+    }
+  }
+}
+
+@mixin link-pdf {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 20px;
+  color: $blue-primary;
+  font-weight: bold;
+  margin-bottom: 7px;
+
+  @include breakpoint(tablet) {
+    align-items: flex-start;
+    word-break: break-all;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../../assets/images/icon-pdf-blue.svg);
+
+    @include breakpoint(tablet) {
+      margin-top: 3px;
+    }
+  }
+}

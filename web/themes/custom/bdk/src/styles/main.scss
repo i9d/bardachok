@@ -1,0 +1,24 @@
+/* Normalize css */
+@import '~normalize.css/normalize.css';
+
+/* Setup */
+@import './settings/variables';
+
+/* Fonts */
+@import './base/fonts';
+
+/* Mixins */
+@import './base/media';
+@import './settings/mixins/mixin-fonts';
+@import './settings/mixins/mixin-common';
+@import './settings/mixins/mixin-layout';
+@import './settings/mixins/mixin-containers';
+@import './settings/mixins/block-builder';
+@import './settings/mixins/mixin-control';
+@import './settings/mixins/mixin-links';
+@import './settings/mixins/mixin-slider';
+@import './settings/mixins/mixin-print-style';
+
+/* Base styles */
+@import './base/elements';
+@import './base/typography';

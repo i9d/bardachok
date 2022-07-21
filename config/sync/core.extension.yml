@@ -64,6 +64,7 @@ module:
   standard: 1000
 theme:
   claro: 0
-  stark: 0
+  stable: 0
+  classy: 0
   bdk: 0
 profile: standard

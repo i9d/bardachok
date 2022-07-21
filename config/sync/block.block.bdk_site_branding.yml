@@ -1,4 +1,4 @@
-uuid: 744a2dcc-fd44-4da5-b736-ffe414f85e60
+uuid: 68c794ff-5134-4f2a-aee3-0710b16602fd
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bdk_site_branding
 theme: bdk
 region: header
-weight: 0
+weight: -2
 provider: null
 plugin: system_branding_block
 settings:

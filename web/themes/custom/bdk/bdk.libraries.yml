@@ -1,0 +1,7 @@
+# Global styling.
+global-styling:
+  css:
+    base:
+      dist/main/style.css: {}
+  js:
+    dist/main/index.js: {}

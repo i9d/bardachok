@@ -1,0 +1,106 @@
+/**
+ * @file
+ * Mixin containers.
+*/
+
+@mixin full-width {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  margin-right: -50vw;
+  margin-left: -50vw;
+  width: 100vw;
+
+  @media print {
+    margin-right: auto;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+  }
+}
+
+@mixin container-1200 {
+  max-width: 1210px;
+  margin: 0 auto;
+
+  @include breakpoint(desktop-small) {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media print {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin container-1060 {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+@mixin container-1130 {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
+@mixin container-reset {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin container-1280 {
+  max-width: 1280px;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: 0 auto;
+
+  @media print {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@mixin container-1210 {
+  max-width: 1210px;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin: 0 auto;
+
+  @include breakpoint(tablet-m) {
+    padding-left: 35px;
+    padding-right: 35px;
+
+    @media print {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@mixin container-1140 {
+  max-width: 1210px;
+  width: 100%;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin: 0 auto;
+
+  @include breakpoint(tablet-m) {
+    padding-left: 0;
+    padding-right: 0;
+
+    @media print {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media print {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

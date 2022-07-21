@@ -1,4 +1,4 @@
-uuid: 2d0ebd44-dd81-4e33-abb7-fab0bcd58ffb
+uuid: 066ea59d-b905-46fd-a08e-0d7f020089af
 langcode: ru
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: bdk_search_form_wide
 theme: bdk
 region: header
-weight: -5
+weight: -1
 provider: null
 plugin: search_form_block
 settings:

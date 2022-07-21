@@ -1,0 +1,661 @@
+/**
+ * @file
+ * Mixin layout.
+*/
+
+
+@mixin layout-two-column {
+  &.content {
+    flex-wrap: nowrap;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+
+    @include breakpoint(IPad-Pro) {
+      flex-wrap: wrap;
+    }
+
+    > .layout__region--first {
+      flex: auto;
+      width: calc(100% - 440px);
+      padding-right: 140px;
+      padding-bottom: 90px;
+
+      @include breakpoint(laptop) {
+        padding-right: 70px;
+
+        @media print {
+          padding-right: 0;
+          width: 100%;
+        }
+      }
+
+      @include breakpoint(IPad-Pro) {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 40px;
+
+        @media print {
+          padding-right: 0;
+          width: 100%;
+        }
+      }
+
+      @media print {
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+
+    > .layout__region--second {
+      flex: none;
+      width: 300px;
+      margin-top: -75px;
+
+      @include breakpoint(IPad-Pro) {
+        width: 100%;
+        margin-top: 0;
+      }
+
+      @media print {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin layout-two-column-landing {
+  &.layout__twocol_section {
+    @include container-1280;
+
+    @include breakpoint(IPad-Pro) {
+      padding-right: 70px;
+      padding-left: 70px;
+
+      @media print {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    @include breakpoint(tablet-m) {
+      padding-right: 35px;
+      padding-left: 35px;
+
+      @media print {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+
+    > .node__content {
+      /* Block intro */
+      .layout--onecol {
+        .layout__region--content {
+          .paragraph--type--intro {
+            width: calc(100% - 370px);
+            padding-right: 0;
+            padding-left: 70px;
+            padding-bottom: 40px;
+            align-items: flex-start;
+
+            @include breakpoint(IPad-Pro) {
+              width: 100%;
+              padding-left: 0;
+            }
+
+            .field--name-field-text {
+
+              h2 {
+                color: $text-primary;
+
+                @include fira-sans-fz-25-lh-30-fw-n;
+                @include breakpoint(mobile-large) {
+                  font-size: 19px;
+                  line-height: 24px;
+                }
+              }
+
+              p {
+                @include fira-sans-fz-16-lh-24-fw-n-color-primary;
+              }
+            }
+
+            .field--name-field-teaser-box {
+              max-width: 300px;
+              margin-top: -117px;
+
+              @include breakpoint(IPad-Pro) {
+                display: none;
+              }
+            }
+          }
+
+          .block-field-blocknodelandingpagefield-secondary-content {
+            .paragraph--type--topics {
+              .slick--field-topic-teasers {
+                .slick__slider {
+                  @include breakpoint(tablet-m) {
+                    margin-left: 0;
+                    margin-right: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      > .layout--twocol-section--75-25 {
+        flex-wrap: nowrap;
+
+        @include breakpoint(IPad-Pro) {
+          flex-wrap: wrap;
+        }
+
+        /* Block breadcrumb */
+        &.action-links-breadcrumbs {
+          @include action-links-breadcrumbs-landing;
+
+          margin: 0 auto 40px;
+
+          @include breakpoint(IPad-Pro) {
+            margin: 0 auto 20px;
+          }
+        }
+
+        &.content {
+          flex-wrap: nowrap;
+
+          @include breakpoint(IPad-Pro) {
+            flex-wrap: wrap;
+          }
+
+          /* Block content */
+          > .layout__region--first {
+            flex: auto;
+            padding-right: 70px;
+            width: calc(100% - 370px);
+            padding-bottom: 90px;
+
+            @include breakpoint(laptop) {
+              padding-right: 70px;
+            }
+
+            @include breakpoint(IPad-Pro) {
+              width: 100%;
+              padding-right: 0;
+              padding-bottom: 40px;
+            }
+
+            .block-field-blocknodelandingpagefield-content {
+              .field--name-field-content {
+                > .field__item {
+                  margin-bottom: 40px;
+
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+
+            .block-field-blocknodepoll-quizfield-intro-text {
+              margin-bottom: 30px;
+            }
+
+            .paragraph--type--dynamic-block {
+              padding-top: 0;
+              padding-left: 70px;
+
+              @include breakpoint(IPad-Pro) {
+                padding-left: 0;
+              }
+            }
+
+            .paragraph--type--ask-question,
+            .paragraph--type--text,
+            .paragraph--type--contact,
+            .paragraph--type--product-report {
+              padding-top: 0;
+              padding-left: 70px;
+
+              @include breakpoint(IPad-Pro) {
+                padding-left: 0;
+              }
+
+              iframe {
+                border: 2px solid $green-primary;
+                background-color: #ffffff;
+                padding: 40px 35px 40px;
+
+                @include breakpoint(IPad-Pro) {
+                  padding: 30px 45px 30px;
+                }
+
+                @include breakpoint(mobile-large) {
+                  padding: 25px 20px 25px;
+                }
+              }
+            }
+          }
+
+          /* Block sidebar */
+          > .layout__region--second {
+            flex: none;
+            width: 300px;
+
+            @media print {
+              display: none;
+            }
+
+            .block-field-blocknodelandingpagefield-top-content {
+              margin-bottom: 45px;
+
+              @include breakpoint(mobile-large) {
+                margin-bottom: 30px;
+              }
+            }
+
+            .block-field-blocknodelandingpagefield-bottom-content {
+
+              @include breakpoint(IPad-Pro) {
+                margin-left: -35px;
+                margin-right: -35px;
+              }
+
+              @include breakpoint(mobile-large) {
+                margin-left: 0;
+                margin-right: 0;
+              }
+            }
+
+            > .field--name-field-teaser-box {
+              margin-bottom: 30px;
+
+              @include breakpoint(mobile-large) {
+                margin-left: -35px;
+                margin-right: -35px;
+
+                @media print {
+                  margin-left: 0;
+                  margin-right:0;
+                }
+              }
+
+              @media print {
+                margin-left: 0;
+                margin-right:0;
+              }
+            }
+
+            @include sidebar-block-views;
+
+            @include breakpoint(IPad-Pro) {
+              width: 100%;
+              margin-top: 0;
+              padding-bottom: 60px;
+            }
+
+            .slick-list {
+              @include breakpoint(IPad-Pro) {
+                margin-left: -35px;
+                margin-right: -35px;
+
+                @media print {
+                  margin-left: 0;
+                  margin-right:0;
+                }
+              }
+
+              @include breakpoint(mobile-large) {
+                margin-left: 0;
+                margin-right: 0;
+
+                @media print {
+                  margin-left: 0;
+                  margin-right:0;
+                }
+              }
+
+              @media print {
+                margin-left: 0;
+                margin-right:0;
+              }
+            }
+
+            .slick--field-boxes {
+              position: relative;
+
+              .slick__arrow {
+                position: absolute;
+                font-size: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                z-index: 2;
+
+                @include breakpoint(mobile-large) {
+                  top: calc(50% - 30px);
+                }
+
+                .slick-arrow {
+                  position: absolute;
+                }
+
+                .slick-prev {
+                  @include breakpoint(IPad-Pro) {
+                    left: -40px;
+                  }
+
+                  @include breakpoint(tablet-m) {
+                    left: -30px;
+                  }
+
+                  @include breakpoint(mobile-large) {
+                    left: 0;
+                  }
+                }
+
+                .slick-next {
+
+                  @include breakpoint(IPad-Pro) {
+                    right: -40px;
+                  }
+
+                  @include breakpoint(tablet-m) {
+                    right: -30px;
+                  }
+
+                  @include breakpoint(mobile-large) {
+                    right: 0;
+                  }
+                }
+              }
+            }
+
+            .paragraph--type--color-boxes {
+              padding-bottom: 0;
+            }
+
+            .slick__slide {
+              @include breakpoint(IPad-Pro) {
+                padding-left: 35px;
+                padding-right: 35px;
+              }
+
+              @include breakpoint(mobile-large) {
+                padding-left: 0;
+                padding-right: 0;
+              }
+
+              &.slick-active {
+                border-left: 1px solid $border-primary;
+
+                &:first-child {
+                  border-left: none;
+                }
+
+                @include breakpoint(mobile-large) {
+                  border: none;
+                }
+              }
+
+              &.slick-current {
+                border-left: none;
+              }
+
+              .teaser_box-link {
+                margin-left: 0;
+                margin-right: 0;
+
+                @include breakpoint(IPad-Pro) {
+                  margin-left: 0;
+                  margin-right: 0;
+                }
+              }
+            }
+
+            .paragraph--type--color-boxes {
+              .teaser_box-link {
+                margin-bottom: 30px;
+                display: block;
+              }
+
+              .node--type-teaser-box {
+                margin-bottom: 30px;
+
+                @include breakpoint(IPad-Pro) {
+                  margin-bottom: 0;
+                }
+
+                &.node--view-mode-product-color-box {
+                  &::before {
+                    border-top: 25px solid #f0f0f1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .paragraph--type--color-boxes {
+        @include breakpoint(mobile-large) {
+          margin-left: -35px;
+          margin-right: -35px;
+
+          @media print {
+            margin-left: 0;
+            margin-right:0;
+          }
+        }
+
+        @media print {
+          margin-left: 0;
+          margin-right:0;
+        }
+      }
+    }
+  }
+}
+
+@mixin layout-one-column-landing {
+  &.layout__onecol {
+    .heading {
+      @include container-1280;
+    }
+
+    .action-links-breadcrumbs {
+      @include container-1280;
+      margin-bottom: 50px;
+    }
+
+    .paragraph--type--color-boxes {
+      padding-top: 20px;
+      padding-bottom: 120px;
+
+      @include breakpoint(IPad-Pro) {
+        padding-bottom: 90px;
+      }
+
+      @include breakpoint(tablet-m) {
+        padding-bottom: 45px;
+      }
+
+      @media print {
+        padding-top: 40px;
+        padding-bottom: 60px;
+      }
+
+      .slick--field-boxes {
+        @include container-1140;
+
+        @media print {
+          @include container-1210;
+        }
+      }
+
+      @include breakpoint(IPad-Pro) {
+        padding-bottom: 63px;
+      }
+
+      @include breakpoint(mobile-large) {
+        padding-bottom: 76px;
+      }
+    }
+
+    .paragraph--type--slider {
+      @include container-1280;
+
+      margin: 0 auto 90px;
+
+      @include breakpoint(IPad-Pro) {
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0 auto 45px;
+      }
+
+      @include breakpoint(mobile-large) {
+        margin: 0 auto 45px;
+      }
+    }
+
+    .paragraph--type--intro {
+      padding-bottom: 60px;
+
+      @include container-1210;
+      @include breakpoint(mobile-large) {
+        padding-bottom: 30px;
+        padding-left: 35px;
+        padding-right: 35px;
+
+        @media print {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+
+      h2 {
+        @include fira-sans-fz-25-lh-30-fw-n;
+      }
+
+      &.up {
+        margin-top: -87px !important;
+        align-items: flex-start;
+
+        @include breakpoint(IPad-Pro) {
+          margin-top: 0;
+        }
+
+        .field--name-field-text {
+          padding-top: 70px;
+        }
+      }
+    }
+
+    .paragraph--type--dynamic-block {
+      background-color: $c-white;
+      padding-top: 60px;
+
+      @include breakpoint(tablet-l) {
+        padding-top: 60px;
+      }
+
+      .field--name-field-views {
+        @include container-1210;
+
+        @include breakpoint(mobile-large) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .paragraph--type--search-block {
+      transform: translateY(50%);
+    }
+
+    .paragraph--type--topics,
+    .paragraph--type--slider-all-content {
+      padding-top: 20px;
+      padding-bottom: 60px;
+
+      @include breakpoint(IPad-Pro) {
+        padding-bottom: 30px;
+      }
+
+      @include breakpoint(tablet-m) {
+        padding-bottom: 25px;
+      }
+
+      .slick--field-topic-teasers,
+      .slick--field-teaser {
+        @include container-1140;
+        @include breakpoint(tablet-m) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        @media print {
+          @include container-1210;
+        }
+
+        .slick__slider {
+          margin-left: -30px;
+          margin-right: -30px;
+
+          @include breakpoint(mobile-large) {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+      }
+
+      .slick--field-topic-teasers {
+        padding-left: 70px;
+        padding-right: 70px;
+
+        @include breakpoint(mobile-large) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .paragraph--type--text-boxes {
+      background-color: $c-white;
+
+      .field--name-field-text-boxes {
+        @include container-1210;
+      }
+    }
+
+    .paragraph--type--text {
+      @include container-1210;
+      padding-bottom: 120px;
+
+      @include breakpoint(IPad-Pro) {
+        padding-right: 70px;
+        padding-left: 70px;
+        padding-bottom: 90px;
+
+        @media print {
+          padding-left: 0;
+          padding-right:0;
+        }
+      }
+
+      @include breakpoint(tablet-m) {
+        padding-right: 35px;
+        padding-left: 35px;
+        padding-bottom: 45px;
+
+        @media print {
+          padding-left: 0;
+          padding-right:0;
+        }
+      }
+    }
+  }
+}

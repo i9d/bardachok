@@ -1,0 +1,163 @@
+/**
+ * @file
+ * Mixin block-builder.
+*/
+
+@mixin CT-page-label {
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 10px;
+
+  @include breakpoint(mobile-large) {
+    font-size: 16px;
+  }
+}
+
+@mixin CT-page-title {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: normal;
+
+  @include breakpoint(IPad-Pro) {
+    font-size: 32px;
+
+    @media print {
+      font-size: 42px;
+    }
+  }
+
+  @include breakpoint(mobile-large) {
+    font-size: 26px;
+
+    @media print {
+      font-size: 42px;
+    }
+  }
+}
+
+@mixin CT-block-builder {
+  min-height: 70px;
+  position: relative;
+}
+
+@mixin CT-block-builder-padding-l-80 {
+  padding-left: 80px;
+
+  @include breakpoint(IPad-Pro) {
+    padding-left: 65px;
+
+    @media print {
+      padding-left: 80px;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding-left: 50px;
+
+    @media print {
+      padding-left: 80px;
+    }
+  }
+}
+
+@mixin CT-block-builder-margin-b-20 {
+  margin-bottom: 20px;
+}
+
+@mixin CT-block-builder-border-bottom {
+  border-bottom: $border-grey;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+@mixin CT-block-builder-before {
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-color: $green-primary;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+
+    @include breakpoint(tablet) {
+      width: 40px;
+      height: 40px;
+
+      @media print {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
+@mixin CT-title-block-builder {
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 3px;
+  font-weight: normal;
+
+  @include breakpoint(tablet) {
+    font-size: 22px;
+
+    @media print {
+      font-size: 25px;
+    }
+  }
+}
+
+@mixin CT-label-block-builder {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* block-builder dropdown title */
+@mixin dropdown-wrapper-btn-title {
+
+  .dropdown-wrapper-btn-title {
+    cursor: pointer;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+
+    &.open {
+      button {
+        transform: scale(1, -1);
+      }
+    }
+
+    .field__label {
+      margin-right: 10px;
+    }
+
+    .dropdown-wrapper-btn {
+      display: none;
+      justify-content: center;
+      margin-left: auto;
+
+      @include breakpoint(IPad-Pro) {
+        display: flex;
+      }
+
+      button {
+        @include btn-reset;
+
+        width: 16px;
+        height: 9px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../../../assets/images/arrow-button-more-down-blue.svg);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
