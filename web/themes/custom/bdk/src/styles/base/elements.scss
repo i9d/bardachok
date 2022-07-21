@@ -15,17 +15,6 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
-
-  .layout-container {
-    @include fira-sans-fz-16-lh-24-fw-n-color-primary;
-    background-color: $grey-primary;
-    transition: font-size 0.3s ease;
-
-    .bigger {
-      font-size: 18px;
-      line-height: 1.5;
-    }
-  }
 }
 
 audio,
@@ -65,15 +54,6 @@ a {
   text-decoration: none;
 }
 
-.link-teaser-wrapper,
-.teaser_box-link {
-  color: $text-primary;
-
-  @media print {
-    color: $c-black;
-  }
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -85,23 +65,8 @@ a {
   overflow: hidden;
 }
 
-.layout-container {
-
-  @include breakpoint(laptop) {
-    padding-top: 160px;
-  }
-
-  @include breakpoint(tablet) {
-    padding-top: 120px;
-  }
-
-  @include breakpoint(mobile-large) {
-    padding-top: 110px;
-  }
-}
-
 .region-content,
-.region-featured {
+.region-highlighted {
   @include container-1280;
 }
 
@@ -132,6 +97,7 @@ em {
   font-family: sans-serif;
 }
 
+.btn,
 input[type="submit"] {
   display: inline-block;
   border: none;

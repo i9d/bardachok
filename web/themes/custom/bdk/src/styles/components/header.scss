@@ -1,0 +1,8 @@
+header {
+  background: $gray-light;
+  .region-header {
+    @include container-1440;
+    display: flex;
+    justify-content: space-between;
+  }
+}

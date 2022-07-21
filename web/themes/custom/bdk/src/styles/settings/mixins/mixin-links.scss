@@ -80,12 +80,6 @@
     background-size: contain;
     background-position: center;
     background-image: url(../../../assets/images/arrow-more-blue.svg);
-
-    @media print {
-      background-image: none;
-      content: url(../../../assets/images/arrow-more-black.svg);
-      height: 19px;
-    }
   }
 }
 
@@ -145,12 +139,6 @@
     background-size: contain;
     background-position: center;
     background-image: url(../../../assets/images/arrow-more.svg);
-
-    @media print {
-      background-image: none;
-      content: url(../../../assets/images/arrow-more-black.svg);
-      height: 19px;
-    }
   }
 
 }

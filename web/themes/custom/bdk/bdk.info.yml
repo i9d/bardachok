@@ -4,7 +4,7 @@ description: 'Bardachok sub theme of Classy.'
 core_version_requirement: ^9
 # Defines the base theme
 base theme: classy
-#logo: logo.png
+logo: logo.svg
 # Defines libraries group in which we can add css/js.
 libraries:
   - bdk/global-styling

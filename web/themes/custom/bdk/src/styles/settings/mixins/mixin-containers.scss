@@ -10,14 +10,11 @@
   margin-right: -50vw;
   margin-left: -50vw;
   width: 100vw;
+}
 
-  @media print {
-    margin-right: auto;
-    margin-left: auto;
-    left: auto;
-    right: auto;
-    width: auto;
-  }
+@mixin container-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 @mixin container-1200 {
@@ -27,11 +24,6 @@
   @include breakpoint(desktop-small) {
     padding-left: 15px;
     padding-right: 15px;
-
-    @media print {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 }
 
@@ -57,11 +49,6 @@
   padding-left: 35px;
   padding-right: 35px;
   margin: 0 auto;
-
-  @media print {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 @mixin container-1210 {
@@ -74,11 +61,6 @@
   @include breakpoint(tablet-m) {
     padding-left: 35px;
     padding-right: 35px;
-
-    @media print {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 }
 
@@ -90,16 +72,6 @@
   margin: 0 auto;
 
   @include breakpoint(tablet-m) {
-    padding-left: 0;
-    padding-right: 0;
-
-    @media print {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  @media print {
     padding-left: 0;
     padding-right: 0;
   }
