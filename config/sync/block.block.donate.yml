@@ -1,0 +1,25 @@
+uuid: f3ed5942-b5e0-438c-a2b5-c37be3141969
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bf0aee88-b74f-43e6-aefe-b4185a6589af'
+  module:
+    - block_content
+  theme:
+    - bdk
+id: donate
+theme: bdk
+region: header
+weight: -1
+provider: null
+plugin: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
+settings:
+  id: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
+  label: Donate
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
