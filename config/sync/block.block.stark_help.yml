@@ -1,22 +1,22 @@
-uuid: 5b3e3ccf-bbc7-4935-8312-77f41c5b8a64
+uuid: 88c860c2-43cb-4c5e-b715-78cfcf511202
 langcode: ru
 status: true
 dependencies:
   module:
     - help
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
-id: olivero_help
-theme: olivero
-region: content_above
+id: stark_help
+theme: stark
+region: sidebar_first
 weight: 0
 provider: null
 plugin: help_block
 settings:
   id: help_block
-  label: Help
+  label: Справка
   label_display: '0'
   provider: help
 visibility: {  }

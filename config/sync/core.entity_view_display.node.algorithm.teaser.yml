@@ -1,0 +1,34 @@
+uuid: 1fe3baab-a30e-43b9-a135-b08376b81d37
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.algorithm.field_annotation
+    - field.field.node.algorithm.field_conclusion
+    - field.field.node.algorithm.field_content
+    - field.field.node.algorithm.field_image
+    - node.type.algorithm
+  module:
+    - user
+id: node.algorithm.teaser
+targetEntityType: node
+bundle: algorithm
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  tg_comments:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_annotation: true
+  field_conclusion: true
+  field_content: true
+  field_image: true
+  langcode: true

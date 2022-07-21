@@ -10,7 +10,6 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
-  comment: 0
   config: 0
   contextual: 0
   ctools: 0
@@ -64,6 +63,7 @@ module:
   paragraphs: 11
   standard: 1000
 theme:
-  olivero: 0
   claro: 0
+  stark: 0
+  olivero: 0
 profile: standard

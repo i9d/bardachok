@@ -69,3 +69,7 @@
 # Ignore IDE files
 /.idea
 /.editorconfig
+
+# Ignore db files
+*.sql
+*.sql.*

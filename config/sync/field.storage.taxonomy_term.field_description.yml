@@ -1,17 +1,16 @@
-uuid: 70a80ecf-cd93-45e2-a77f-d9d119a27a73
+uuid: e5777b36-59dc-4340-9605-db2a6d735a29
 langcode: ru
 status: true
 dependencies:
   module:
-    - media
     - taxonomy
-id: taxonomy_term.field_image
-field_name: field_image
+    - text
+id: taxonomy_term.field_description
+field_name: field_description
 entity_type: taxonomy_term
-type: entity_reference
-settings:
-  target_type: media
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

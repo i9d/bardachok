@@ -1,22 +1,22 @@
-uuid: 433686ca-7728-4539-82cc-928453cdd95b
+uuid: 8e4bb674-2f12-4aa8-b897-35486758f82e
 langcode: ru
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
-id: olivero_site_branding
-theme: olivero
+id: stark_site_branding
+theme: stark
 region: header
 weight: 0
 provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Брендинг сайта'
   label_display: '0'
   provider: system
   use_site_logo: true

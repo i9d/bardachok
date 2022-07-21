@@ -1,11 +1,11 @@
 chat_name: bardachok_test
 token: '5479254670:AAF7VLa4YE7CuxoPs8BW_Rtc04ctj5qfK4w'
-post_to_tg: 0
-display_comments: 0
+post_to_tg: 1
+display_comments: 1
 silent_mode: 0
 disable_link_preview: 0
 content_types:
-  node|landing_page: node|landing_page
-  comment|comment: 0
-  taxonomy_term|tags: 0
+  node|algorithm: node|algorithm
+  node|landing_page: 0
+  taxonomy_term|categories: 0
   webform_submission|contact: 0

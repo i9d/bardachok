@@ -1,20 +1,20 @@
-uuid: e5e47f18-f500-46c5-b89b-3f937901b6e1
+uuid: b905f691-c200-4fc3-ac7d-6372b703233b
 langcode: ru
 status: true
 dependencies:
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
-id: olivero_page_title
-theme: olivero
-region: content_above
+id: stark_page_title
+theme: stark
+region: sidebar_first
 weight: -5
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Заголовок страницы'
   label_display: '0'
   provider: core
 visibility: {  }

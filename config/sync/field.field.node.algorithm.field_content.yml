@@ -1,17 +1,18 @@
-uuid: 8970114d-853d-44ca-82c7-e0897b80e068
-langcode: en
+uuid: e64700a7-6146-4de8-9b0f-38f59609c58a
+langcode: ru
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_content
+    - field.storage.node.field_content
+    - node.type.algorithm
     - paragraphs.paragraphs_type.step
   module:
     - entity_reference_revisions
-id: paragraph.step.field_content
+id: node.algorithm.field_content
 field_name: field_content
-entity_type: paragraph
-bundle: step
-label: Контент
+entity_type: node
+bundle: algorithm
+label: 'Содержимое алгоритма'
 description: ''
 required: false
 translatable: false
@@ -22,18 +23,18 @@ settings:
   handler_settings:
     target_bundles:
       step: step
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
       media:
         weight: 5
         enabled: false
       step:
-        weight: 3
+        weight: 6
         enabled: true
       title_text:
         weight: 7
         enabled: false
       two_col:
-        weight: 4
+        weight: 8
         enabled: false
 field_type: entity_reference_revisions

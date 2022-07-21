@@ -3,7 +3,6 @@ langcode: ru
 status: true
 dependencies:
   module:
-    - comment
     - media
     - search
     - shortcut
@@ -11,16 +10,12 @@ dependencies:
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
-label: 'Authenticated user'
+label: 'Аутентифицированный пользователь'
 weight: -9
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
   - 'access shortcuts'
   - 'access user profiles'
-  - 'edit own comments'
-  - 'post comments'
   - 'search content'
-  - 'skip comment approval'
   - 'view media'

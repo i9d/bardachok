@@ -1,22 +1,22 @@
-uuid: 2fba4251-0874-43e5-bbdd-6dcd14e4f4cf
+uuid: abfc4c1c-3db4-47e9-88d6-b9b40e95f6d0
 langcode: ru
 status: true
 dependencies:
   module:
     - search
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
-id: olivero_search_form_wide
-theme: olivero
+id: stark_search_form_wide
+theme: stark
 region: secondary_menu
 weight: -5
 provider: null
 plugin: search_form_block
 settings:
   id: search_form_block
-  label: 'Search form (wide)'
+  label: 'Форма поиска (широкая)'
   label_display: '0'
   provider: search
   page_id: ''

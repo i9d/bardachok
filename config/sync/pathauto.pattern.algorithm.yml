@@ -1,0 +1,22 @@
+uuid: bab4ac53-cc59-4adc-b21e-741f205a1c79
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: algorithm
+label: Algorithm
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  f4837580-1f98-4c27-bab3-3ef7d19d1a5d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: f4837580-1f98-4c27-bab3-3ef7d19d1a5d
+    context_mapping:
+      node: node
+    bundles:
+      algorithm: algorithm
+selection_logic: and
+weight: -5
+relationships: {  }

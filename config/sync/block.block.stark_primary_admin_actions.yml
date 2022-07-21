@@ -1,20 +1,20 @@
-uuid: c2a17c1e-9bb8-4045-86ef-34a1929c40b8
+uuid: 0127bac2-283c-4c17-acff-19dfd0b831ea
 langcode: ru
 status: true
 dependencies:
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
-id: olivero_primary_admin_actions
-theme: olivero
+id: stark_primary_admin_actions
+theme: stark
 region: highlighted
 weight: -5
 provider: null
 plugin: local_actions_block
 settings:
   id: local_actions_block
-  label: 'Primary admin actions'
+  label: 'Основные действия администратора'
   label_display: '0'
   provider: core
 visibility: {  }

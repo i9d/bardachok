@@ -1,22 +1,22 @@
-uuid: c86b5ede-1d61-4268-b05c-667f3e0ed486
+uuid: cb272c81-82be-40cd-b28e-24284e3b3d6f
 langcode: ru
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
-id: olivero_messages
-theme: olivero
+id: stark_messages
+theme: stark
 region: highlighted
 weight: -5
 provider: null
 plugin: system_messages_block
 settings:
   id: system_messages_block
-  label: 'Status messages'
+  label: 'Системные сообщения'
   label_display: '0'
   provider: system
 visibility: {  }

@@ -1,4 +1,4 @@
-uuid: 5d16887b-6d0c-4b58-9801-6ac041d64a98
+uuid: 2e95eed1-c6e5-4937-932e-1456aabf2aac
 langcode: ru
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
+    - stark
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: olivero_main_menu
-theme: olivero
+id: stark_main_menu
+theme: stark
 region: primary_menu
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
   id: 'system_menu_block:main'
-  label: 'Main navigation'
+  label: 'Основная навигация'
   label_display: '0'
   provider: system
   level: 1
