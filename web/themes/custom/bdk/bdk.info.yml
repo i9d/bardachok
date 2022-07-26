@@ -10,7 +10,8 @@ libraries:
   - bdk/global-styling
 # Regions
 regions:
+  admin: Admin
   header: Header
-  highlighted: Highlighted
+  top: Top
   content: Content
   footer: Footer

@@ -1,0 +1,15 @@
+uuid: 0b7ecb21-7d38-4b72-a1e0-b65240c871d5
+langcode: en
+status: true
+dependencies: {  }
+name: categories_slider
+label: 'Categories Slider 250x200'
+effects:
+  f38200ee-58a3-4379-b647-56b33abef91f:
+    uuid: f38200ee-58a3-4379-b647-56b33abef91f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 200
+      anchor: center-center

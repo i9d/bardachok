@@ -1,8 +1,0 @@
-uuid: 70462745-32a9-4aaf-8224-51745a4c2710
-langcode: ru
-status: true
-dependencies: {  }
-_core:
-  default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
-id: default
-label: Default

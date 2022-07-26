@@ -5,7 +5,6 @@ dependencies:
   module:
     - media
     - search
-    - shortcut
     - system
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
@@ -15,7 +14,6 @@ weight: -9
 is_admin: false
 permissions:
   - 'access content'
-  - 'access shortcuts'
   - 'access user profiles'
   - 'search content'
   - 'view media'
