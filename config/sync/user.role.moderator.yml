@@ -4,13 +4,13 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - filter.format.full_html
-    - filter.format.restricted_html
     - media.type.audio
     - media.type.document
     - media.type.image
     - media.type.remote_video
     - media.type.video
+    - node.type.algorithm
+    - taxonomy.vocabulary.categories
   module:
     - contextual
     - file
@@ -21,7 +21,6 @@ dependencies:
     - path
     - system
     - taxonomy
-    - toolbar
     - tour
     - webform
 id: moderator
@@ -29,22 +28,27 @@ label: Moderator
 weight: -7
 is_admin: null
 permissions:
+  - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
   - 'access media overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
-  - 'access toolbar'
   - 'access tour'
   - 'access user profiles'
   - 'administer url aliases'
   - 'change own username'
+  - 'create algorithm content'
   - 'create audio media'
   - 'create document media'
   - 'create image media'
   - 'create media'
   - 'create remote_video media'
+  - 'create terms in categories'
+  - 'create url aliases'
   - 'create video media'
+  - 'create webform'
+  - 'delete any algorithm content'
   - 'delete any audio media'
   - 'delete any document media'
   - 'delete any image media'
@@ -52,30 +56,36 @@ permissions:
   - 'delete any remote_video media'
   - 'delete any video media'
   - 'delete media'
+  - 'delete own algorithm content'
   - 'delete own audio media'
   - 'delete own document media'
   - 'delete own image media'
   - 'delete own remote_video media'
   - 'delete own video media'
+  - 'delete own webform'
+  - 'edit any algorithm content'
   - 'edit any audio media'
   - 'edit any document media'
   - 'edit any image media'
   - 'edit any remote_video media'
   - 'edit any video media'
+  - 'edit own algorithm content'
   - 'edit own audio media'
   - 'edit own document media'
   - 'edit own image media'
   - 'edit own remote_video media'
   - 'edit own video media'
+  - 'edit terms in categories'
+  - 'revert algorithm revisions'
   - 'revert all revisions'
   - 'update any media'
   - 'update media'
   - 'use text format basic_html'
-  - 'use text format full_html'
-  - 'use text format restricted_html'
+  - 'view algorithm revisions'
   - 'view all revisions'
   - 'view any webform submission'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view own webform submission'
   - 'view unpublished paragraphs'
+  - 'view user email addresses'

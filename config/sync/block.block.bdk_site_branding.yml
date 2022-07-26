@@ -11,7 +11,7 @@ _core:
 id: bdk_site_branding
 theme: bdk
 region: header
-weight: -2
+weight: -1
 provider: null
 plugin: system_branding_block
 settings:

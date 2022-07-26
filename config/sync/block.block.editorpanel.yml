@@ -1,0 +1,33 @@
+uuid: d6f86ed9-b76c-4166-a44d-c90633eb1c2b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+  module:
+    - block_content
+    - user
+  theme:
+    - bdk
+id: editorpanel
+theme: bdk
+region: admin
+weight: 0
+provider: null
+plugin: 'block_content:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+settings:
+  id: 'block_content:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+  label: 'Editor panel'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      content_editor: content_editor
