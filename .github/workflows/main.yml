@@ -5,10 +5,11 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
+      - run: cd web/themes/bdk
       - uses: actions/checkout@v2
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install # will run `yarn install` command
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: build # will run `yarn build` comman
+          cmd: build # will run `yarn build` command
