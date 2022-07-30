@@ -1,0 +1,10 @@
+uuid: df0a9faa-29c6-4965-afb9-f41041ada452
+langcode: ru
+status: true
+dependencies: {  }
+id: title_subtitle_text
+label: Заголовок+Подзаголовок+Текст
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_webform_tabs module file.
+ */
+
+function bdk_webform_tabs_preprocess_node(&$variables) {
+  if ($variables['node']->id() == '12') {
+    $variables['#attached']['library'][] = 'bdk_webform_tabs/webform-tabs';
+  }
+}

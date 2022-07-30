@@ -8,10 +8,10 @@
 @import './base/fonts';
 
 /* Mixins */
-@import './base/media';
 @import './settings/mixins/mixin-common';
 @import './settings/mixins/mixin-containers';
-@import './settings/mixins/mixin-links';
+@import './settings/mixins/mixin-fonts';
+@import './base/media';
 
 /* Base styles */
 @import './base/elements';
@@ -19,3 +19,4 @@
 
 /* Components */
 @import './components/header';
+@import './components/maintenance-page';

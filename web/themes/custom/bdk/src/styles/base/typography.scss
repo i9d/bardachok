@@ -3,17 +3,23 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin-top: 0;
 }
 
-h2 {
-  font-weight: bold;
+h1 {
+  @include Title_1_Heavy_48pt;
 }
 
-p {
-  &:last-child {
-    margin-bottom: 0;
-  }
+h2 {
+  @include Title_2_Bold_28pt;
+}
+
+p, span {
+  @include Body_5_Regular_16pt;
+  margin: 0;
+}
+
+a {
+  @include Link_Medium_16pt;
 }

@@ -1,0 +1,21 @@
+uuid: ee2724c9-c06d-47fc-b17e-342e9ffb8031
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_1
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_text_1
+field_name: field_text_1
+entity_type: node
+bundle: landing_page
+label: 'Text 1'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -7,6 +7,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  transition: all 0.5s ease-out;
 }
 
 body {
@@ -49,9 +50,14 @@ input[type='submit'] {
   cursor: pointer;
 }
 
+//button,
+//input[type='submit'],
+//a {
+//  transition: top 1s ease-out 0.5s;
+//}
+
 a {
-  color: $blue-primary;
-  text-decoration: none;
+  @include Link_Medium_16pt;
 }
 
 .visually-hidden {
@@ -67,30 +73,17 @@ a {
 
 .region-content,
 .region-highlighted {
-  @include container-1280;
+  @include container-1304;
 }
-
 
 .align-left {
   max-width: 255px;
   margin: 0 15px 15px 0;
-
-  @include breakpoint(mobile-middle) {
-      max-width: 100%;
-      width: 100%;
-      margin: 0 0 15px 0;
-  }
 }
 
 .align-right {
   max-width: 255px;
   margin: 0 0 15px 15px;
-
-  @include breakpoint(mobile-middle) {
-    max-width: 100%;
-    width: 100%;
-    margin: 0 0 15px 0;
-  }
 }
 
 em {
@@ -101,16 +94,23 @@ em {
 input[type="submit"] {
   display: inline-block;
   border: none;
+  border-radius: 12px;
   background-color: $blue-primary;
-  color: $c-white;
-  font-size: 17px;
+  color: $gray-0;
+  text-decoration: none;
   text-align: center;
   font-weight: bold;
-  padding: 14px 30px;
-}
-
-.field--name-comment-body {
-  .filter-wrapper {
-    display: none;
+  padding: 12px 32px;
+  &:hover {
+    background-color: $blue-light;
+  }
+  &:active {
+    background-color: $blue-dark;
+  }
+  &:focus {
+    outline: 3px solid $blue-focus;
+  }
+  &.disabled {
+    background-color: $blue-lighter;
   }
 }

@@ -1,44 +1,62 @@
 /**
  * @file
- * Breakpoints.
+ * Media queries.
  */
-
-@mixin breakpoint($breakpoint) {
-  @if $breakpoint == '' {
-    @content;
+@media (max-width: 1350px) {
+  .header-wrapper,
+  .region-content {
+    @include container-1350;
   }
 
-  @else {
-    // Retrieves the value from the key
-    $value: map-get($breakpoints, $breakpoint);
+}
 
-    // If the key exists in the map
-    @if $value != null {
-      // Prints a media query based on the value
-      @media (max-width: $value) {
-        @content;
-      }
+@media (max-width: 772px) {
+  header {
+    height: 125px !important;
+    padding: 10px 0;
+
+    .header-wrapper {
+      flex-direction: column;
     }
-
-    // If the key doesn't exist in the map
-    @else {
-      @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
-        + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+  // @TODO remove.
+  .node--id-12 {
+    .layout--twocol-section--50-50 {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }
 
-$breakpoints: (
-  mobile-small: '375px',
-  mobile-middle: '480px',
-  mobile-large: '600px',
-  tablet-small: '640px',
-  tablet: '767px',
-  tablet-m: '800px',
-  tablet-l: '900px',
-  IPad-Pro-Nav: '1023px',
-  IPad-Pro: '1024px',
-  laptop: '1201px',
-  desktop-small: '1440px',
-) !default;
+@media (max-width: 500px) {
+  header {
+    height: 150px !important;
 
+    .header-wrapper {
+      .region-header-right {
+        flex-direction: column;
+
+        .menu--social {
+          margin-top: 10px;
+          margin-left: 0 !important;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 772px) and (max-width: 1200px) {
+  // @TODO remove.
+  .node--id-12 {
+    .layout--twocol-section--50-50 {
+      margin-bottom: 50px !important;
+      //flex-direction: column;
+      .layout__region--first {
+        .block-field-blocknodelanding-pagetitle {
+          max-width: 80%;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 uuid: 066ea59d-b905-46fd-a08e-0d7f020089af
 langcode: ru
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
 id: bdk_search_form_wide
 theme: bdk
-region: header
-weight: 1
+region: header_right
+weight: -1
 provider: null
 plugin: search_form_block
 settings:

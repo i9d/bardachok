@@ -1,0 +1,34 @@
+uuid: a9f01a25-36a0-44c0-8c3c-d51d0540a93d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_text_landing.field_text
+    - field.field.paragraph.title_text_landing.field_title
+    - paragraphs.paragraphs_type.title_text_landing
+  module:
+    - text
+id: paragraph.title_text_landing.default
+targetEntityType: paragraph
+bundle: title_text_landing
+mode: default
+content:
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

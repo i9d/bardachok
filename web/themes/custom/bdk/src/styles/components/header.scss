@@ -1,8 +1,74 @@
 header {
-  background: $gray-light;
-  .region-header {
-    @include container-1440;
+  background: $gray-100;
+  height: 72px;
+  margin-bottom: 80px;
+
+  .header-wrapper {
+    @include container-1304;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    .region-header-left {
+      .site-name a {
+        color: $gray-900;
+        font-family: 'CraftworkGrotesk', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+
+    .region-header-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu--social {
+        margin-left: 96px;
+        display: flex;
+        align-items: center;
+
+        > .menu {
+          display: flex;
+          margin: 0;
+
+          .menu-item {
+            padding: 0;
+            &:not(:last-child) {
+              margin-right: 50px;
+            }
+
+            a {
+              display: block;
+              text-indent: -9999px;
+              height: 32px;
+              width: 32px;
+            }
+
+            &.telegram a {
+              mask: url('../../assets/images/tg.svg') no-repeat center;
+              background-color: $blue-primary;
+
+              &:hover {
+                background-color: $blue-light;
+              }
+            }
+
+            &.vk a {
+              mask: url('../../assets/images/vk.svg') no-repeat center;
+              background-color: $blue-primary;
+
+              &:hover {
+                background-color: $blue-light;
+              }
+            }
+          }
+
+
+        }
+      }
+    }
   }
 }

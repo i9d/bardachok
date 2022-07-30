@@ -1,0 +1,101 @@
+/**
+ * @file
+ * Mixin fonts.
+*/
+
+@mixin Title_1_Heavy_48pt {
+  font-family: 'CraftworkGrotesk', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  color: $gray-900;
+}
+
+@mixin Title_2_Bold_28pt {
+  font-family: 'CraftworkGrotesk', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  color: $gray-900;
+}
+
+@mixin Subhead_1_Semibold_24pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: $gray-900;
+}
+
+@mixin Subhead_2_Demibold_20pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: $gray-900;
+}
+
+@mixin Body_1_Medium_20pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: $gray-900;
+}
+
+@mixin Body_2_Regular_20pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: $gray-900;
+}
+
+@mixin Body_3_Demibold_17pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  color: $gray-900;
+}
+
+@mixin Body_4_Medium_16pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray-900;
+}
+
+@mixin Body_5_Regular_16pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $gray-900;
+}
+
+@mixin Body_6_Medium_14pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-900;
+}
+
+@mixin Body_7_Regular_14pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: $gray-900;
+}
+
+@mixin Link_Medium_16pt {
+  font-family: 'Golos', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: $gray-900;
+}

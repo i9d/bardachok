@@ -1,0 +1,19 @@
+uuid: 935e6af2-cabb-4a4e-ba60-09b75f9da7b2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.title_text_landing
+id: paragraph.title_text_landing.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: title_text_landing
+label: Заголовок
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

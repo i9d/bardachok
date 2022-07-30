@@ -10,8 +10,8 @@ _core:
   default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: bdk_site_branding
 theme: bdk
-region: header
-weight: -1
+region: header_left
+weight: -3
 provider: null
 plugin: system_branding_block
 settings:
@@ -19,7 +19,7 @@ settings:
   label: 'Брендинг сайта'
   label_display: '0'
   provider: system
-  use_site_logo: true
-  use_site_name: false
+  use_site_logo: false
+  use_site_name: true
   use_site_slogan: false
 visibility: {  }

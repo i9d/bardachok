@@ -1,0 +1,10 @@
+uuid: 99e78965-d5b7-482d-930e-febc5f8e2611
+langcode: ru
+status: true
+dependencies: {  }
+id: title_text_landing
+label: 'Title + Text (Landing)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

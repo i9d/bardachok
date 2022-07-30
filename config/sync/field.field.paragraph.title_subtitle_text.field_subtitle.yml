@@ -1,0 +1,21 @@
+uuid: c932d809-6d63-41fc-9cf9-93b345db3807
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle
+    - paragraphs.paragraphs_type.title_subtitle_text
+  module:
+    - text
+id: paragraph.title_subtitle_text.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+bundle: title_subtitle_text
+label: Подзаголовок
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

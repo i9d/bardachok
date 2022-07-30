@@ -11,7 +11,8 @@ libraries:
 # Regions
 regions:
   admin: Admin
-  header: Header
+  header_left: Header_left
+  header_right: Header_right
   top: Top
   content: Content
   footer: Footer

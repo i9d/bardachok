@@ -1,0 +1,43 @@
+uuid: b01ebe07-7958-43d6-9cf2-f7d6a958cac3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_subtitle_text.field_subtitle
+    - field.field.paragraph.title_subtitle_text.field_text
+    - field.field.paragraph.title_subtitle_text.field_title
+    - paragraphs.paragraphs_type.title_subtitle_text
+  module:
+    - text
+id: paragraph.title_subtitle_text.default
+targetEntityType: paragraph
+bundle: title_subtitle_text
+mode: default
+content:
+  field_subtitle:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

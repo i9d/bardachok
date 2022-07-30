@@ -1,0 +1,19 @@
+uuid: 8f44ed27-19bd-4a98-95a2-bf998e50b6b8
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_subtitle
+field_name: field_subtitle
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

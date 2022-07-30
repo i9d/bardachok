@@ -1,0 +1,23 @@
+uuid: 3a76ca34-a66e-4e23-a5c3-b0ab4f3807cd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraph
+    - node.type.landing_page
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_paragraph
+field_name: field_paragraph
+entity_type: node
+bundle: landing_page
+label: Paragraph
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings: {  }
+field_type: entity_reference_revisions

@@ -17,14 +17,14 @@
   margin: 0 auto;
 }
 
+@mixin container-1304 {
+  max-width: 1304px;
+  margin: 0 auto;
+}
+
 @mixin container-1200 {
   max-width: 1210px;
   margin: 0 auto;
-
-  @include breakpoint(desktop-small) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 @mixin container-1060 {
@@ -43,7 +43,7 @@
   margin: 0;
 }
 
-@mixin container-1280 {
+@mixin container-1350 {
   max-width: 1280px;
   width: 100%;
   padding-left: 35px;
@@ -57,11 +57,6 @@
   padding-left: 70px;
   padding-right: 70px;
   margin: 0 auto;
-
-  @include breakpoint(tablet-m) {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
 }
 
 @mixin container-1140 {
@@ -70,9 +65,4 @@
   padding-left: 35px;
   padding-right: 35px;
   margin: 0 auto;
-
-  @include breakpoint(tablet-m) {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }

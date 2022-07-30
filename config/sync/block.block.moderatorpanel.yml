@@ -12,13 +12,13 @@ dependencies:
 id: moderatorpanel
 theme: bdk
 region: admin
-weight: 0
+weight: -3
 provider: null
 plugin: 'block_content:92765037-504e-45c8-b6e6-a431edf6d9ea'
 settings:
   id: 'block_content:92765037-504e-45c8-b6e6-a431edf6d9ea'
   label: 'Moderator panel'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''
@@ -31,4 +31,3 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       moderator: moderator
-      administrator: administrator

@@ -52,6 +52,7 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  text_field_formatter: 0
   tg_integration: 0
   token: 0
   toolbar: 0
