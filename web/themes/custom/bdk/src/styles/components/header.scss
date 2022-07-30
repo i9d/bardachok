@@ -45,24 +45,32 @@ header {
               text-indent: -9999px;
               height: 32px;
               width: 32px;
+              background-color: $gray-900;
+
+              &:hover {
+                background-color: $gray-600;
+              }
+
+              &:active {
+                background-color: $gray-400;
+              }
+
+              &:focus {
+                background-color: $gray-300;
+                outline: 3px solid $gray-400;
+              }
+
+              &.disabled {
+                background-color: $gray-200;
+              }
             }
 
             &.telegram a {
               mask: url('../../assets/images/tg.svg') no-repeat center;
-              background-color: $blue-primary;
-
-              &:hover {
-                background-color: $blue-light;
-              }
             }
 
             &.vk a {
               mask: url('../../assets/images/vk.svg') no-repeat center;
-              background-color: $blue-primary;
-
-              &:hover {
-                background-color: $blue-light;
-              }
             }
           }
 
