@@ -5,6 +5,13 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - run: |
-         ls
-      
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install yarn dependencies
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: install # will run `yarn install` command
+      - name: Build theme
+        uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: build # will run `yarn build` command
