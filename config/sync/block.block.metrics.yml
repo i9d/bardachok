@@ -1,0 +1,25 @@
+uuid: 0f285193-793a-43dc-9b38-8584bfa059e7
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:355de392-f8d7-4dde-b921-962201f21c14'
+  module:
+    - block_content
+  theme:
+    - bdk
+id: metrics
+theme: bdk
+region: metrics
+weight: -4
+provider: null
+plugin: 'block_content:355de392-f8d7-4dde-b921-962201f21c14'
+settings:
+  id: 'block_content:355de392-f8d7-4dde-b921-962201f21c14'
+  label: Metrics
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
