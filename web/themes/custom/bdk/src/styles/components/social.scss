@@ -1,0 +1,52 @@
+.menu--social {
+  margin-left: 96px;
+  display: flex;
+  align-items: center;
+
+  > .menu {
+    display: flex;
+    margin: 0;
+
+    .menu-item {
+      padding: 0;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+
+      a {
+        display: block;
+        text-indent: -9999px;
+        height: 32px;
+        width: 32px;
+        background-color: $gray-900;
+
+        &:hover {
+          background-color: $gray-600;
+        }
+
+        &:active {
+          background-color: $gray-400;
+        }
+
+        &:focus {
+          background-color: $gray-300;
+          outline: 3px solid $gray-400;
+        }
+
+        &.disabled {
+          background-color: $gray-200;
+        }
+      }
+
+      &.telegram a {
+        mask: url('../../assets/images/tg.svg') no-repeat center;
+      }
+
+      &.vk a {
+        mask: url('../../assets/images/vk.svg') no-repeat center;
+      }
+    }
+
+
+  }
+}
