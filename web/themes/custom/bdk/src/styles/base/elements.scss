@@ -68,10 +68,12 @@ a {
   &:active {
     color: $blue-dark;
     outline: 1px solid $blue-light;
+    border-radius: 4px;
   }
   &:focus {
     color: $gray-900;
     outline: 1px solid $blue-light;
+    border-radius: 4px;
   }
 }
 
@@ -118,14 +120,18 @@ input[type="submit"] {
   padding: 12px 32px;
   &:hover {
     background-color: $blue-light;
+    color: $gray-0;
   }
   &:active {
     background-color: $blue-dark;
+    color: $gray-0;
   }
   &:focus {
     outline: 3px solid $blue-focus;
+    color: $gray-0;
   }
   &.disabled {
     background-color: $blue-lighter;
+    color: $gray-0;
   }
 }
