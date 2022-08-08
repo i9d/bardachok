@@ -62,14 +62,16 @@ input[type='submit'] {
 
 a {
   @include Link_Medium_16pt;
-  //&:hover {
-  //  color: $blue-light;
-  //}
+  &:hover {
+    color: $gray-600;
+  }
   &:active {
     color: $blue-dark;
+    outline: 1px solid $blue-light;
   }
   &:focus {
-    color: $gray-600;
+    color: $gray-900;
+    outline: 1px solid $blue-light;
   }
 }
 
