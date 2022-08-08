@@ -62,6 +62,15 @@ input[type='submit'] {
 
 a {
   @include Link_Medium_16pt;
+  &:hover {
+    color: $blue-dark;
+  }
+  &:active {
+    color: $blue-light;
+  }
+  &:focus {
+    outline: 3px solid $blue-focus;
+  }
 }
 
 .visually-hidden {
