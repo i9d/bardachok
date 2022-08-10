@@ -11,7 +11,7 @@ dependencies:
 id: social_2
 theme: bdk
 region: footer
-weight: 0
+weight: -5
 provider: null
 plugin: 'system_menu_block:social'
 settings:
