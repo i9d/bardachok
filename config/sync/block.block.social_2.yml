@@ -1,0 +1,25 @@
+uuid: a8a7af43-8f87-40fb-af09-000698268815
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.social
+  module:
+    - system
+  theme:
+    - bdk
+id: social_2
+theme: bdk
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:social'
+settings:
+  id: 'system_menu_block:social'
+  label: Social
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
