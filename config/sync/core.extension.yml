@@ -5,6 +5,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_tools: 0
   automated_cron: 0
+  backup_migrate: 0
   big_pipe: 0
   blazy: 0
   block: 0
@@ -13,6 +14,7 @@ module:
   ckeditor: 0
   config: 0
   contextual: 0
+  counter: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -37,6 +39,7 @@ module:
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
+  metatag: 0
   mysql: 0
   node: 0
   options: 0
