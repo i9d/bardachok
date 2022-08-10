@@ -54,13 +54,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-//button,
-//input[type='submit'],
-//a {
-//  transition: top 1s ease-out 0.5s;
-//}
-
-a {
+a:not([class]) {
   @include Link_Medium_16pt;
   &:hover {
     color: $gray-600;
@@ -110,6 +104,7 @@ em {
 
 .btn,
 input[type="submit"] {
+  @include Link_Medium_16pt;
   display: inline-block;
   border: none;
   border-radius: 12px;

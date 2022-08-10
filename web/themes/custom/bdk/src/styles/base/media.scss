@@ -29,16 +29,30 @@
   }
   #block-social-2 {
     display: flex;
-    margin: 0;
-    margin-top: 24px;
+    margin: 24px 0 0;
   }
 }
 
+// TODO: Remove later.
 @media (max-width: 548px) {
-  // TODO: Remove later.
   h1 {
     line-height: 48px !important;
     font-weight: 900 !important;
     font-size: 32px !important;
+  }
+}
+
+// TODO: Remove later.
+@media (max-width: 366px) {
+  .header-wrapper {
+    justify-content: center !important;
+  }
+  #block-donate {
+    display: none;
+  }
+  #block-social-2,
+  #block-donate-2 {
+    display: flex;
+    justify-content: center;
   }
 }
