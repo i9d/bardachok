@@ -4,60 +4,41 @@
  */
 @media (max-width: 1350px) {
   .header-wrapper,
-  .region-content {
+  .region-content,
+  .region-footer {
     @include container-1350;
   }
 
 }
 
-@media (max-width: 772px) {
-  header {
-    height: 100px !important;
-    padding: 10px 0;
+@media (max-width: 866px) {
+  .btn,
+  input[type="submit"] {
+    padding: 8px 24px;
+  }
+  // TODO: Remove later.
+  #block-social {
+    display: none;
+  }
+  .layout--twocol-section--50-50 {
+    flex-direction: column;
 
-    .header-wrapper {
-      flex-direction: column;
-      align-items: center;
+    .layout__region {
+      max-width: 100%;
     }
   }
-  // @TODO remove.
-  .node--id-12 {
-    .layout--twocol-section--50-50 {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  header {
-    height: 150px !important;
-
-    .header-wrapper {
-      .region-header-right {
-        flex-direction: column;
-
-        .menu--social {
-          margin-top: 10px;
-          margin-left: 0 !important;
-          justify-content: center;
-        }
-      }
-    }
+  #block-social-2 {
+    display: flex;
+    margin: 0;
+    margin-top: 24px;
   }
 }
 
-@media (min-width: 772px) and (max-width: 1200px) {
-  // @TODO remove.
-  .node--id-12 {
-    .layout--twocol-section--50-50 {
-      margin-bottom: 50px !important;
-      //flex-direction: column;
-      .layout__region--first {
-        .block-field-blocknodelanding-pagetitle {
-          max-width: 80%;
-        }
-      }
-    }
+@media (max-width: 548px) {
+  // TODO: Remove later.
+  h1 {
+    line-height: 48px !important;
+    font-weight: 900 !important;
+    font-size: 32px !important;
   }
 }

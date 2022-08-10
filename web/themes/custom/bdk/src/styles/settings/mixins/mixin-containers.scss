@@ -46,23 +46,7 @@
 @mixin container-1350 {
   max-width: 1280px;
   width: 100%;
-  padding-left: 35px;
-  padding-right: 35px;
-  margin: 0 auto;
-}
-
-@mixin container-1210 {
-  max-width: 1210px;
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
-  margin: 0 auto;
-}
-
-@mixin container-1140 {
-  max-width: 1210px;
-  width: 100%;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }

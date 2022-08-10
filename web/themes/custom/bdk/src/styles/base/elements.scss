@@ -76,7 +76,8 @@ a {
 }
 
 .region-content,
-.region-highlighted {
+.region-highlighted,
+.region-footer {
   @include container-1304;
 }
 
