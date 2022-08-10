@@ -50,9 +50,15 @@
   #block-donate {
     display: none;
   }
-  #block-social-2,
   #block-donate-2 {
     display: flex;
     justify-content: center;
+    margin: 24px 0 0 !important;
+  }
+  #block-social-2 {
+    margin: 0;
+    .telegram {
+      margin-right: 25px;
+    }
   }
 }
