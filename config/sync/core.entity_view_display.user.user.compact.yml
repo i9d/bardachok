@@ -10,7 +10,85 @@ dependencies:
     - image.style.thumbnail
   module:
     - image
+    - layout_builder
+    - layout_discovery
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          b9ad0252-1add-4ab2-83d3-afdf9e1afa92:
+            uuid: b9ad0252-1add-4ab2-83d3-afdf9e1afa92
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label: Изображение
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: user_preview
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e1bbda0e-57b2-4464-979f-666a0f960626:
+            uuid: e1bbda0e-57b2-4464-979f-666a0f960626
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_bio'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          33a2a55a-85dd-4fbb-af99-433713efdc01:
+            uuid: 33a2a55a-85dd-4fbb-af99-433713efdc01
+            region: second
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: '@user.current_user_context:current_user'
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
 id: user.user.compact
@@ -18,6 +96,14 @@ targetEntityType: user
 bundle: user
 mode: compact
 content:
+  field_bio:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   user_picture:
     type: image
     label: hidden
@@ -30,7 +116,6 @@ content:
     weight: 0
     region: content
 hidden:
-  field_bio: true
   field_categories: true
   langcode: true
   member_for: true
