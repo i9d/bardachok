@@ -45,7 +45,6 @@
         "drupal/slick_views": "^2.6",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
-        "drupal/webform": "^6.1",
         "drush/drush": "^11.0",
         "kenwheeler/slick": "^1.8"
     },
