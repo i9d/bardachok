@@ -3,6 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - field.field.taxonomy_term.categories.field_color
     - taxonomy.vocabulary.categories
   module:
     - path
@@ -19,6 +20,12 @@ content:
     settings:
       rows: 5
       placeholder: ''
+    third_party_settings: {  }
+  field_color:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

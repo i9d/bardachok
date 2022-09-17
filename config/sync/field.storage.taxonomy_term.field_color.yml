@@ -1,0 +1,39 @@
+uuid: 58912c69-f8df-47e6-bad5-b6fb0717b119
+langcode: ru
+status: true
+dependencies:
+  module:
+    - options
+    - taxonomy
+id: taxonomy_term.field_color
+field_name: field_color
+entity_type: taxonomy_term
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: Синий
+    -
+      value: green
+      label: Зеленый
+    -
+      value: red
+      label: Красный
+    -
+      value: cyan
+      label: Голубой
+    -
+      value: purple
+      label: Пурпурный
+    -
+      value: orange
+      label: Оранжевый
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

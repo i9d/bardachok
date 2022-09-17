@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.teaser
+    - field.field.taxonomy_term.categories.field_color
     - taxonomy.vocabulary.categories
   module:
     - layout_builder
@@ -52,4 +53,5 @@ content:
     weight: 0
     region: content
 hidden:
+  field_color: true
   langcode: true
