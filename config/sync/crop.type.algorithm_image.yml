@@ -1,0 +1,12 @@
+uuid: 8298cb3f-781f-41bb-9c25-0ca6a86eafb6
+langcode: ru
+status: true
+dependencies: {  }
+label: 'Algorithm Image'
+id: algorithm_image
+description: ''
+aspect_ratio: '1304:431'
+soft_limit_width: 1304
+soft_limit_height: 431
+hard_limit_width: 1304
+hard_limit_height: 431

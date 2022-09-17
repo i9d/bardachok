@@ -1,0 +1,26 @@
+uuid: e2858731-474c-4679-9811-48404cac00ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.algorithm_image
+  module:
+    - crop
+name: algorithm_image
+label: 'Algorithm Image'
+effects:
+  57b0a006-8b70-48b3-a27d-2bb05bded413:
+    uuid: 57b0a006-8b70-48b3-a27d-2bb05bded413
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: algorithm_image
+      automatic_crop_provider: null
+  472fbc41-1818-43ec-85f1-bd48f7894992:
+    uuid: 472fbc41-1818-43ec-85f1-bd48f7894992
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1304
+      height: 431
+      anchor: center-center

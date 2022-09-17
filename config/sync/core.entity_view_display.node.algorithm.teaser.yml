@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
+    - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
     - user
@@ -15,18 +16,19 @@ targetEntityType: node
 bundle: algorithm
 mode: teaser
 content:
-  links:
-    settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: algorithm_teaser
+      link: false
     third_party_settings: {  }
-    weight: 100
-    region: content
-  tg_comments:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_annotation: true
   field_conclusion: true
   field_content: true
   langcode: true
+  links: true
+  tg_comments: true

@@ -1,0 +1,10 @@
+uuid: 1328dd2a-4007-4af1-9cb9-a93e20631f12
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+id: media.algorithm_image
+label: 'Algorithm Image'
+targetEntityType: media
+cache: true

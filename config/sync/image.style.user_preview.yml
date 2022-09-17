@@ -1,0 +1,18 @@
+uuid: 0fa98a00-fdc6-4256-a037-07b4e26d0c66
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.user_preview
+  module:
+    - crop
+name: user_preview
+label: 'User Preview'
+effects:
+  45d2528b-0e9f-40ee-8a7a-0e67355944d9:
+    uuid: 45d2528b-0e9f-40ee-8a7a-0e67355944d9
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: user_preview
+      automatic_crop_provider: null

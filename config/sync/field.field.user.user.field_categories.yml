@@ -11,9 +11,9 @@ id: user.user.field_categories
 field_name: field_categories
 entity_type: user
 bundle: user
-label: Категории
+label: Категория
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

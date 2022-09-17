@@ -1,0 +1,12 @@
+uuid: fe135401-004f-4904-9dfd-b93492b332cb
+langcode: ru
+status: true
+dependencies: {  }
+label: 'Algoritm teaser'
+id: algoritm_teaser
+description: ''
+aspect_ratio: '322:280'
+soft_limit_width: 322
+soft_limit_height: 279
+hard_limit_width: 322
+hard_limit_height: 279

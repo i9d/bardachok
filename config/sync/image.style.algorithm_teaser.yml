@@ -1,0 +1,18 @@
+uuid: 4348d7c8-3345-48f1-8a4a-09674b61de5e
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.algoritm_teaser
+  module:
+    - crop
+name: algorithm_teaser
+label: 'Algorithm teaser'
+effects:
+  729119a8-6f67-4175-8759-bea77e0adbf2:
+    uuid: 729119a8-6f67-4175-8759-bea77e0adbf2
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: algoritm_teaser
+      automatic_crop_provider: null

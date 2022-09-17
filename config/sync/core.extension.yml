@@ -13,6 +13,7 @@ module:
   ckeditor: 0
   config: 0
   contextual: 0
+  crop: 0
   ctools: 0
   datetime: 0
   dblog: 0
@@ -27,11 +28,14 @@ module:
   help: 0
   history: 0
   image: 0
+  image_widget_crop: 0
   language: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
   locale: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0

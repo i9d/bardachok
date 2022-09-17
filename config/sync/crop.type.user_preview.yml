@@ -1,0 +1,12 @@
+uuid: a225c4d8-d4ac-4580-82dd-e2864e2b1fc8
+langcode: ru
+status: true
+dependencies: {  }
+label: 'User Preview'
+id: user_preview
+description: ''
+aspect_ratio: '44:44'
+soft_limit_width: 44
+soft_limit_height: 44
+hard_limit_width: 44
+hard_limit_height: 44
