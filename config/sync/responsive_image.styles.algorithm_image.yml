@@ -1,0 +1,16 @@
+uuid: 1c96bf44-effc-4cbb-b766-d58f689f111a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.algorithm_image
+id: algorithm_image
+label: 'Algorithm Image'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: algorithm_image
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: algorithm_image

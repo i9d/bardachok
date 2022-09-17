@@ -6,11 +6,11 @@ dependencies:
     - core.entity_view_mode.media.algorithm_teaser
     - field.field.media.cropped_image.field_caption
     - field.field.media.cropped_image.field_media_image
-    - image.style.algorithm_teaser
     - media.type.cropped_image
+    - responsive_image.styles.algorithm_teaser
   module:
-    - image
     - layout_builder
+    - responsive_image
 third_party_settings:
   layout_builder:
     enabled: false
@@ -21,13 +21,11 @@ bundle: cropped_image
 mode: algorithm_teaser
 content:
   field_media_image:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: algorithm_teaser
       image_link: ''
-      image_style: algorithm_teaser
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
