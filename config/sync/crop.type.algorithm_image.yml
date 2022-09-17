@@ -6,7 +6,7 @@ label: 'Algorithm Image'
 id: algorithm_image
 description: ''
 aspect_ratio: '1304:431'
-soft_limit_width: 1304
-soft_limit_height: 431
-hard_limit_width: 1304
-hard_limit_height: 431
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

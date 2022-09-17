@@ -6,7 +6,7 @@ label: 'Algoritm teaser'
 id: algoritm_teaser
 description: ''
 aspect_ratio: '322:280'
-soft_limit_width: 322
-soft_limit_height: 279
-hard_limit_width: 322
-hard_limit_height: 279
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null
