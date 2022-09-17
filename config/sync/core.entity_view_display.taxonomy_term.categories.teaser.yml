@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.taxonomy_term.teaser
-    - field.field.taxonomy_term.categories.field_image
     - taxonomy.vocabulary.categories
   module:
     - layout_builder
@@ -39,25 +38,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          f9f1c2ac-0bb6-4fc3-96c8-7c0e73f5311a:
-            uuid: f9f1c2ac-0bb6-4fc3-96c8-7c0e73f5311a
-            region: content
-            configuration:
-              id: 'field_block:taxonomy_term:categories:field_image'
-              label: Изображение
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: categories_teaser
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
         third_party_settings: {  }
 id: taxonomy_term.categories.teaser
 targetEntityType: taxonomy_term
@@ -70,15 +50,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   langcode: true

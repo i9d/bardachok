@@ -4,10 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.media.field_caption
-    - field.field.paragraph.media.field_media
     - paragraphs.paragraphs_type.media
-  module:
-    - media_library
 id: paragraph.media.default
 targetEntityType: paragraph
 bundle: media
@@ -20,16 +17,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  field_media:
-    type: media_library_widget
-    weight: 0
-    region: content
-    settings:
-      media_types:
-        - image
-        - remote_video
-        - video
     third_party_settings: {  }
 hidden:
   created: true

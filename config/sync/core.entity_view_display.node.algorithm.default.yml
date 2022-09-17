@@ -6,7 +6,6 @@ dependencies:
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
-    - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
     - entity_reference_revisions
@@ -39,15 +38,6 @@ content:
       link: ''
     third_party_settings: {  }
     weight: 3
-    region: content
-  field_image:
-    type: entity_reference_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 1
     region: content
   links:
     settings: {  }

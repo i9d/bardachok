@@ -3,7 +3,6 @@ langcode: ru
 status: true
 dependencies:
   module:
-    - media
     - search
     - system
 _core:
@@ -16,4 +15,3 @@ permissions:
   - 'access content'
   - 'access user profiles'
   - 'search content'
-  - 'view media'

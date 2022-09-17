@@ -4,22 +4,15 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
-    - media.type.audio
-    - media.type.document
-    - media.type.image
-    - media.type.remote_video
-    - media.type.video
     - node.type.algorithm
   module:
     - contextual
     - filter
-    - media
     - node
     - path
     - system
     - taxonomy
     - tour
-    - webform
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
@@ -29,35 +22,14 @@ is_admin: false
 permissions:
   - 'access content overview'
   - 'access contextual links'
-  - 'access media overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access tour'
   - 'change own username'
   - 'create algorithm content'
-  - 'create audio media'
-  - 'create document media'
-  - 'create image media'
-  - 'create media'
-  - 'create remote_video media'
   - 'create url aliases'
-  - 'create video media'
-  - 'delete media'
   - 'delete own algorithm content'
-  - 'delete own audio media'
-  - 'delete own document media'
-  - 'delete own image media'
-  - 'delete own remote_video media'
-  - 'delete own video media'
   - 'edit own algorithm content'
-  - 'edit own audio media'
-  - 'edit own document media'
-  - 'edit own image media'
-  - 'edit own remote_video media'
-  - 'edit own video media'
-  - 'update media'
   - 'use text format basic_html'
   - 'view own unpublished content'
-  - 'view own unpublished media'
-  - 'view own webform submission'
   - 'view the administration theme'

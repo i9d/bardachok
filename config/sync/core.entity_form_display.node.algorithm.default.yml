@@ -6,10 +6,8 @@ dependencies:
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
-    - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
-    - media_library
     - paragraphs
     - path
     - text
@@ -58,13 +56,6 @@ content:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
-    third_party_settings: {  }
-  field_image:
-    type: media_library_widget
-    weight: 1
-    region: content
-    settings:
-      media_types: {  }
     third_party_settings: {  }
   langcode:
     type: language_select
