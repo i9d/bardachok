@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.base_field_override.node.algorithm.title
     - field.field.node.algorithm.field_annotation
+    - field.field.node.algorithm.field_category
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
     - field.field.node.algorithm.field_image
@@ -44,6 +45,22 @@ third_party_settings:
                   view_mode: algorithm_image
                 third_party_settings: {  }
             weight: 0
+            additional: {  }
+          b8670eda-695c-464e-9c25-ca8a91eee8a3:
+            uuid: b8670eda-695c-464e-9c25-ca8a91eee8a3
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:field_category'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -181,6 +198,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
     region: content
   field_conclusion:
     type: text_default
