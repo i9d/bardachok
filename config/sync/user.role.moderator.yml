@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.editor
     - node.type.algorithm
     - taxonomy.vocabulary.categories
   module:
@@ -40,7 +40,7 @@ permissions:
   - 'edit terms in categories'
   - 'revert algorithm revisions'
   - 'revert all revisions'
-  - 'use text format basic_html'
+  - 'use text format editor'
   - 'view algorithm revisions'
   - 'view all revisions'
   - 'view own unpublished content'

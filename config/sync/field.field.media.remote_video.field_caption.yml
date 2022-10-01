@@ -1,0 +1,19 @@
+uuid: 29eb40d2-97d4-4ea6-bf90-288a93723525
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_caption
+    - media.type.remote_video
+id: media.remote_video.field_caption
+field_name: field_caption
+entity_type: media
+bundle: remote_video
+label: Описание
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

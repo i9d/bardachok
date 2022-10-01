@@ -9,6 +9,7 @@ dependencies:
     - paragraphs.paragraphs_type.title_subtitle_text
   module:
     - text
+    - text_field_formatter
 id: paragraph.title_subtitle_text.default
 targetEntityType: paragraph
 bundle: title_subtitle_text
@@ -16,22 +17,26 @@ mode: default
 content:
   field_subtitle:
     type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_text:
-    type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
   field_title:
-    type: string
-    label: above
+    type: text_field_formatter
+    label: hidden
     settings:
+      wrap_tag: h3
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
       link_to_entity: false
     third_party_settings: {  }
     weight: 0

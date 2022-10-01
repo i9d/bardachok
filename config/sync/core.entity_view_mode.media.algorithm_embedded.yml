@@ -1,0 +1,10 @@
+uuid: 3690e584-a1a2-4890-bcf5-50ddb2f6753f
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+id: media.algorithm_embedded
+label: 'Algorithm embedded'
+targetEntityType: media
+cache: true

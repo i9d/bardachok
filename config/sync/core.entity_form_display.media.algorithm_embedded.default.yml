@@ -1,18 +1,18 @@
-uuid: 151d5164-ae2a-4fd9-9b8a-b2edd10b1976
+uuid: ef2d263d-0c06-42a8-8ff5-393fa40f3210
 langcode: ru
 status: true
 dependencies:
   config:
-    - field.field.media.cropped_image.field_caption
-    - field.field.media.cropped_image.field_media_image
+    - field.field.media.algorithm_embedded.field_caption
+    - field.field.media.algorithm_embedded.field_media_image_1
     - image.style.thumbnail
-    - media.type.cropped_image
+    - media.type.algorithm_embedded
   module:
     - image_widget_crop
     - path
-id: media.cropped_image.default
+id: media.algorithm_embedded.default
 targetEntityType: media
-bundle: cropped_image
+bundle: algorithm_embedded
 mode: default
 content:
   created:
@@ -29,7 +29,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_media_image:
+  field_media_image_1:
     type: image_widget_crop
     weight: 2
     region: content
@@ -38,11 +38,9 @@ content:
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       crop_list:
-        - algorithm_image
-        - algoritm_teaser
+        - algroithm_embedded
       crop_types_required:
-        - algorithm_image
-        - algoritm_teaser
+        - algroithm_embedded
       warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true

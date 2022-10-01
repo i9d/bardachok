@@ -1,0 +1,12 @@
+uuid: 347f6a5f-392a-439b-9df1-37f34a60a316
+langcode: ru
+status: true
+dependencies: {  }
+label: 'Algroithm embedded'
+id: algroithm_embedded
+description: ''
+aspect_ratio: '706:388'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

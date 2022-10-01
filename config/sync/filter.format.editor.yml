@@ -1,0 +1,45 @@
+uuid: d5fe79fe-a469-456d-8c12-024c9876cbb2
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.algorithm_embedded
+  module:
+    - media
+name: 'Editor HTML'
+format: editor
+weight: 0
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol type start> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <u> <s> <sup> <sub> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: algorithm_embedded
+      allowed_view_modes: {  }
+      allowed_media_types:
+        algorithm_embedded: algorithm_embedded
+        remote_video: remote_video
+        video: video
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }

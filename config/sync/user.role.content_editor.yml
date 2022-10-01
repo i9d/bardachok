@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.editor
     - node.type.algorithm
   module:
     - contextual
@@ -30,6 +30,6 @@ permissions:
   - 'create url aliases'
   - 'delete own algorithm content'
   - 'edit own algorithm content'
-  - 'use text format basic_html'
+  - 'use text format editor'
   - 'view own unpublished content'
   - 'view the administration theme'

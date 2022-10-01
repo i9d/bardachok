@@ -1,0 +1,45 @@
+uuid: 1f5e2a1b-cf95-46c9-a5ee-71b18ecd97d4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.algorithm_embedded
+    - field.field.media.algorithm_embedded.field_caption
+    - field.field.media.algorithm_embedded.field_media_image_1
+    - media.type.algorithm_embedded
+    - responsive_image.styles.algorithm_embedded
+  module:
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.algorithm_embedded.algorithm_embedded
+targetEntityType: media
+bundle: algorithm_embedded
+mode: algorithm_embedded
+content:
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image_1:
+    type: responsive_image
+    label: visually_hidden
+    settings:
+      responsive_image_style: algorithm_embedded
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

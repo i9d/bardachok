@@ -1,0 +1,49 @@
+uuid: 210c598a-03cb-4733-86ef-f88d7065b507
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.algorithm_image
+    - field.field.media.image.field_caption
+    - field.field.media.image.field_media_image
+    - image.style.algorithm_image
+    - media.type.image
+  module:
+    - image
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.algorithm_image
+targetEntityType: media
+bundle: image
+mode: algorithm_image
+content:
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: algorithm_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

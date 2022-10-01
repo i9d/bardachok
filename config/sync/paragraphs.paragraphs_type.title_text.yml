@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies: {  }
 id: title_text
-label: 'Текст с заголовком'
+label: 'Заголовок + текст'
 icon_uuid: null
 icon_default: null
 description: ''

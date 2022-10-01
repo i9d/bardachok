@@ -1,0 +1,11 @@
+uuid: 4aef13a0-9ce0-42d4-a52b-622842b93de1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - media.type.algorithm_embedded
+id: media.algorithm_embedded
+target_entity_type_id: media
+target_bundle: algorithm_embedded
+default_langcode: site_default
+language_alterable: false

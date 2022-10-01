@@ -3,6 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - field.field.media.video.field_caption
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
@@ -14,6 +15,14 @@ targetEntityType: media
 bundle: video
 mode: default
 content:
+  field_caption:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
   field_media_video_file:
     type: file_video
     label: visually_hidden
@@ -23,8 +32,8 @@ content:
       loop: false
       multiple_file_display_type: tags
       muted: false
-      width: 640
-      height: 480
+      width: 706
+      height: 388
     third_party_settings: {  }
     weight: 0
     region: content

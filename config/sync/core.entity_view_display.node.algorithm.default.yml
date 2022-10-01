@@ -3,6 +3,7 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - block_content.type.basic
     - core.base_field_override.node.algorithm.title
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_category
@@ -51,12 +52,15 @@ third_party_settings:
             region: content
             configuration:
               id: 'field_block:node:algorithm:field_category'
+              label: Категория
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_label
-                label: above
+                label: hidden
                 settings:
                   link: true
                 third_party_settings: {  }
@@ -109,8 +113,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          a2638a3a-d3bb-499e-959e-91a6274f6006:
-            uuid: a2638a3a-d3bb-499e-959e-91a6274f6006
+          9ac72659-a01b-4c45-9342-aaa31170595c:
+            uuid: 9ac72659-a01b-4c45-9342-aaa31170595c
             region: first
             configuration:
               id: 'field_block:node:algorithm:uid'
@@ -126,7 +130,7 @@ third_party_settings:
                 settings:
                   view_mode: compact
                 third_party_settings: {  }
-            weight: 0
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -151,6 +155,20 @@ third_party_settings:
                   view_mode: default
                   link: ''
                 third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b4a3b8ea-bf8c-4a96-aca6-bc9153d32085:
+            uuid: b4a3b8ea-bf8c-4a96-aca6-bc9153d32085
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: Placeholder
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 9
+              block_serialized: null
             weight: 0
             additional: {  }
         third_party_settings: {  }
@@ -184,6 +202,20 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d2703d1e-0427-43e1-8d1c-7c16b4175023:
+            uuid: d2703d1e-0427-43e1-8d1c-7c16b4175023
+            region: first
+            configuration:
+              id: 'inline_block:basic'
+              label: Placeholder
+              label_display: '0'
+              provider: layout_builder
+              view_mode: full
+              context_mapping: {  }
+              block_revision_id: 10
+              block_serialized: null
             weight: 0
             additional: {  }
         third_party_settings: {  }

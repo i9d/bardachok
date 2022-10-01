@@ -4,7 +4,11 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.step
+    - paragraphs.paragraphs_type.title_subtitle_text
+    - paragraphs.paragraphs_type.title_text
+    - paragraphs.paragraphs_type.two_col
   module:
     - entity_reference_revisions
 id: paragraph.step.field_content
@@ -21,19 +25,28 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      step: step
-    negate: 1
+      two_col: two_col
+      media: media
+      title_text: title_text
+      title_subtitle_text: title_subtitle_text
+    negate: 0
     target_bundles_drag_drop:
       media:
         weight: 5
-        enabled: false
+        enabled: true
       step:
         weight: 3
+        enabled: false
+      title_subtitle_text:
+        weight: 9
         enabled: true
       title_text:
         weight: 7
+        enabled: true
+      title_text_landing:
+        weight: 11
         enabled: false
       two_col:
         weight: 4
-        enabled: false
+        enabled: true
 field_type: entity_reference_revisions

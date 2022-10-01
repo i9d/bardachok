@@ -1,0 +1,16 @@
+uuid: e10633b9-fe52-4586-8708-e7490f63af13
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.embedded_ckeditor_media
+id: algorithm_embedded
+label: 'Algorithm embedded'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: embedded_ckeditor_media
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: embedded_ckeditor_media

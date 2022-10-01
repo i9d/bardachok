@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.title_text
   module:
     - text
+    - text_field_formatter
 id: paragraph.title_text.default
 targetEntityType: paragraph
 bundle: title_text
@@ -21,9 +22,13 @@ content:
     weight: 1
     region: content
   field_title:
-    type: string
+    type: text_field_formatter
     label: hidden
     settings:
+      wrap_tag: h3
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
       link_to_entity: false
     third_party_settings: {  }
     weight: 0

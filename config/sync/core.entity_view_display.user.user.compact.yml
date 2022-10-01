@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_bio
     - field.field.user.user.field_categories
+    - field.field.user.user.field_name
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -52,27 +53,11 @@ third_party_settings:
             region: second
             configuration:
               id: 'field_block:user:user:field_bio'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: above
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          33a2a55a-85dd-4fbb-af99-433713efdc01:
-            uuid: 33a2a55a-85dd-4fbb-af99-433713efdc01
-            region: second
-            configuration:
-              id: 'field_block:user:user:name'
-              label: Name
+              label: Био
               label_display: '0'
               provider: layout_builder
               context_mapping:
-                entity: '@user.current_user_context:current_user'
+                entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
                 type: string
@@ -80,7 +65,26 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 0
+            weight: 2
+            additional: {  }
+          ef9c4b3e-cbc7-4695-8ecc-dc023851a384:
+            uuid: ef9c4b3e-cbc7-4695-8ecc-dc023851a384
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_name'
+              label: Имя
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
             additional: {  }
         third_party_settings: {  }
       -
@@ -117,5 +121,6 @@ content:
     region: content
 hidden:
   field_categories: true
+  field_name: true
   langcode: true
   member_for: true

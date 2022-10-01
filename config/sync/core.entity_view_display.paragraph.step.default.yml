@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.step
   module:
     - entity_reference_revisions
+    - text_field_formatter
 id: paragraph.step.default
 targetEntityType: paragraph
 bundle: step
@@ -23,9 +24,13 @@ content:
     weight: 1
     region: content
   field_title:
-    type: string
+    type: text_field_formatter
     label: hidden
     settings:
+      wrap_tag: h2
+      wrap_class: ''
+      wrap_attributes: ''
+      override_link_label: ''
       link_to_entity: false
     third_party_settings: {  }
     weight: 0

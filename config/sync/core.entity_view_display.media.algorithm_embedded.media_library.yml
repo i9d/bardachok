@@ -1,20 +1,18 @@
-uuid: a0940cd5-71d8-4dcf-b899-f344ec4394a2
+uuid: c5fc3957-d3fe-4e9c-b66b-c9e948d94626
 langcode: ru
 status: true
 dependencies:
   config:
     - core.entity_view_mode.media.media_library
-    - field.field.media.video.field_caption
-    - field.field.media.video.field_media_video_file
-    - image.style.thumbnail
-    - media.type.video
+    - field.field.media.algorithm_embedded.field_caption
+    - field.field.media.algorithm_embedded.field_media_image_1
+    - image.style.medium
+    - media.type.algorithm_embedded
   module:
     - image
-_core:
-  default_config_hash: _fnkUKwQYHkXO1Ngmq9nE6FqWUNAmkddOxAH1h5aiKg
-id: media.video.media_library
+id: media.algorithm_embedded.media_library
 targetEntityType: media
-bundle: video
+bundle: algorithm_embedded
 mode: media_library
 content:
   thumbnail:
@@ -22,7 +20,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: thumbnail
+      image_style: medium
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -31,7 +29,7 @@ content:
 hidden:
   created: true
   field_caption: true
-  field_media_video_file: true
+  field_media_image_1: true
   langcode: true
   name: true
   uid: true

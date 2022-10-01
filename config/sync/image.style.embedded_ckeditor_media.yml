@@ -1,0 +1,26 @@
+uuid: 0839ec01-f210-4572-a53c-3dfc969c43d1
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.algroithm_embedded
+  module:
+    - crop
+name: embedded_ckeditor_media
+label: 'Embedded CKEditor media'
+effects:
+  9b9e188b-2e26-4afb-a1ec-404e8ee1d8a0:
+    uuid: 9b9e188b-2e26-4afb-a1ec-404e8ee1d8a0
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: algroithm_embedded
+      automatic_crop_provider: null
+  d2ba5035-1d5a-4098-8dd7-d4548112c1fc:
+    uuid: d2ba5035-1d5a-4098-8dd7-d4548112c1fc
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 706
+      height: 388
+      anchor: center-center

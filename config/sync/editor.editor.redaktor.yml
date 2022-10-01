@@ -1,31 +1,33 @@
-uuid: 672b7f99-d2a8-473c-9bc2-8875efc60d19
+uuid: ee1f4837-3ef3-4100-af79-7e6552f0e769
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.redaktor
   module:
     - ckeditor
-_core:
-  default_config_hash: AqlPmO16LvJI4D0Ih6u4GFQIzqr5OnLgAUSjcUGWk2g
-format: basic_html
+format: redaktor
 editor: ckeditor
 settings:
   toolbar:
     rows:
       -
         -
-          name: Formatting
+          name: Форматирование
           items:
             - Bold
             - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
         -
-          name: Linking
+          name: Ссылки
           items:
             - DrupalLink
             - DrupalUnlink
         -
-          name: Lists
+          name: Списки
           items:
             - BulletedList
             - NumberedList
@@ -34,17 +36,9 @@ settings:
           items:
             - Blockquote
             - DrupalImage
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - Source
   plugins: {  }
 image_upload:
-  status: true
+  status: false
   scheme: public
   directory: inline-images
   max_size: ''

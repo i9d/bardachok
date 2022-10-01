@@ -16,3 +16,11 @@ effects:
     data:
       crop_type: user_preview
       automatic_crop_provider: null
+  bd301337-c703-49c8-97ec-3bf596762a60:
+    uuid: bd301337-c703-49c8-97ec-3bf596762a60
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 44
+      height: 44
+      anchor: center-center
