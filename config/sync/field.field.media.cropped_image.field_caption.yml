@@ -10,7 +10,7 @@ field_name: field_caption
 entity_type: media
 bundle: cropped_image
 label: Описание
-description: ''
+description: 'Текст, который будет отображаться под изображением'
 required: false
 translatable: true
 default_value: {  }

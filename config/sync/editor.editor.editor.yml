@@ -1,46 +1,37 @@
-uuid: 5ab4d844-13de-457c-a237-0990a1d046e9
+uuid: 955d1ed3-65eb-4df3-941b-aaa79ab28440
 langcode: ru
 status: true
 dependencies:
   config:
     - filter.format.editor
   module:
-    - ckeditor
+    - ckeditor5
 format: editor
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Форматирование
-          items:
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-            - Superscript
-            - Subscript
-        -
-          name: Ссылки
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Списки
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalMediaLibrary
-        -
-          name: Tools
-          items:
-            - Source
-  plugins: {  }
+    items:
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalMedia
+      - '|'
+  plugins:
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: false
   scheme: public
