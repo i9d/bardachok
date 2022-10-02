@@ -6,25 +6,25 @@ cancel_confirm:
   body: "[user:display-name]\r\n\r\nA request to cancel your account has been made at [site:name].\r\n\r\nYou may now cancel your account on [site:url-brief] by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:cancel-url]\r\n\r\nNOTE: The cancellation of your account is not reversible.\r\n\r\nThis link expires in one day and nothing will happen if it is not used.\r\n\r\n--  [site:name] team"
 password_reset:
   subject: '[site:name] | Восстановление пароля'
-  body: "[user:display-name], мы получили запрос на сброс пароля.\r\n\r\nПерейдя по ссылки ниже Вы можете сбросить свой пароль:\r\n\r\n[user:one-time-login-url]\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и новый пароль.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], мы получили запрос на сброс пароля.\r\n\r\nПерейдя по ссылки ниже Вы можете сбросить свой пароль:\r\n\r\n[user:one-time-login-url]\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и новый пароль.\r\n\r\n—\r\nКоманда [site:name]."
 register_admin_created:
   subject: '[site:name] | Регистрация'
-  body: "[user:display-name], администратор сайта [site:name] создал учетную запись для Вас. Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], администратор сайта [site:name] создал учетную запись для Вас. Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n—\r\nКоманда [site:name]."
 register_no_approval_required:
   subject: '[site:name] | Регистрация'
-  body: "[user:display-name], спасибо за регистрацию! Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], спасибо за регистрацию! Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n—\r\nКоманда [site:name]."
 register_pending_approval:
   subject: 'Новая заявка на регистрацию: [user:display-name]'
-  body: "[user:display-name], спасибо за регистрацию, \r\n\r\nВаша заявка на создание учетной записи в настоящее время находится на рассмотрении. Мы сообщим Вам, как только она будет одобрена.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], спасибо за регистрацию, \r\n\r\nВаша заявка на создание учетной записи в настоящее время находится на рассмотрении. Мы сообщим Вам, как только она будет одобрена.\r\n\r\n—\r\nКоманда [site:name]."
 register_pending_approval_admin:
   subject: 'Новая заявка на регистрацию: [user:display-name]'
   body: "[user:display-name] подал заявку на создание учетной записи.\r\n\r\n[user:edit-url]"
 status_activated:
   subject: '[site:name] | Регистрация'
-  body: "[user:display-name], Ваша учетная запись была активирована. Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], Ваша учетная запись была активирована. Вы можете войти кликнув по следующей ссылке:\r\n\r\n[user:one-time-login-url]\r\n\r\nЭта ссылка может быть использована только один раз для входа в систему и приведет вас на страницу, где Вы можете установить свой пароль.\r\n\r\nПосле установки пароля вы сможете войти в систему по адресу [site:login-url] в будущем, используя логин [user:name] и установленный пароль.\r\n\r\n—\r\nКоманда [site:name]."
 status_blocked:
   subject: '[site:name] | Блокировка учетной записи'
-  body: "[user:display-name], Ваша учетная запись была заблокирована. Пожалуйста, свяжитесь с нами для выяснения причин.\r\n\r\n-- команда [site:name]."
+  body: "[user:display-name], Ваша учетная запись была заблокирована. Пожалуйста, свяжитесь с нами для выяснения причин.\r\n\r\n—\r\nКоманда [site:name]."
 status_canceled:
   subject: 'Account details for [user:display-name] at [site:name] (canceled)'
   body: "[user:display-name],\r\n\r\nYour account on [site:name] has been canceled.\r\n\r\n--  [site:name] team"
