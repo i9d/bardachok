@@ -41,22 +41,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-          2348202e-2d00-4148-863c-fd1653b679d2:
-            uuid: 2348202e-2d00-4148-863c-fd1653b679d2
-            region: content
-            configuration:
-              id: 'field_block:media:cropped_image:field_caption'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
         third_party_settings: {  }
       -
         layout_id: layout_twocol_section
