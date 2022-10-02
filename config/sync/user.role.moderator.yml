@@ -4,12 +4,19 @@ status: true
 dependencies:
   config:
     - filter.format.editor
+    - media.type.algorithm_embedded
+    - media.type.cropped_image
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
     - node.type.algorithm
     - taxonomy.vocabulary.categories
   module:
     - contextual
     - file
     - filter
+    - media
     - node
     - paragraphs
     - path
@@ -24,6 +31,7 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access media overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'access tour'
@@ -31,15 +39,44 @@ permissions:
   - 'administer url aliases'
   - 'change own username'
   - 'create algorithm content'
+  - 'create algorithm_embedded media'
+  - 'create cropped_image media'
+  - 'create document media'
+  - 'create media'
+  - 'create remote_video media'
   - 'create terms in categories'
   - 'create url aliases'
+  - 'create video media'
   - 'delete any algorithm content'
+  - 'delete any algorithm_embedded media'
+  - 'delete any cropped_image media'
+  - 'delete any document media'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete media'
   - 'delete own algorithm content'
+  - 'delete own algorithm_embedded media'
+  - 'delete own cropped_image media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete own video media'
   - 'edit any algorithm content'
+  - 'edit any algorithm_embedded media'
+  - 'edit any cropped_image media'
+  - 'edit any document media'
+  - 'edit any remote_video media'
+  - 'edit any video media'
   - 'edit own algorithm content'
+  - 'edit own algorithm_embedded media'
+  - 'edit own cropped_image media'
+  - 'edit own document media'
+  - 'edit own remote_video media'
+  - 'edit own video media'
   - 'edit terms in categories'
   - 'revert algorithm revisions'
   - 'revert all revisions'
+  - 'update media'
   - 'use text format editor'
   - 'view algorithm revisions'
   - 'view all revisions'
