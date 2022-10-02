@@ -27,7 +27,7 @@ content:
     type: text_field_formatter
     label: hidden
     settings:
-      wrap_tag: h2
+      wrap_tag: span
       wrap_class: ''
       wrap_attributes: ''
       override_link_label: ''

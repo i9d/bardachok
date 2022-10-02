@@ -3,7 +3,6 @@ langcode: ru
 status: true
 dependencies:
   config:
-    - block_content.type.basic
     - core.base_field_override.node.algorithm.title
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_category
@@ -12,6 +11,7 @@ dependencies:
     - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
+    - bdk_blocks
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
@@ -25,11 +25,11 @@ third_party_settings:
       -
         layout_id: layout_onecol
         layout_settings:
-          label: Top
+          label: ''
           context_mapping: {  }
         components:
-          2a23fb55-dc45-43b1-987f-423f551a60c0:
-            uuid: 2a23fb55-dc45-43b1-987f-423f551a60c0
+          ce9d124e-c088-415e-bd25-09e7336b9b8c:
+            uuid: ce9d124e-c088-415e-bd25-09e7336b9b8c
             region: content
             configuration:
               id: 'field_block:node:algorithm:field_image'
@@ -47,8 +47,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          b8670eda-695c-464e-9c25-ca8a91eee8a3:
-            uuid: b8670eda-695c-464e-9c25-ca8a91eee8a3
+          b1b3e62e-7b80-4244-8ab8-5d65bc9fa223:
+            uuid: b1b3e62e-7b80-4244-8ab8-5d65bc9fa223
             region: content
             configuration:
               id: 'field_block:node:algorithm:field_category'
@@ -70,12 +70,31 @@ third_party_settings:
       -
         layout_id: layout_twocol_section
         layout_settings:
-          label: Heading
+          label: ''
           context_mapping: {  }
           column_widths: 25-75
         components:
-          ea9e764b-71dc-4b20-a16c-94e02050786c:
-            uuid: ea9e764b-71dc-4b20-a16c-94e02050786c
+          59ae675e-3b72-4e78-8d06-f5834e21544f:
+            uuid: 59ae675e-3b72-4e78-8d06-f5834e21544f
+            region: first
+            configuration:
+              id: 'field_block:node:algorithm:uid'
+              label: Автор
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: compact
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          7cf8d585-3fad-4db7-b227-40900d60922e:
+            uuid: 7cf8d585-3fad-4db7-b227-40900d60922e
             region: second
             configuration:
               id: 'field_block:node:algorithm:title'
@@ -96,127 +115,88 @@ third_party_settings:
                   override_link_label: ''
                   token: ''
                 third_party_settings: {  }
-            weight: 1
+            weight: 0
             additional: {  }
-          c0d8c6ad-bc6e-4de5-b04c-a5861b47509d:
-            uuid: c0d8c6ad-bc6e-4de5-b04c-a5861b47509d
+          fd6cb630-b11c-444a-89f9-f196103aee15:
+            uuid: fd6cb630-b11c-444a-89f9-f196103aee15
             region: second
             configuration:
               id: 'field_block:node:algorithm:field_annotation'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          9ac72659-a01b-4c45-9342-aaa31170595c:
-            uuid: 9ac72659-a01b-4c45-9342-aaa31170595c
-            region: first
-            configuration:
-              id: 'field_block:node:algorithm:uid'
-              label: Автор
+              label: Аннотация
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: entity_reference_entity_view
+                type: text_default
                 label: hidden
-                settings:
-                  view_mode: compact
+                settings: {  }
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: Body
-          context_mapping: {  }
-          column_widths: 25-75
-        components:
-          8437e797-5ef4-4fa2-9b99-4b5d534e7f09:
-            uuid: 8437e797-5ef4-4fa2-9b99-4b5d534e7f09
+          e2855e27-f7cd-4213-8a6d-9ce0f8f989a8:
+            uuid: e2855e27-f7cd-4213-8a6d-9ce0f8f989a8
             region: second
             configuration:
               id: 'field_block:node:algorithm:field_content'
+              label: 'Содержимое алгоритма'
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_revisions_entity_view
                 label: hidden
                 settings:
                   view_mode: default
-                  link: ''
                 third_party_settings: {  }
-            weight: 0
+            weight: 2
             additional: {  }
-          b4a3b8ea-bf8c-4a96-aca6-bc9153d32085:
-            uuid: b4a3b8ea-bf8c-4a96-aca6-bc9153d32085
-            region: first
-            configuration:
-              id: 'inline_block:basic'
-              label: Placeholder
-              label_display: '0'
-              provider: layout_builder
-              view_mode: full
-              context_mapping: {  }
-              block_revision_id: 9
-              block_serialized: null
-            weight: 0
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: Footer
-          context_mapping: {  }
-          column_widths: 25-75
-        components:
-          d5b4d3c9-1d36-41c0-a290-242e2ff171eb:
-            uuid: d5b4d3c9-1d36-41c0-a290-242e2ff171eb
-            region: second
-            configuration:
-              id: 'extra_field_block:node:algorithm:tg_comments'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
-          97e0d695-3800-433c-a3d3-7eff1cc0b3c8:
-            uuid: 97e0d695-3800-433c-a3d3-7eff1cc0b3c8
+          6141c3ed-0fd8-48a4-99f1-f73f38039f23:
+            uuid: 6141c3ed-0fd8-48a4-99f1-f73f38039f23
             region: second
             configuration:
               id: 'field_block:node:algorithm:field_conclusion'
+              label: Заключение
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: text_default
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 0
+            weight: 3
             additional: {  }
-          d2703d1e-0427-43e1-8d1c-7c16b4175023:
-            uuid: d2703d1e-0427-43e1-8d1c-7c16b4175023
-            region: first
+          486392e2-2927-4c22-9deb-39b396094a7c:
+            uuid: 486392e2-2927-4c22-9deb-39b396094a7c
+            region: second
             configuration:
-              id: 'inline_block:basic'
-              label: Placeholder
+              id: 'extra_field_block:node:algorithm:tg_comments'
+              label: 'Telegram comments'
               label_display: '0'
               provider: layout_builder
-              view_mode: full
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          2bdfa9a7-c347-4bd3-af0a-80be465c0f67:
+            uuid: 2bdfa9a7-c347-4bd3-af0a-80be465c0f67
+            region: second
+            configuration:
+              id: social_sharing_block
+              label: 'Social sharing block'
+              label_display: '0'
+              provider: bdk_blocks
               context_mapping: {  }
-              block_revision_id: 10
-              block_serialized: null
-            weight: 0
+            weight: 4
             additional: {  }
         third_party_settings: {  }
 id: node.algorithm.default
@@ -224,6 +204,11 @@ targetEntityType: node
 bundle: algorithm
 mode: default
 content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
   field_annotation:
     type: text_default
     label: hidden

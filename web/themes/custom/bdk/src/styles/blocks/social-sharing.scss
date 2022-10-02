@@ -1,0 +1,26 @@
+.social-sharing-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 56px 0;
+  p {
+    color: $gray-600;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    .item {
+      margin-left: 16px;
+      width: 24px;
+      height: 24px;
+    }
+    .tg {
+      background-image: url("../../assets/images/sharing/stg.svg");
+    }
+    .vk {
+      background-image: url("../../assets/images/sharing/svk.svg");
+    }
+    .ok {
+      background-image: url("../../assets/images/sharing/sok.svg");
+    }
+  }
+}

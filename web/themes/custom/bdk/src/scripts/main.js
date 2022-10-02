@@ -1,4 +1,7 @@
+import localization from './modules/tg-localization';
 import polyfills from './polyfills';
+
+localization();
 
 (() => {
   polyfills();

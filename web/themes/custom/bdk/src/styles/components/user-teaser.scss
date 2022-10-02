@@ -1,0 +1,25 @@
+.field--name-uid {
+  display: flex;
+
+  .layout__region--first {
+    flex: none !important;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    .field--name-user-picture {
+      img {
+        border-radius: 44px;
+      }
+    }
+  }
+
+  .layout__region--second {
+    .field--name-field-name {
+      @include Body_6_Medium_14pt;
+    }
+
+    .field--name-field-bio {
+      @include Description_Regular_12px;
+    }
+  }
+}

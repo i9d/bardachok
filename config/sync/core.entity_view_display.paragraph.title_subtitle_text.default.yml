@@ -33,7 +33,7 @@ content:
     type: text_field_formatter
     label: hidden
     settings:
-      wrap_tag: h3
+      wrap_tag: h2
       wrap_class: ''
       wrap_attributes: ''
       override_link_label: ''

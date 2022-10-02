@@ -45,6 +45,7 @@
         "drupal/remove_username": "^1.2",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
+        "drupal/stage_file_proxy": "^1.2",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
         "drupal/webp": "^1.0@beta",

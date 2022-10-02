@@ -9,12 +9,74 @@ dependencies:
     - media.type.cropped_image
     - responsive_image.styles.algorithm_image
   module:
+    - bdk_blocks
     - layout_builder
+    - layout_discovery
     - responsive_image
 third_party_settings:
   layout_builder:
-    enabled: false
+    enabled: true
     allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Image
+          context_mapping: {  }
+        components:
+          42141754-8511-4bbb-9260-fdff91b8edca:
+            uuid: 42141754-8511-4bbb-9260-fdff91b8edca
+            region: content
+            configuration:
+              id: 'field_block:media:cropped_image:field_media_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: responsive_image
+                label: hidden
+                settings:
+                  responsive_image_style: algorithm_image
+                  image_link: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Caption
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          c1e22fe4-c210-420f-a25a-f6b6fb625a8d:
+            uuid: c1e22fe4-c210-420f-a25a-f6b6fb625a8d
+            region: second
+            configuration:
+              id: 'field_block:media:cropped_image:field_caption'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          deacb877-53b6-4b9c-a7dd-8ca4454a3900:
+            uuid: deacb877-53b6-4b9c-a7dd-8ca4454a3900
+            region: first
+            configuration:
+              id: placeholder_block
+              label: 'Placeholder block'
+              label_display: '0'
+              provider: bdk_blocks
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: media.cropped_image.algorithm_image
 targetEntityType: media
 bundle: cropped_image

@@ -1,0 +1,13 @@
+.paragraph--type--step {
+  &>.field--name-field-title {
+    margin: 40px 0 20px;
+    display: flex;
+    span {
+      padding: 5px 32px;
+      border-radius: 3px;
+      background-color: $gray-600;
+      @include Body_7_Regular_14pt;
+      color: $gray-0;
+    }
+  }
+}

@@ -8,16 +8,29 @@ h6 {
 }
 
 h1 {
-  @include Title_1_Heavy_48pt;
+  @include Title_2_Bold_28pt;
+  margin-bottom: 40px;
 }
 
 h2 {
-  @include Title_2_Bold_28pt;
+  @include Subhead_1_Semibold_24pt;
 }
 
-p, span {
+h3 {
+  @include Body_1_Medium_20pt;
+}
+
+p, span, li {
   @include Body_5_Regular_16pt;
   margin: 0;
+}
+
+ol, ul {
+  margin: 24px 0;
+}
+
+sup, sub {
+  @include Description_Regular_12px;
 }
 
 a {
@@ -30,4 +43,5 @@ label {
 
 .field--name-field-caption {
   @include Description_Regular_12px;
+  color: $gray-600;
 }

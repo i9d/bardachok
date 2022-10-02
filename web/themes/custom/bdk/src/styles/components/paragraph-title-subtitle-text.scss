@@ -1,0 +1,6 @@
+.paragraph--type--title-subtitle-text {
+  .field--name-field-subtitle p{
+    @include Subhead_2_Demibold_20pt;
+    margin-bottom: 10px;
+  }
+}

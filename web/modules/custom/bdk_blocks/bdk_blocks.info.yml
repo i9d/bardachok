@@ -1,0 +1,5 @@
+name: Blocks
+description: Добавляет кастомные блоки.
+package: Bardachok
+type: module
+core_version_requirement: ^9
