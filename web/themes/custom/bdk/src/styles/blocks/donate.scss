@@ -1,0 +1,27 @@
+#block-donatebottom .field--name-body {
+  display: flex;
+  background-color: $gray-100;
+  border-radius: 48px;
+  padding: 40px 54px;
+  justify-content: space-between;
+  .left {
+    max-width: 408px;
+    &>h2 {
+      @include Title_1_Heavy_48pt;
+      margin-bottom: 32px;
+      line-height: 64px;
+    }
+    &>p {
+      @include Body_5_Regular_16pt;
+      margin-bottom: 48px;
+    }
+  }
+  .right img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &::after {
+    display: none;
+  }
+}
