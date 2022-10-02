@@ -1,0 +1,74 @@
+#user-register-form,
+#user-login-form,
+#user-pass {
+  border-radius: 64px;
+  padding: 50px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  #edit-mail--description,
+  #edit-pass--description,
+  #edit-field-bio-0-value--description,
+  #edit-user-picture-0--description {
+    @include Description_Regular_12px;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+
+    .form-required::after {
+      background-image: url("../../assets/images/required-sign.svg");
+    }
+
+    &.form-type-email {
+      .description {
+        display: none;
+      }
+    }
+
+    &.form-type-password-confirm {
+      flex-direction: row;
+      justify-content: space-between;
+      .form-item {
+        max-width: 230px;
+
+      }
+      .description {
+        display: none;
+      }
+    }
+
+    &.form-item-user-picture-0 {
+      .image-widget {
+        display: flex;
+        .image-preview {
+          display: flex;
+          align-items: center;
+        }
+        .image-widget-data {
+          margin-left: 10px;
+          .input[type="file"] {
+            background: #0a6eb4;
+          }
+        }
+      }
+      .description {
+        display: none;
+      }
+    }
+  }
+  .field--name-field-categories {
+    .form-item {
+      display: block;
+    }
+  }
+  .form-item-name .description,
+  .form-item-pass .description {
+    display: none;
+  }
+  #edit-actions {
+    display: flex;
+    justify-content: center;
+  }
+}

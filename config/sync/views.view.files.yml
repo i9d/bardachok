@@ -490,7 +490,7 @@ display:
           field: area_text_custom
           plugin_id: text_custom
           empty: true
-          content: 'No files available.'
+          content: 'Файлы не выбраны.'
       sorts: {  }
       arguments: {  }
       filters:

@@ -5,5 +5,27 @@
  * Main bdk_register_overwrite module file.
  */
 
-function bdk_register_overwrite_form_alter(&$variables) {;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element\PasswordConfirm;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ * user_form
+ */
+function bdk_register_overwrite_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['account']['pass']['#process'][] = 'form_user_edit_process_pass';
+}
+
+/**
+ * Process password fields.
+ *
+ * @param $element
+ * @param FormStateInterface $form_state
+ * @param $complete_form
+ *
+ * @return mixed
+ */
+function form_user_edit_process_pass(&$element, FormStateInterface $form_state, &$complete_form) {
+  $element = PasswordConfirm::processPasswordConfirm($element, $form_state, $complete_form);
+  return $element;
 }

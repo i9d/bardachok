@@ -11,7 +11,7 @@
 }
 
 *::selection {
-    background: $blue-lighter;
+  background: $blue-lighter;
 }
 
 body {
@@ -56,14 +56,17 @@ input[type='submit'] {
 
 a:not([class]) {
   @include Link_Medium_16pt;
+
   &:hover {
     color: $gray-600;
   }
+
   &:active {
     color: $blue-dark;
     outline: 1px solid $blue-light;
     border-radius: 4px;
   }
+
   &:focus {
     color: $gray-900;
     outline: 1px solid $blue-light;
@@ -114,20 +117,40 @@ input[type="submit"] {
   text-align: center;
   font-weight: bold;
   padding: 12px 32px;
+
   &:hover {
     background-color: $blue-light;
     color: $gray-0;
   }
+
   &:active {
     background-color: $blue-dark;
     color: $gray-0;
   }
+
   &:focus {
     outline: 3px solid $blue-focus;
     color: $gray-0;
   }
+
   &.disabled {
     background-color: $blue-lighter;
     color: $gray-0;
   }
+}
+
+
+input {
+  caret-color: $blue-primary;
+  padding: 15px;
+  background-color: $gray-100;
+  border: 1px solid $gray-200;
+  border-radius: 4px;
+  &:focus {
+    border: 1px solid $gray-500;
+    outline: 0;
+  }
+  //&:invalid {
+  //  border: 1px solid $error;
+  //}
 }
