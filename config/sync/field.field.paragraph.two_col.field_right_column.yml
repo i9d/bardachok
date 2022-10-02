@@ -4,9 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_right_column
-    - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.title_subtitle_text
-    - paragraphs.paragraphs_type.title_text
     - paragraphs.paragraphs_type.two_col
   module:
     - entity_reference_revisions
@@ -24,9 +22,7 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      media: media
       title_subtitle_text: title_subtitle_text
-      title_text: title_text
     negate: 0
     target_bundles_drag_drop:
       media:

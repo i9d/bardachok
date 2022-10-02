@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: two_col
-label: 'Две колонки'
+label: 'Разделение на две колонки'
 icon_uuid: null
 icon_default: null
 description: ''

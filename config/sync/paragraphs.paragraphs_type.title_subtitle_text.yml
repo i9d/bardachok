@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies: {  }
 id: title_subtitle_text
-label: Заголовок+Подзаголовок+Текст
+label: 'Текстовый параграф'
 icon_uuid: null
 icon_default: null
 description: ''
