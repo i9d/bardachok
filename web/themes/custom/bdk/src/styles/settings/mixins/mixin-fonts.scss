@@ -99,3 +99,11 @@
   text-decoration-line: underline;
   color: $gray-900;
 }
+
+@mixin Description_Regular_12px {
+  font-family: 'Golos', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: $gray-600;
+}

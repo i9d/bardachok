@@ -23,3 +23,7 @@ p, span {
 a {
   @include Link_Medium_16pt;
 }
+
+.field--name-field-caption {
+  @include Description_Regular_12px;
+}
