@@ -24,8 +24,8 @@ third_party_settings:
           label: Image
           context_mapping: {  }
         components:
-          42141754-8511-4bbb-9260-fdff91b8edca:
-            uuid: 42141754-8511-4bbb-9260-fdff91b8edca
+          42de6d51-5c70-4010-9d9d-46b2721a5bf2:
+            uuid: 42de6d51-5c70-4010-9d9d-46b2721a5bf2
             region: content
             configuration:
               id: 'field_block:media:cropped_image:field_media_image'
@@ -39,7 +39,23 @@ third_party_settings:
                   responsive_image_style: algorithm_image
                   image_link: ''
                 third_party_settings: {  }
-            weight: 0
+            weight: 1
+            additional: {  }
+          2348202e-2d00-4148-863c-fd1653b679d2:
+            uuid: 2348202e-2d00-4148-863c-fd1653b679d2
+            region: content
+            configuration:
+              id: 'field_block:media:cropped_image:field_caption'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
             additional: {  }
         third_party_settings: {  }
       -
