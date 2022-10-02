@@ -36,7 +36,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_categories:
-    type: options_buttons
+    type: options_select
     weight: 4
     region: content
     settings: {  }

@@ -49,6 +49,7 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
+  remove_username: 0
   responsive_image: 0
   search: 0
   statistics: 0

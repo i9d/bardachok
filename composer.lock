@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9247d2047407b13209dcc71fe0118a0",
+    "content-hash": "fc961695b0c722bb0abb9a4ede04b56e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3139,6 +3139,54 @@
             "homepage": "https://www.drupal.org/project/redirect",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect"
+            }
+        },
+        {
+            "name": "drupal/remove_username",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/remove_username.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/remove_username-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "2c1050196bb2124007876bd6de1a65e01274c03a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1663737986",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "cristiroma",
+                    "homepage": "https://www.drupal.org/user/2267390"
+                },
+                {
+                    "name": "sadashiv",
+                    "homepage": "https://www.drupal.org/user/1773304"
+                }
+            ],
+            "description": "Elimitates username and copies email into the username field.",
+            "homepage": "https://www.drupal.org/project/remove_username",
+            "support": {
+                "source": "https://git.drupalcode.org/project/remove_username"
             }
         },
         {
@@ -8319,5 +8367,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }

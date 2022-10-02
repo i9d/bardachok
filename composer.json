@@ -42,6 +42,7 @@
         "drupal/paragraphs": "^1.14",
         "drupal/pathauto": "^1.10",
         "drupal/redirect": "^1.7",
+        "drupal/remove_username": "^1.2",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
         "drupal/text_field_formatter": "^2.0",
