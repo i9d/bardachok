@@ -1,0 +1,5 @@
+name: Register overwite
+description: Изменяет форму регистрации.
+package: Bardachok
+type: module
+core_version_requirement: ^9

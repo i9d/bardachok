@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_register_overwrite module file.
+ */
+
+function bdk_register_overwrite_form_alter(&$variables) {;
+}

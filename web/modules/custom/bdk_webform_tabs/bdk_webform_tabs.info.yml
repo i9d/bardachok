@@ -1,5 +1,0 @@
-name: Webform tabs
-description: Provides webforms with tabs.
-package: Bardachok
-type: module
-core_version_requirement: ^9
