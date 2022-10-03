@@ -22,9 +22,10 @@ dependencies:
     - node
     - paragraphs
     - path
+    - quickedit
+    - statistics
     - system
     - taxonomy
-    - tour
 id: moderator
 label: Moderator
 weight: -7
@@ -33,12 +34,11 @@ permissions:
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access in-place editing'
   - 'access media overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
-  - 'access tour'
   - 'access user profiles'
-  - 'administer url aliases'
   - 'change own username'
   - 'create algorithm content'
   - 'create algorithm_embedded media'
@@ -89,5 +89,7 @@ permissions:
   - 'view any unpublished content'
   - 'view latest version'
   - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view post access counter'
   - 'view unpublished paragraphs'
   - 'view user email addresses'

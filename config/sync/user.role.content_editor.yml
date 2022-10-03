@@ -21,7 +21,6 @@ dependencies:
     - path
     - system
     - taxonomy
-    - tour
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
@@ -33,7 +32,6 @@ permissions:
   - 'access contextual links'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
-  - 'access tour'
   - 'change own username'
   - 'create algorithm content'
   - 'create algorithm_embedded media'
@@ -62,4 +60,5 @@ permissions:
   - 'use editorial transition create_new_draft'
   - 'use text format editor'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'
