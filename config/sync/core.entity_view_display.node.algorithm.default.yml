@@ -121,16 +121,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 3
             additional: {  }
-          4be19d64-7092-4258-be20-cc0430e23ffa:
-            uuid: 4be19d64-7092-4258-be20-cc0430e23ffa
-            region: second
-            configuration:
-              id: 'extra_field_block:node:algorithm:tg_comments'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 5
-            additional: {  }
           6d837341-041a-4791-a2fb-f18e8e63ce78:
             uuid: 6d837341-041a-4791-a2fb-f18e8e63ce78
             region: second
