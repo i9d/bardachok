@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
+    - bdk_blocks
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
@@ -176,6 +177,17 @@ third_party_settings:
               formatter:
                 settings: {  }
                 third_party_settings: {  }
+            weight: 6
+            additional: {  }
+          b76485e6-5063-47a0-a0b3-18b5e249274e:
+            uuid: b76485e6-5063-47a0-a0b3-18b5e249274e
+            region: second
+            configuration:
+              id: social_sharing_block
+              label: 'Social sharing block'
+              label_display: '0'
+              provider: bdk_blocks
+              context_mapping: {  }
             weight: 5
             additional: {  }
         third_party_settings: {  }
