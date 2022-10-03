@@ -110,7 +110,7 @@ input[type="submit"] {
   @include Link_Medium_16pt;
   display: inline-block;
   border: none;
-  border-radius: 12px;
+  border-radius: 4px;
   background-color: $blue-primary;
   color: $gray-0;
   text-decoration: none;
@@ -146,10 +146,12 @@ input {
   background-color: $gray-100;
   border: 1px solid $gray-200;
   border-radius: 4px;
+
   &:focus {
     border: 1px solid $gray-500;
     outline: 0;
   }
+
   //&:invalid {
   //  border: 1px solid $error;
   //}

@@ -1,9 +1,11 @@
 #block-donatebottom .field--name-body {
   display: flex;
   background-color: $gray-100;
+  box-shadow: 0 4px 30px rgba(233, 233, 233, 0.5);
   border-radius: 48px;
   padding: 40px 54px;
   justify-content: space-between;
+  margin-bottom: 80px;
   .left {
     max-width: 408px;
     &>h2 {
