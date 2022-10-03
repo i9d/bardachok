@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
-    - bdk_blocks
     - entity_reference_revisions
     - layout_builder
     - layout_discovery
@@ -145,17 +144,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          f73bae32-4a10-4484-acd5-90346479fd6a:
-            uuid: f73bae32-4a10-4484-acd5-90346479fd6a
-            region: second
-            configuration:
-              id: social_sharing_block
-              label: 'Social sharing block'
-              label_display: '0'
-              provider: bdk_blocks
-              context_mapping: {  }
-            weight: 4
-            additional: {  }
           61641487-f18a-4b19-bd92-943d949c958e:
             uuid: 61641487-f18a-4b19-bd92-943d949c958e
             region: first
@@ -174,6 +162,21 @@ third_party_settings:
                   view_mode: compact
                 third_party_settings: {  }
             weight: 0
+            additional: {  }
+          693c1530-90a7-4bfe-98e6-e0bb02361e25:
+            uuid: 693c1530-90a7-4bfe-98e6-e0bb02361e25
+            region: second
+            configuration:
+              id: 'extra_field_block:node:algorithm:tg_comments'
+              label: 'Telegram comments'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
             additional: {  }
         third_party_settings: {  }
 id: node.algorithm.default
