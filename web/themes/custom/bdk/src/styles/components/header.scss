@@ -11,12 +11,16 @@ header {
     align-items: center;
 
     .region-header-left {
-      .site-name a {
-        color: $gray-900;
-        font-family: 'CraftworkGrotesk', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        text-decoration: none;
+      .block-system-branding-block {
+        display: flex;
+        .site-name a {
+          color: $gray-900;
+          font-family: 'CraftworkGrotesk', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          text-decoration: none;
+          margin-left: 20px;
+        }
       }
     }
 
