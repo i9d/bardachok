@@ -9,7 +9,6 @@ dependencies:
     - media.type.cropped_image
     - responsive_image.styles.algorithm_image
   module:
-    - bdk_blocks
     - layout_builder
     - layout_discovery
     - responsive_image
@@ -41,17 +40,9 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 1
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: Caption
-          context_mapping: {  }
-          column_widths: 25-75
-        components:
           c1e22fe4-c210-420f-a25a-f6b6fb625a8d:
             uuid: c1e22fe4-c210-420f-a25a-f6b6fb625a8d
-            region: second
+            region: content
             configuration:
               id: 'field_block:media:cropped_image:field_caption'
               label_display: '0'
@@ -63,18 +54,7 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          deacb877-53b6-4b9c-a7dd-8ca4454a3900:
-            uuid: deacb877-53b6-4b9c-a7dd-8ca4454a3900
-            region: first
-            configuration:
-              id: placeholder_block
-              label: 'Placeholder block'
-              label_display: '0'
-              provider: bdk_blocks
-              context_mapping: {  }
-            weight: 0
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 id: media.cropped_image.algorithm_image

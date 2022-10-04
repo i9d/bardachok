@@ -3,12 +3,14 @@ langcode: ru
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.algorithm.title
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_category
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
     - field.field.node.algorithm.field_image
     - node.type.algorithm
+    - views.view.algorithms
   module:
     - bdk_blocks
     - entity_reference_revisions
@@ -16,6 +18,7 @@ dependencies:
     - layout_discovery
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
     enabled: true
@@ -70,71 +73,11 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 25-75
+          column_widths: 75-25
         components:
-          8a7b5955-9cac-48ed-883a-66b7c2f1ab69:
-            uuid: 8a7b5955-9cac-48ed-883a-66b7c2f1ab69
-            region: second
-            configuration:
-              id: 'extra_field_block:node:algorithm:tg_comments'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 4
-            additional: {  }
-          0a158004-cca6-4097-acd2-81cd034938e0:
-            uuid: 0a158004-cca6-4097-acd2-81cd034938e0
-            region: second
-            configuration:
-              id: 'field_block:node:algorithm:field_conclusion'
-              label: Заключение
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          352177a7-7f89-4a4a-9b78-ed8bd06477d0:
-            uuid: 352177a7-7f89-4a4a-9b78-ed8bd06477d0
-            region: second
-            configuration:
-              id: 'field_block:node:algorithm:field_content'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          d080b6c2-3e9b-4d2c-ae68-799120e48cee:
-            uuid: d080b6c2-3e9b-4d2c-ae68-799120e48cee
-            region: second
-            configuration:
-              id: 'field_block:node:algorithm:field_annotation'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: hidden
-                settings: {  }
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           98079da1-fa29-4269-9dde-255f3785f11c:
             uuid: 98079da1-fa29-4269-9dde-255f3785f11c
-            region: first
+            region: second
             configuration:
               id: 'field_block:node:algorithm:uid'
               label: Автор
@@ -151,16 +94,139 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
+          d080b6c2-3e9b-4d2c-ae68-799120e48cee:
+            uuid: d080b6c2-3e9b-4d2c-ae68-799120e48cee
+            region: first
+            configuration:
+              id: 'field_block:node:algorithm:field_annotation'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          352177a7-7f89-4a4a-9b78-ed8bd06477d0:
+            uuid: 352177a7-7f89-4a4a-9b78-ed8bd06477d0
+            region: first
+            configuration:
+              id: 'field_block:node:algorithm:field_content'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0a158004-cca6-4097-acd2-81cd034938e0:
+            uuid: 0a158004-cca6-4097-acd2-81cd034938e0
+            region: first
+            configuration:
+              id: 'field_block:node:algorithm:field_conclusion'
+              label: Заключение
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
           03e3ef47-1159-4f52-bbc0-83badf499a95:
             uuid: 03e3ef47-1159-4f52-bbc0-83badf499a95
-            region: second
+            region: first
             configuration:
               id: social_sharing_block
               label: 'Social sharing block'
               label_display: '0'
               provider: bdk_blocks
               context_mapping: {  }
-            weight: 3
+            weight: 4
+            additional: {  }
+          282d9fa6-54ef-4d94-ae28-7754c62180ea:
+            uuid: 282d9fa6-54ef-4d94-ae28-7754c62180ea
+            region: first
+            configuration:
+              id: 'field_block:node:algorithm:title'
+              label: Заголовок
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_field_formatter
+                label: hidden
+                settings:
+                  link_to_entity: 0
+                  wrap_tag: h1
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 75-25
+        components:
+          8a7b5955-9cac-48ed-883a-66b7c2f1ab69:
+            uuid: 8a7b5955-9cac-48ed-883a-66b7c2f1ab69
+            region: first
+            configuration:
+              id: 'extra_field_block:node:algorithm:tg_comments'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 1
+            additional: {  }
+          41c0f9a5-ceb3-48bc-b764-54cd0646d871:
+            uuid: 41c0f9a5-ceb3-48bc-b764-54cd0646d871
+            region: second
+            configuration:
+              id: placeholder_block
+              label: 'Placeholder block'
+              label_display: '0'
+              provider: bdk_blocks
+              context_mapping: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          9dac4cb2-8068-4ea7-bb3a-cdc4b5daea50:
+            uuid: 9dac4cb2-8068-4ea7-bb3a-cdc4b5daea50
+            region: content
+            configuration:
+              id: 'views_block:algorithms-algorithm_slider'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
             additional: {  }
         third_party_settings: {  }
 id: node.algorithm.default

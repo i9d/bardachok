@@ -1,0 +1,106 @@
+uuid: 06cf3023-f9d8-47aa-9ac8-ff0bae0125af
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.algorithm.title
+    - core.entity_view_mode.node.teaser_mini
+    - field.field.node.algorithm.field_annotation
+    - field.field.node.algorithm.field_category
+    - field.field.node.algorithm.field_conclusion
+    - field.field.node.algorithm.field_content
+    - field.field.node.algorithm.field_image
+    - node.type.algorithm
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8f7821c8-914e-4188-97c6-96d959f875e4:
+            uuid: 8f7821c8-914e-4188-97c6-96d959f875e4
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: algorithm_teaser_mini
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          ab70115e-2684-40c2-bcd5-eed01764c95e:
+            uuid: ab70115e-2684-40c2-bcd5-eed01764c95e
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:title'
+              label: Заголовок
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a86e6cfd-4d82-4e4e-8878-b5efbf45b241:
+            uuid: a86e6cfd-4d82-4e4e-8878-b5efbf45b241
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:uid'
+              label: Автор
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: compact
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: node.algorithm.teaser_mini
+targetEntityType: node
+bundle: algorithm
+mode: teaser_mini
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: algorithm_teaser_mini
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_annotation: true
+  field_category: true
+  field_conclusion: true
+  field_content: true
+  langcode: true
+  links: true
+  tg_comments: true

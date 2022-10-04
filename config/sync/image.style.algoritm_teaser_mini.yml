@@ -1,0 +1,26 @@
+uuid: 3eae4a53-a810-4302-bb10-e17205eb8577
+langcode: ru
+status: true
+dependencies:
+  config:
+    - crop.type.algoritm_teaser
+  module:
+    - crop
+name: algoritm_teaser_mini
+label: 'Algoritm Teaser Mini'
+effects:
+  697709fb-91f3-4094-af6f-3ff595ea215d:
+    uuid: 697709fb-91f3-4094-af6f-3ff595ea215d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: algoritm_teaser
+      automatic_crop_provider: null
+  261873af-b211-404c-8a05-2e6cb6e21a88:
+    uuid: 261873af-b211-404c-8a05-2e6cb6e21a88
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 222
+      height: 157
+      anchor: center-center

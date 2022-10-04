@@ -1,0 +1,16 @@
+uuid: 85e746a3-24bf-418e-8aa8-42c4871a8c0c
+langcode: ru
+status: true
+dependencies:
+  config:
+    - image.style.algoritm_teaser_mini
+id: algorithm_teaser_mini
+label: 'Algorithm Teaser Mini'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: algoritm_teaser_mini
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: algoritm_teaser_mini

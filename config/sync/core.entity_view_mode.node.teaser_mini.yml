@@ -1,0 +1,10 @@
+uuid: e6564747-1b5e-4f22-b595-8be45e383c55
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_mini
+label: 'Teaser Mini'
+targetEntityType: node
+cache: true

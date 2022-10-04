@@ -1,0 +1,10 @@
+uuid: d8c65fc6-fe3d-4091-a5f9-f76d040c25b6
+langcode: ru
+status: true
+dependencies:
+  module:
+    - media
+id: media.algorithm_teaser_mini
+label: 'Algorithm Teaser Mini'
+targetEntityType: media
+cache: true

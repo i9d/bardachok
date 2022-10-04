@@ -1,0 +1,38 @@
+uuid: 7d98c3f8-2c61-4a2d-b30c-ca70e899f0d4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.algorithm_teaser_mini
+    - field.field.media.cropped_image.field_caption
+    - field.field.media.cropped_image.field_media_image
+    - media.type.cropped_image
+    - responsive_image.styles.algorithm_teaser_mini
+  module:
+    - layout_builder
+    - responsive_image
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: media.cropped_image.algorithm_teaser_mini
+targetEntityType: media
+bundle: cropped_image
+mode: algorithm_teaser_mini
+content:
+  field_media_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: algorithm_teaser_mini
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
