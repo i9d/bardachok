@@ -12,18 +12,6 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "kenwheeler/slick",
-                "type": "drupal-library",
-                "version": "1.8.0",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/kenwheeler/slick/archive/1.8.0.zip"
-                }
-            }
         }
     ],
     "require": {
@@ -50,7 +38,8 @@
         "drupal/tg_integration": "^1.0",
         "drupal/webp": "^1.0@beta",
         "drush/drush": "^11.0",
-        "kenwheeler/slick": "^1.8"
+        "kenwheeler/slick": "^1.8",
+        "zodiacmedia/drupal-libraries-installer": "^1.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -67,6 +56,10 @@
         "sort-packages": true
     },
     "extra": {
+        "drupal-libraries": {
+            "slick": "https://github.com/kenwheeler/slick/archive/1.8.0.zip",
+            "blazy": "https://github.com/dinbror/blazy/archive/1.8.2.zip"
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"

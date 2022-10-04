@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cfe98a47754806d35997dd0424454aa",
+    "content-hash": "6fed6dcbf502431c0e60836645408650",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8433,6 +8433,61 @@
             },
             "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
+        },
+        {
+            "name": "zodiacmedia/drupal-libraries-installer",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zodiacmedia/drupal-libraries-installer.git",
+                "reference": "5e671f0c89fca01e4428e2c7f7e067c8ef85d5aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zodiacmedia/drupal-libraries-installer/zipball/5e671f0c89fca01e4428e2c7f7e067c8ef85d5aa",
+                "reference": "5e671f0c89fca01e4428e2c7f7e067c8ef85d5aa",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "composer/installers": "^1.1 || ^2.0",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^2.0",
+                "ext-json": "*",
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Zodiacmedia\\DrupalLibrariesInstaller\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zodiacmedia\\DrupalLibrariesInstaller\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "homepage": "https://github.com/balbuf"
+                },
+                {
+                    "name": "codebymikey",
+                    "homepage": "https://www.drupal.org/u/codebymikey"
+                }
+            ],
+            "description": "Install Drupal libraries via a simple listing in your composer.json file",
+            "support": {
+                "issues": "https://github.com/zodiacmedia/drupal-libraries-installer/issues",
+                "source": "https://github.com/zodiacmedia/drupal-libraries-installer/tree/v1.5.0"
+            },
+            "time": "2022-03-01T16:51:50+00:00"
         }
     ],
     "packages-dev": [],
