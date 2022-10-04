@@ -1,25 +1,30 @@
 .field--name-uid {
-  display: flex;
+  .layout--twocol-section--25-75 {
+    flex-wrap: nowrap;
+    .layout__region--first {
+      flex: unset !important;
+      margin-right: 16px;
+      display: flex;
+      align-items: center;
 
-  .layout__region--first {
-    flex: none !important;
-    margin-right: 16px;
-    display: flex;
-    align-items: center;
-    .field--name-user-picture {
-      img {
-        border-radius: 44px;
+      .field--name-user-picture {
+        img {
+          border-radius: 44px;
+        }
       }
     }
-  }
 
-  .layout__region--second {
-    .field--name-field-name {
-      @include Body_6_Medium_14pt;
-    }
+    .layout__region--second {
+      //flex: none !important;
 
-    .field--name-field-bio {
-      @include Description_Regular_12px;
+      .field--name-field-name {
+        @include Body_6_Medium_14pt;
+      }
+
+      .field--name-field-bio {
+        max-width: 100%;
+        @include Description_Regular_12px;;
+      }
     }
   }
 }

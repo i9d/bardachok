@@ -28,7 +28,7 @@ content:
     label: hidden
     settings:
       wrap_tag: span
-      wrap_class: ''
+      wrap_class: 'tax-color no-hover'
       wrap_attributes: ''
       override_link_label: ''
       link_to_entity: false

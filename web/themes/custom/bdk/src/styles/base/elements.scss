@@ -16,7 +16,8 @@
 
 body {
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
+  
   &.no-scroll {
     overflow: hidden;
   }

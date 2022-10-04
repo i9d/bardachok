@@ -1,0 +1,5 @@
+scroll_to_up:
+  js:
+    js/scroll_to_up.js: {}
+  dependencies:
+    - core/jquery

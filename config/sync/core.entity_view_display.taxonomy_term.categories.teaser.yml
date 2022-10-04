@@ -8,50 +8,23 @@ dependencies:
     - taxonomy.vocabulary.categories
   module:
     - layout_builder
-    - layout_discovery
-    - text
+    - options
 third_party_settings:
   layout_builder:
-    enabled: true
+    enabled: false
     allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          4581ae91-75ec-44a7-8f94-04623029cc58:
-            uuid: 4581ae91-75ec-44a7-8f94-04623029cc58
-            region: content
-            configuration:
-              id: 'field_block:taxonomy_term:categories:name'
-              label: Name
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-        third_party_settings: {  }
 id: taxonomy_term.categories.teaser
 targetEntityType: taxonomy_term
 bundle: categories
 mode: teaser
 content:
-  description:
-    type: text_default
+  field_color:
+    type: list_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
-  field_color: true
+  description: true
   langcode: true

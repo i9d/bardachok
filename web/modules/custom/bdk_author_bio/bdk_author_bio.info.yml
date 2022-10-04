@@ -1,0 +1,5 @@
+name: Author Bio
+description: Работа с полем Био.
+package: Bardachok
+type: module
+core_version_requirement: ^9

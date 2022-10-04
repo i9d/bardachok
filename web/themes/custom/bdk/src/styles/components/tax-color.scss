@@ -1,0 +1,83 @@
+.tax-color-default .tax-color {
+  background-color: $blue-primary;
+
+  &:hover:not(.no-hover) {
+    background-color: $blue-light;
+  }
+
+  &:active:not(.no-hover):not(.no-hover) {
+    background-color: $blue-dark;
+  }
+}
+
+.tax-color-blue .tax-color{
+  background-color: $category-blue;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-blue-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-blue-active;
+  }
+}
+
+.tax-color-green .tax-color {
+  background-color: $category-green;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-green-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-green-active;
+  }
+}
+
+.tax-color-red .tax-color {
+  background-color: $category-red;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-red-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-red-active;
+  }
+}
+
+.tax-color-cyan .tax-color {
+  background-color: $category-cyan;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-cyan-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-cyan-active;
+  }
+}
+
+.tax-color-purple .tax-color{
+  background-color: $category-purple;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-purple-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-purple-active;
+  }
+}
+
+.tax-color-orange .tax-color {
+  background-color: $category-orange;
+
+  &:hover:not(.no-hover) {
+    background-color: $category-orange-hover;
+  }
+
+  &:active:not(.no-hover) {
+    background-color: $category-orange-active;
+  }
+}

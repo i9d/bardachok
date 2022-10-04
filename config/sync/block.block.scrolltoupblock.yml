@@ -1,0 +1,20 @@
+uuid: 1f9b578a-4a88-4ab1-8c0f-7d2136302984
+langcode: ru
+status: true
+dependencies:
+  module:
+    - bdk_blocks
+  theme:
+    - bdk
+id: scrolltoupblock
+theme: bdk
+region: footer
+weight: 0
+provider: null
+plugin: scroll_to_up_block
+settings:
+  id: scroll_to_up_block
+  label: 'Scroll to up block'
+  label_display: '0'
+  provider: bdk_blocks
+visibility: {  }

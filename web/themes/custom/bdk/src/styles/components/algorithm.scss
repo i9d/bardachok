@@ -1,5 +1,12 @@
 .node--type-algorithm.node--view-mode-full {
   .node__content {
+    &>.layout--twocol-section--75-25 {
+      flex-wrap: nowrap;
+      &>.layout__region--second {
+        margin-left: 75px;
+      }
+    }
+
     img {
       border-radius: 8px;
     }
@@ -27,7 +34,6 @@
         text-align: center;
         padding: 4px 12px;
         border-radius: 4px;
-        background-color: $gray-600;
         z-index: 1;
       }
     }

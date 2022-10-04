@@ -3,6 +3,8 @@ recipe: drupal9
 config:
   webroot: web
   xdebug: true
+  config:
+    php: php.ini
 services:
   node:
     type: node:16

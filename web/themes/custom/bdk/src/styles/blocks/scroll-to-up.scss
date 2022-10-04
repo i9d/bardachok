@@ -1,0 +1,17 @@
+#scrollToUpButton {
+  display: none;
+  position: fixed;
+  bottom: 35px;
+  right: 70px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100%;
+  background-image: url("../../assets/images/arrowUp.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
+}
