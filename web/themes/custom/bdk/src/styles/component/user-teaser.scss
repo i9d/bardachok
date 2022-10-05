@@ -1,5 +1,5 @@
 .field--name-uid {
-  .layout--twocol-section--25-75 {
+  .layout--twocol-section--50-50 {
     flex-wrap: nowrap;
     .layout__region--first {
       flex: unset !important;
@@ -15,7 +15,7 @@
     }
 
     .layout__region--second {
-      //flex: none !important;
+      flex: 0 1 100%;
 
       .field--name-field-name {
         @include Body_6_Medium_14pt;

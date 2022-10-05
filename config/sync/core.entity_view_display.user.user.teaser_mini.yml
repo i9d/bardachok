@@ -12,7 +12,6 @@ dependencies:
   module:
     - image
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -20,39 +19,36 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components: {  }
-        third_party_settings: {  }
-      -
         layout_id: layout_twocol_section
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 25-75
+          column_widths: 50-50
         components:
-          a2096b0c-3e79-4bbe-aa43-160461debc20:
-            uuid: a2096b0c-3e79-4bbe-aa43-160461debc20
+          fbb5e20c-5de1-4a67-873d-186acb637673:
+            uuid: fbb5e20c-5de1-4a67-873d-186acb637673
             region: first
             configuration:
               id: 'field_block:user:user:user_picture'
+              label: Изображение
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: image
                 label: hidden
                 settings:
-                  image_link: content
+                  image_link: ''
                   image_style: user_preview
                   image_loading:
                     attribute: lazy
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          560e6682-ac75-4008-ba55-8bc97cfc4a77:
-            uuid: 560e6682-ac75-4008-ba55-8bc97cfc4a77
+          6aac3cb8-bc3c-4579-a50a-9ff0fab9a185:
+            uuid: 6aac3cb8-bc3c-4579-a50a-9ff0fab9a185
             region: second
             configuration:
               id: 'field_block:user:user:field_name'
@@ -70,8 +66,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          e95bd049-4f56-4852-9ab2-f51d7b95902a:
-            uuid: e95bd049-4f56-4852-9ab2-f51d7b95902a
+          685e4685-29d1-4d9b-aaf0-e9e9d12f7149:
+            uuid: 685e4685-29d1-4d9b-aaf0-e9e9d12f7149
             region: second
             configuration:
               id: 'field_block:user:user:field_bio'
@@ -82,10 +78,15 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: string
+                type: text_field_formatter
                 label: hidden
                 settings:
-                  link_to_entity: false
+                  link_to_entity: 0
+                  wrap_tag: span
+                  wrap_class: ''
+                  wrap_attributes: ''
+                  override_link_label: ''
+                  token: ''
                 third_party_settings: {  }
             weight: 1
             additional: {  }

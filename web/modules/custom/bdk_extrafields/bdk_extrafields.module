@@ -11,7 +11,7 @@
  */
 function milgard_extra_field_theme() {
   return [
-    'bdk_test' => [
+    'author_bio_trimmed' => [
       'variables' => [
         'fields' => NULL,
       ],

@@ -1,5 +1,12 @@
 .block-views-blockalgorithms-algorithm-slider {
   margin-top: 80px;
+  .slick__slide {
+    .node--view-mode-teaser-mini {
+      max-width: 222px;
+
+    }
+  }
+
   .slick__arrow {
     .slick-arrow {
       //position: absolute;

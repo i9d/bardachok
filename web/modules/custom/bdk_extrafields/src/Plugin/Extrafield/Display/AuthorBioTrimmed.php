@@ -9,15 +9,15 @@ use Drupal\extra_field\Plugin\ExtraFieldDisplayBase;
  * DealerBadges Extra field Display.
  *
  * @ExtraFieldDisplay(
- *   id = "title_trimmed",
- *   label = @Translation("Title trimmed"),
- *   description = @Translation("Title trimmed."),
+ *   id = "author_bio_trimmed",
+ *   label = @Translation("Author Bio trimmed"),
+ *   description = @Translation("Author Bio trimmed."),
  *   bundles = {
- *     "node.algorithm",
+ *     "user.*",
  *   }
  * )
  */
-class AlgorithmTitleTrimmed extends ExtraFieldDisplayBase {
+class AuthorBioTrimmed extends ExtraFieldDisplayBase {
 
   /**
    * {@inheritdoc}

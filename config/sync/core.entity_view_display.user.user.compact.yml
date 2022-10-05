@@ -12,7 +12,6 @@ dependencies:
   module:
     - image
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -24,10 +23,10 @@ third_party_settings:
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 25-75
+          column_widths: 50-50
         components:
-          b9ad0252-1add-4ab2-83d3-afdf9e1afa92:
-            uuid: b9ad0252-1add-4ab2-83d3-afdf9e1afa92
+          d95a9c37-06b0-4fbc-ac22-028012edc26d:
+            uuid: d95a9c37-06b0-4fbc-ac22-028012edc26d
             region: first
             configuration:
               id: 'field_block:user:user:user_picture'
@@ -48,27 +47,8 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          e1bbda0e-57b2-4464-979f-666a0f960626:
-            uuid: e1bbda0e-57b2-4464-979f-666a0f960626
-            region: second
-            configuration:
-              id: 'field_block:user:user:field_bio'
-              label: Био
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: string
-                label: hidden
-                settings:
-                  link_to_entity: false
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          ef9c4b3e-cbc7-4695-8ecc-dc023851a384:
-            uuid: ef9c4b3e-cbc7-4695-8ecc-dc023851a384
+          2cd657c8-c708-4051-8d11-d1d57d979e70:
+            uuid: 2cd657c8-c708-4051-8d11-d1d57d979e70
             region: second
             configuration:
               id: 'field_block:user:user:field_name'
@@ -84,14 +64,27 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d900343c-80e5-4a8f-94e6-dd87df0e4b03:
+            uuid: d900343c-80e5-4a8f-94e6-dd87df0e4b03
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_bio'
+              label: Био
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
             weight: 1
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY

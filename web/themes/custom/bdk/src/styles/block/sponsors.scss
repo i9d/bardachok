@@ -3,22 +3,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .views-row a {
       display: flex;
       align-items: center;
       text-decoration: none;
+
       .field--name-name {
         margin-left: 32px;
         max-width: 182px;
         @include Body_2_Regular_20pt;
       }
-    }
-    img {
-      filter: grayscale(100%);
-    }
-    &:hover {
+
       img {
-        filter: grayscale(0);
+        filter: grayscale(100%);
+      }
+
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
       }
     }
   }

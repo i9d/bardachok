@@ -44,6 +44,6 @@ function bdk_preprocess_page(&$variables) {
   $route_name = $current_route->getRouteName();
 
   if ($route_name == 'entity.user.canonical') {
-    throw new NotFoundHttpException();
+    throw new NotFoundHttpException('', null, 0, );
   }
 }

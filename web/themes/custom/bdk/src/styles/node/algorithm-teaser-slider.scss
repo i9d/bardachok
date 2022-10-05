@@ -1,4 +1,5 @@
-.node--type-algorithm.node--view-mode-teaser {
+.node--type-algorithm.node--view-mode-teaser,
+.node--type-algorithm.node--view-mode-teaser-mini {
   box-shadow: 0 4px 28px rgba(226, 226, 226, 0.5);
   border-radius: 24px;
   max-width: 322px;
@@ -8,6 +9,10 @@
   .node__content {
     a {
       text-decoration: none;
+
+      &:focus {
+        outline: none
+      }
     }
 
     .field--name-field-image {
@@ -21,12 +26,20 @@
     .field--name-uid {
       .layout--twocol-section {
         margin: 0 20px;
+        display: flex;
+
         .layout__region--first {
-          width: auto;
+          flex: 0 0 44px !important;
         }
 
         .layout__region--second {
+          text-align: left;
+
+          .field--name-field-bio:hover {
+            color: $gray-900;
+          }
         }
+
       }
     }
   }
