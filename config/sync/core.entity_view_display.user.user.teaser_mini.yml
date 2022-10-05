@@ -1,0 +1,130 @@
+uuid: 644b6db6-d4e8-4ea5-9ae5-289b41297b27
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.teaser_mini
+    - field.field.user.user.field_bio
+    - field.field.user.user.field_categories
+    - field.field.user.user.field_name
+    - field.field.user.user.user_picture
+    - image.style.user_preview
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 25-75
+        components:
+          a2096b0c-3e79-4bbe-aa43-160461debc20:
+            uuid: a2096b0c-3e79-4bbe-aa43-160461debc20
+            region: first
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: user_preview
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          560e6682-ac75-4008-ba55-8bc97cfc4a77:
+            uuid: 560e6682-ac75-4008-ba55-8bc97cfc4a77
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_name'
+              label: Имя
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          e95bd049-4f56-4852-9ab2-f51d7b95902a:
+            uuid: e95bd049-4f56-4852-9ab2-f51d7b95902a
+            region: second
+            configuration:
+              id: 'field_block:user:user:field_bio'
+              label: Био
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.teaser_mini
+targetEntityType: user
+bundle: user
+mode: teaser_mini
+content:
+  field_bio:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: user_preview
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_categories: true
+  langcode: true
+  member_for: true

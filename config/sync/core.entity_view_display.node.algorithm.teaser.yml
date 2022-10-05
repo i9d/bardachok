@@ -57,7 +57,7 @@ third_party_settings:
                 type: string
                 label: hidden
                 settings:
-                  link_to_entity: true
+                  link_to_entity: false
                 third_party_settings: {  }
             weight: 2
             additional: {  }
@@ -76,7 +76,7 @@ third_party_settings:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
-                  view_mode: compact
+                  view_mode: teaser_mini
                 third_party_settings: {  }
             weight: 3
             additional: {  }

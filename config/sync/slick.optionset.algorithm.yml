@@ -16,4 +16,4 @@ options:
     prevArrow: Previous
     lazyLoad: ondemand
     rows: 0
-    slidesToShow: 3
+    slidesToShow: 2
