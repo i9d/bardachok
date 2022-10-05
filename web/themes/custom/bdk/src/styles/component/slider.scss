@@ -1,0 +1,33 @@
+.block-views-blockalgorithms-algorithm-slider {
+  margin-top: 80px;
+  .slick__arrow {
+    .slick-arrow {
+      //position: absolute;
+      height: 48px;
+      width: 48px;
+
+      &::before {
+        content: "";
+        background-image: url("../../assets/images/arrow.svg");
+        display: block;
+        position: absolute;
+        height: 48px;
+        width: 48px;
+        top: 0;
+
+      }
+    }
+
+    .slick-prev {
+      left: -24px;
+    }
+
+    .slick-next {
+      right: -24px;
+
+      &::before {
+        transform: scaleX(-1);
+      }
+    }
+  }
+}

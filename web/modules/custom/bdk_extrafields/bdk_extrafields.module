@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_extrafields module file.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function milgard_extra_field_theme() {
+  return [
+    'bdk_test' => [
+      'variables' => [
+        'fields' => NULL,
+      ],
+      'template' => 'bdk-test',
+    ],
+  ];
+}

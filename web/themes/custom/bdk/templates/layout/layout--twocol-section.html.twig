@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% if content %}
+  <div{{ attributes }}>
+
+    <div class="layout__region layout__region--first">
+      {% if content.first %}
+        {{ content.first }}
+      {% endif %}
+    </div>
+
+    <div class="layout__region layout__region--second">
+      {% if content.second %}
+        {{ content.second }}
+      {% endif %}
+    </div>
+
+  </div>
+{% endif %}

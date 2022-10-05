@@ -1,11 +1,12 @@
-.paragraph--type--two-col .layout--twocol-section--50-50 {
+.paragraph--type--two-col {
   margin: 20px 0;
   display: flex;
-  &>.layout__region{
-    //width: 70%;
+
+  .layout--twocol-section--50-50 > .layout__region {
     &:not(:last-child) {
       padding-right: 22.5px;
     }
+
     &:last-child {
       padding-left: 22.5px;
     }

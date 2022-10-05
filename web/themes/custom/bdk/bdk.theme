@@ -4,8 +4,10 @@
  * BDK theme file.
  */
 
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+
 /**
- * Implements template_preprocess_html().
+ * Implements template_preprocess_field().
  */
 function bdk_preprocess_field(&$variables) {
   if ($variables['field_name'] == 'field_category') {
@@ -31,7 +33,17 @@ function bdk_preprocess_html(&$variables) {
       $color = $category->get('field_color')->value;
     }
   }
+    $variables['attributes']['class'][] = 'tax-color-' . $color;
+}
 
-    $variables['attributes']['class'][] = 'tax-color-'. $color;
+/**
+ * Implements theme_preprocess_page().
+ */
+function bdk_preprocess_page(&$variables) {
+  $current_route = \Drupal::routeMatch();
+  $route_name = $current_route->getRouteName();
 
+  if ($route_name == 'entity.user.canonical') {
+    throw new NotFoundHttpException();
+  }
 }

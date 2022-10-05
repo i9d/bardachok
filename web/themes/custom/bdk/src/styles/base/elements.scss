@@ -17,7 +17,7 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  
+
   &.no-scroll {
     overflow: hidden;
   }
@@ -89,7 +89,7 @@ a:not([class]) {
 .region-content,
 .region-highlighted,
 .region-footer {
-  @include container-1304;
+  @include container-1300;
 }
 
 .align-left {
