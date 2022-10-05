@@ -1,0 +1,33 @@
+uuid: 5fad773e-9583-47d0-b0e7-b33aad9577ed
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.sponsors_image.field_media_image
+    - image.style.medium
+    - media.type.sponsors_image
+  module:
+    - image
+id: media.sponsors_image.media_library
+targetEntityType: media
+bundle: sponsors_image
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_media_image: true
+  langcode: true
+  name: true
+  uid: true

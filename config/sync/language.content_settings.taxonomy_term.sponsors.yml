@@ -1,0 +1,11 @@
+uuid: 34d7f92a-a945-4575-a59c-69de540b543f
+langcode: ru
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsors
+id: taxonomy_term.sponsors
+target_entity_type_id: taxonomy_term
+target_bundle: sponsors
+default_langcode: site_default
+language_alterable: false

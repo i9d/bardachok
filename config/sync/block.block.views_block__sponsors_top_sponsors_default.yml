@@ -1,0 +1,29 @@
+uuid: fa59daf1-7f3e-4fb0-ba31-848b58a4ce21
+langcode: ru
+status: true
+dependencies:
+  config:
+    - views.view.sponsors_top
+  module:
+    - system
+    - views
+  theme:
+    - bdk
+id: views_block__sponsors_top_sponsors_default
+theme: bdk
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:sponsors_top-sponsors_default'
+settings:
+  id: 'views_block:sponsors_top-sponsors_default'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/user/*\r\n<front>\r\n/admin/*"

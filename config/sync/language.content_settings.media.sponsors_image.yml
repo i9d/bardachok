@@ -1,0 +1,11 @@
+uuid: 024fe828-3f72-4c1c-846b-696be49566ff
+langcode: ru
+status: true
+dependencies:
+  config:
+    - media.type.sponsors_image
+id: media.sponsors_image
+target_entity_type_id: media
+target_bundle: sponsors_image
+default_langcode: site_default
+language_alterable: false

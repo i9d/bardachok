@@ -1,0 +1,8 @@
+uuid: 54cae2bd-5002-4675-a308-4952548a0c6f
+langcode: ru
+status: true
+dependencies: {  }
+name: Спонсоры
+vid: sponsors
+description: ''
+weight: 0

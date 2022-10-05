@@ -1,0 +1,29 @@
+uuid: 5773a022-ec1f-4473-b99c-9b8978d1f83b
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_logo
+    - media.type.sponsors_image
+    - taxonomy.vocabulary.sponsors
+id: taxonomy_term.sponsors.field_logo
+field_name: field_logo
+entity_type: taxonomy_term
+bundle: sponsors
+label: Logo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      sponsors_image: sponsors_image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
