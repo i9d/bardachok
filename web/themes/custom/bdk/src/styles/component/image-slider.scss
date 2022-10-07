@@ -1,0 +1,27 @@
+.paragraph--type--image-slider {
+  @include container-650;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    li {
+      position: relative;
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      content: url("../../assets/images/slider/slider-dot.svg");
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+    }
+    li.slick-active {
+      content: url("../../assets/images/slider/slider-dot-active.svg");
+    }
+  }
+}

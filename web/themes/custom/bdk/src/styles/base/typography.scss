@@ -20,17 +20,22 @@ h3 {
   @include Body_1_Medium_20pt;
 }
 
-p, span, li {
+p, li {
   @include Body_5_Regular_16pt;
   margin: 0;
 }
 
-ol, ul {
-  margin: 24px 0;
+span {
+  @include Body_7_Regular_14pt;
+  color: $gray-0;
 }
 
 sup, sub {
   @include Description_Regular_12px;
+}
+
+blockquote {
+  font-style: italic;
 }
 
 a {

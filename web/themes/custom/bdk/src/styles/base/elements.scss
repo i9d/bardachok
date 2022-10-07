@@ -92,16 +92,6 @@ a:not([class]) {
   @include container-1300;
 }
 
-.align-left {
-  max-width: 255px;
-  margin: 0 15px 15px 0;
-}
-
-.align-right {
-  max-width: 255px;
-  margin: 0 0 15px 15px;
-}
-
 em {
   font-family: sans-serif;
 }
@@ -140,6 +130,9 @@ input[type="submit"] {
   }
 }
 
+ol, ul {
+  margin: 24px 0;
+}
 
 input {
   caret-color: $blue-primary;
@@ -152,8 +145,4 @@ input {
     border: 1px solid $gray-500;
     outline: 0;
   }
-
-  //&:invalid {
-  //  border: 1px solid $error;
-  //}
 }

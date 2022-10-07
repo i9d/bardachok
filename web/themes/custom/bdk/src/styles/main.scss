@@ -14,18 +14,30 @@
 @import './base/typography';
 
 /* Components */
-@import 'component/header';
-@import 'component/maintenance-page';
-@import 'component/social';
+@import 'component/TEMP-header';
+@import 'component/TEMP-maintenance-page';
+@import 'component/TEMP-social';
+@import 'component/user-teaser';
+@import 'component/tax-color';
+@import 'component/slider';
+@import 'component/image-slider';
+
+/* Forms */
 @import 'form/auth-form';
+
+/* Nodes */
 @import 'node/algorithm-full';
+@import 'node/algorithm-teaser-slider';
+
+/* Paragraphs */
 @import 'paragraph/paragraph-step';
 @import 'paragraph/paragraph-title-subtitle-text';
 @import 'paragraph/paragraph-two-column';
-@import 'component/user-teaser';
-@import 'node/algorithm-teaser-slider';
-@import 'component/tax-color';
-@import 'component/slider';
-@import 'block/to-main-page-button';
 
-
+/* Block */
+@import 'block/donate';
+@import 'block/social-sharing';
+@import 'block/tg-comments';
+@import 'block/sponsors';
+@import 'block/scroll-to-up';
+@import 'block/DEPRECATED-to-main-page-button';
