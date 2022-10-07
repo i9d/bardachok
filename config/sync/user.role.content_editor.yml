@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - filter.format.editor
-    - media.type.algorithm_embedded
     - media.type.cropped_image
     - media.type.document
     - media.type.image
@@ -34,7 +33,6 @@ permissions:
   - 'access taxonomy overview'
   - 'change own username'
   - 'create algorithm content'
-  - 'create algorithm_embedded media'
   - 'create cropped_image media'
   - 'create document media'
   - 'create media'
@@ -43,14 +41,12 @@ permissions:
   - 'create video media'
   - 'delete media'
   - 'delete own algorithm content'
-  - 'delete own algorithm_embedded media'
   - 'delete own cropped_image media'
   - 'delete own document media'
   - 'delete own image media'
   - 'delete own remote_video media'
   - 'delete own video media'
   - 'edit own algorithm content'
-  - 'edit own algorithm_embedded media'
   - 'edit own cropped_image media'
   - 'edit own document media'
   - 'edit own remote_video media'
