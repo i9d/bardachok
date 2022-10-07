@@ -1,0 +1,14 @@
+uuid: af034669-32d3-409d-b26b-8639f0ca4bc7
+langcode: ru
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: bardachok_default
+name: 'Bardachok default'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3
+  matching: words

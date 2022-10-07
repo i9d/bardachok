@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/admin_toolbar": "^3.1",
         "drupal/backup_migrate": "^5.0",
         "drupal/core-composer-scaffold": "^9.4",
@@ -32,9 +33,11 @@
         "drupal/pathauto": "^1.10",
         "drupal/redirect": "^1.7",
         "drupal/remove_username": "^1.2",
+        "drupal/search_api": "^1.26",
         "drupal/simple_sitemap": "^4.1",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
+        "drupal/snowball_stemmer": "^2.0",
         "drupal/stage_file_proxy": "^1.2",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
@@ -54,11 +57,17 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "zodiacmedia/drupal-libraries-installer": true
+            "zodiacmedia/drupal-libraries-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
     "extra": {
+        "patches": {
+            "drupal/snowball_stemmer": {
+                "#3274194 Processor unavailable when English language is disabled": "https://www.drupal.org/files/issues/2022-04-08/search-api-processor-langauges-support-3274194-3.patch"
+            }
+        },
         "drupal-libraries": {
             "slick": "https://github.com/kenwheeler/slick/archive/1.8.0.zip",
             "blazy": "https://github.com/dinbror/blazy/archive/1.8.2.zip"

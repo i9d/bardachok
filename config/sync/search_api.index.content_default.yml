@@ -1,0 +1,118 @@
+uuid: 421da3e9-8cdc-4ecb-a1c6-892b12d2551a
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_annotation
+    - field.storage.node.field_conclusion
+    - field.storage.node.field_content
+    - field.storage.paragraph.field_subtitle
+    - field.storage.paragraph.field_text
+    - search_api.server.bardachok_default
+  module:
+    - node
+    - paragraphs
+    - search_api
+    - snowball_stemmer
+id: content_default
+name: 'Content default'
+description: ''
+read_only: false
+field_settings:
+  field_annotation:
+    label: Аннотация
+    datasource_id: 'entity:node'
+    property_path: field_annotation
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_annotation
+  field_conclusion:
+    label: Заключение
+    datasource_id: 'entity:node'
+    property_path: field_conclusion
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_conclusion
+  field_subtitle:
+    label: 'Содержимое алгоритма » Параграф » Подзаголовок'
+    datasource_id: 'entity:node'
+    property_path: 'field_content:entity:field_subtitle'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content
+        - field.storage.paragraph.field_subtitle
+      module:
+        - paragraphs
+  field_text:
+    label: 'Содержимое алгоритма » Параграф » Текст'
+    datasource_id: 'entity:node'
+    property_path: 'field_content:entity:field_text'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_content
+        - field.storage.paragraph.field_text
+      module:
+        - paragraphs
+  status:
+    label: status
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
+    dependencies:
+      module:
+        - node
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - node
+  uid:
+    label: uid
+    datasource_id: 'entity:node'
+    property_path: uid
+    type: integer
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - algorithm
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+  snowball_stemmer:
+    weights:
+      preprocess_index: 0
+      preprocess_query: 0
+    all_fields: 1
+    fields:
+      - title
+      - field_annotation
+      - field_conclusion
+      - field_subtitle
+      - field_text
+    exceptions: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: bardachok_default
