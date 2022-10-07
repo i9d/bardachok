@@ -1,0 +1,29 @@
+uuid: bba9aedd-2553-4133-8a13-715d40cd1f44
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_slide
+    - media.type.algorithm_embedded
+    - paragraphs.paragraphs_type.image_slider
+id: paragraph.image_slider.field_image_slide
+field_name: field_image_slide
+entity_type: paragraph
+bundle: image_slider
+label: Слайд
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      algorithm_embedded: algorithm_embedded
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: algorithm_embedded
+field_type: entity_reference

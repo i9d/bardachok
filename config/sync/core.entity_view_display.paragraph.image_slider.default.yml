@@ -1,0 +1,75 @@
+uuid: 1eaa81f9-a556-4019-b805-6cb60f009470
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_slider.field_image_slide
+    - paragraphs.paragraphs_type.image_slider
+    - responsive_image.styles.algorithm_embedded
+  module:
+    - slick
+id: paragraph.image_slider.default
+targetEntityType: paragraph
+bundle: image_slider
+mode: default
+content:
+  field_image_slide:
+    type: slick_media
+    label: hidden
+    settings:
+      caption:
+        field_caption: field_caption
+      optionset: algorithm_image
+      class: ''
+      id: ''
+      image: ''
+      link: ''
+      overlay: ''
+      title: ''
+      vanilla: false
+      layout: ''
+      view_mode: algorithm_embedded
+      cache: 0
+      skin: ''
+      lazy: ''
+      style: ''
+      background: false
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      loading: eager
+      preload: false
+      responsive_image_style: algorithm_embedded
+      box_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      grid: ''
+      grid_medium: ''
+      grid_small: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+      skin_arrows: ''
+      skin_dots: ''
+      use_theme_field: false
+      preserve_keys: false
+      visible_items: null
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

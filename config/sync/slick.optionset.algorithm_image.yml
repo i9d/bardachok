@@ -1,0 +1,23 @@
+uuid: 7919baea-281a-42e3-bbf7-473c93b8c1db
+langcode: ru
+status: true
+dependencies: {  }
+id: algorithm_image
+name: algorithm_image
+weight: 0
+label: 'Algorithm Image'
+group: ''
+skin: ''
+breakpoints: 0
+optimized: true
+options:
+  options__active_tab: edit-options-settings
+  settings:
+    arrows: false
+    dots: true
+    infinite: false
+    lazyLoad: ondemand
+    rows: 0
+    slidesToShow: 1
+    swipeToSlide: true
+    waitForAnimate: false
