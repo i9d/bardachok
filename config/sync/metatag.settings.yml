@@ -1,0 +1,11 @@
+entity_type_groups:
+  node:
+    algorithm:
+      basic: basic
+      advanced: advanced
+tag_trim_method: beforeValue
+tag_trim_maxlength:
+  metatag_maxlength_title: null
+  metatag_maxlength_abstract: null
+  metatag_maxlength_description: null
+tag_scroll_max_height: ''

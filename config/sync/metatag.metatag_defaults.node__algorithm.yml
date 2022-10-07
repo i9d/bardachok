@@ -1,0 +1,17 @@
+uuid: 1d37285f-3545-4da7-9b54-c71fc7bd9cd7
+langcode: ru
+status: true
+dependencies: {  }
+id: node__algorithm
+label: 'Content: Алгоритм'
+tags:
+  abstract: '[node:field_annotation]'
+  content_language: ru
+  description: '[node:field_annotation]'
+  geo_placename: Омск
+  geo_position: 54.9914;73.3645
+  geo_region: RU
+  icbm: 54.9914;73.3645
+  image_src: '[node:field_image:entity:field_media_image:entity:url]'
+  robots: 'index, follow, noarchive'
+  title: '[node:title] | [site:name]'
