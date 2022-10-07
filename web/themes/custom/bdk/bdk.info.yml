@@ -10,10 +10,9 @@ libraries:
   - bdk/global-styling
 # Regions
 regions:
-  metrics: Metrics
   admin: Admin
-  header_left: Header_left
-  header_right: Header_right
-  top: Top
+  header_left: Header left
+  header_right: Header right
   content: Content
+  bottom: Bottom
   footer: Footer

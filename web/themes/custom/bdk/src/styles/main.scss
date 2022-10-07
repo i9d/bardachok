@@ -1,6 +1,3 @@
-/* Normalize css */
-@import '~normalize.css/normalize.css';
-
 /* Setup */
 @import './settings/variables';
 
@@ -31,15 +28,4 @@
 @import 'component/slider';
 @import 'block/to-main-page-button';
 
-/* Block */
-@import 'block/donate';
-@import 'block/social-sharing';
-@import 'block/tg-comments';
-@import 'block/sponsors';
-@import 'block/scroll-to-up';
 
-/* Media */
-@import 'base/media';
-
-/* Layouts */
-@import 'layout/base';

@@ -13,6 +13,8 @@ function bdk_preprocess_field(&$variables) {
   if ($variables['field_name'] == 'field_category') {
     $variables['content']['name'] = $variables["items"][0]["content"]["#taxonomy_term"]->getName();
     $variables['content']['url'] = $variables["items"][0]["content"]["#taxonomy_term"]->toUrl()->toString();
+    //    $variables['content']['name'] = $variables["items"][0]["content"]["#Title"];
+    //    $variables['content']['url'] = $variables["items"][0]["content"]["#url"]->toString();
   }
 }
 

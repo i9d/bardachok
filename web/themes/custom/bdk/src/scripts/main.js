@@ -1,10 +1,7 @@
 import localization from './modules/tg-localization';
-import polyfills from './polyfills';
-
-localization();
 
 (() => {
-  polyfills();
+  localization();
 })();
 
 // You can use dynamic import if you want
