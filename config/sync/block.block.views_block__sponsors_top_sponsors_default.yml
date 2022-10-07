@@ -11,8 +11,8 @@ dependencies:
     - bdk
 id: views_block__sponsors_top_sponsors_default
 theme: bdk
-region: content
-weight: 0
+region: bottom
+weight: -4
 provider: null
 plugin: 'views_block:sponsors_top-sponsors_default'
 settings:
