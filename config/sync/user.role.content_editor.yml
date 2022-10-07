@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - filter.format.editor
+    - media.type.algorithm_embedded
+    - media.type.audio
     - media.type.cropped_image
     - media.type.document
     - media.type.image
     - media.type.remote_video
+    - media.type.sponsors_image
     - media.type.video
     - node.type.algorithm
     - workflows.workflow.editorial
@@ -18,6 +21,7 @@ dependencies:
     - media
     - node
     - path
+    - quickedit
     - system
     - taxonomy
 _core:
@@ -29,10 +33,13 @@ is_admin: false
 permissions:
   - 'access content overview'
   - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media overview'
   - 'access site in maintenance mode'
   - 'access taxonomy overview'
   - 'change own username'
   - 'create algorithm content'
+  - 'create algorithm_embedded media'
   - 'create cropped_image media'
   - 'create document media'
   - 'create media'
@@ -40,18 +47,22 @@ permissions:
   - 'create url aliases'
   - 'create video media'
   - 'delete media'
-  - 'delete own algorithm content'
+  - 'delete own algorithm_embedded media'
+  - 'delete own audio media'
   - 'delete own cropped_image media'
   - 'delete own document media'
   - 'delete own image media'
   - 'delete own remote_video media'
+  - 'delete own sponsors_image media'
   - 'delete own video media'
   - 'edit own algorithm content'
+  - 'edit own algorithm_embedded media'
   - 'edit own cropped_image media'
   - 'edit own document media'
   - 'edit own remote_video media'
   - 'edit own video media'
   - 'update media'
+  - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition create_new_draft'
   - 'use text format editor'

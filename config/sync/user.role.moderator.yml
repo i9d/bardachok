@@ -4,13 +4,17 @@ status: true
 dependencies:
   config:
     - filter.format.editor
+    - media.type.algorithm_embedded
+    - media.type.audio
     - media.type.cropped_image
     - media.type.document
     - media.type.image
     - media.type.remote_video
+    - media.type.sponsors_image
     - media.type.video
     - node.type.algorithm
     - taxonomy.vocabulary.categories
+    - taxonomy.vocabulary.sponsors
     - workflows.workflow.editorial
   module:
     - content_moderation
@@ -40,42 +44,53 @@ permissions:
   - 'access user profiles'
   - 'change own username'
   - 'create algorithm content'
+  - 'create algorithm_embedded media'
+  - 'create audio media'
   - 'create cropped_image media'
   - 'create document media'
   - 'create media'
   - 'create remote_video media'
+  - 'create sponsors_image media'
   - 'create terms in categories'
+  - 'create terms in sponsors'
   - 'create url aliases'
   - 'create video media'
-  - 'delete any algorithm content'
-  - 'delete any cropped_image media'
-  - 'delete any document media'
-  - 'delete any remote_video media'
-  - 'delete any video media'
   - 'delete media'
   - 'delete own algorithm content'
+  - 'delete own algorithm_embedded media'
+  - 'delete own audio media'
   - 'delete own cropped_image media'
   - 'delete own document media'
   - 'delete own image media'
   - 'delete own remote_video media'
+  - 'delete own sponsors_image media'
   - 'delete own video media'
   - 'edit any algorithm content'
+  - 'edit any algorithm_embedded media'
+  - 'edit any audio media'
   - 'edit any cropped_image media'
   - 'edit any document media'
+  - 'edit any image media'
   - 'edit any remote_video media'
+  - 'edit any sponsors_image media'
   - 'edit any video media'
   - 'edit own algorithm content'
+  - 'edit own algorithm_embedded media'
+  - 'edit own audio media'
   - 'edit own cropped_image media'
   - 'edit own document media'
   - 'edit own remote_video media'
+  - 'edit own sponsors_image media'
   - 'edit own video media'
   - 'edit terms in categories'
+  - 'edit terms in sponsors'
   - 'revert algorithm revisions'
   - 'revert all revisions'
   - 'update media'
   - 'use editorial transition archive'
   - 'use editorial transition archived_draft'
   - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
   - 'use editorial transition publish'
   - 'use text format editor'
   - 'view algorithm revisions'
