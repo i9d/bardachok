@@ -1,0 +1,46 @@
+uuid: 4195071e-b9bf-4978-b20b-39c570be5820
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - search_api.server.bardachok_default
+  module:
+    - search_api
+    - node
+id: algorithm_by_category
+name: 'Algorithm by category'
+description: ''
+read_only: false
+field_settings:
+  field_category:
+    label: Категория
+    datasource_id: 'entity:node'
+    property_path: field_category
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_category
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - algorithm
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: bardachok_default
