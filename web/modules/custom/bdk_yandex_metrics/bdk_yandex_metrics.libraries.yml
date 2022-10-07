@@ -1,0 +1,9 @@
+bdk_ya_metrics:
+  js:
+    js/ya-metrics.js: {}
+  dependencies:
+    - core/jquery
+    - core/js-cookie
+    - core/drupal
+    - core/drupalSettings
+    - core/once
