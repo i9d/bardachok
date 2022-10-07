@@ -13,7 +13,7 @@ use Drupal\Core\Block\BlockBase;
  *   category = @Translation("BDK blocks"),
  * )
  */
-class ToMainPageButton extends BlockBase {
+class DeprecatedToMainPageButton extends BlockBase {
 
   /**
    * {@inheritdoc}
