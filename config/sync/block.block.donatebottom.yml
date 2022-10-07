@@ -11,8 +11,8 @@ dependencies:
     - bdk
 id: donatebottom
 theme: bdk
-region: content
-weight: -4
+region: bottom
+weight: -5
 provider: null
 plugin: 'block_content:8f040611-2a7d-444b-aeca-7baa154ae509'
 settings:
