@@ -1,4 +1,4 @@
-uuid: d796ebb2-d803-40f4-9e88-eab3d944ae9e
+uuid: bb2a0c54-3208-4dec-a7bd-14515751ae77
 langcode: ru
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_caption
 entity_type: media
 bundle: algorithm_embedded
 label: Описание
-description: 'Текст, который будет отображаться под изображением'
+description: ''
 required: false
 translatable: true
 default_value: {  }

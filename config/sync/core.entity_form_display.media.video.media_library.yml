@@ -7,6 +7,8 @@ dependencies:
     - field.field.media.video.field_caption
     - field.field.media.video.field_media_video_file
     - media.type.video
+  module:
+    - file
 _core:
   default_config_hash: kGv8YsopqHvzTzb7QTINWcv0fnNa5ZDQyZxpOQR2vro
 id: media.video.media_library
@@ -14,17 +16,24 @@ targetEntityType: media
 bundle: video
 mode: media_library
 content:
-  langcode:
-    type: language_select
-    weight: 2
+  field_caption:
+    type: string_textfield
+    weight: 0
     region: content
     settings:
-      include_locked: true
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_video_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
     third_party_settings: {  }
 hidden:
   created: true
-  field_caption: true
-  field_media_video_file: true
+  langcode: true
   name: true
   path: true
   status: true

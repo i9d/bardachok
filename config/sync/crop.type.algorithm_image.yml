@@ -5,7 +5,7 @@ dependencies: {  }
 label: 'Algorithm Image'
 id: algorithm_image
 description: ''
-aspect_ratio: '1001:431'
+aspect_ratio: '1304:431'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

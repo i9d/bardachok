@@ -1,4 +1,4 @@
-uuid: edab3161-954c-4485-8372-1c8f67fef0a3
+uuid: cb468a8b-1e9b-495a-92fa-47952e4c1a83
 langcode: ru
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - crop
 third_party_settings:
   crop:
-    image_field: field_media_image_1
+    image_field: field_media_image
 id: algorithm_embedded
 label: 'Algorithm embedded'
 description: ''
@@ -14,6 +14,6 @@ source: image
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
-  source_field: field_media_image_1
+  source_field: field_media_image
 field_map:
   name: name

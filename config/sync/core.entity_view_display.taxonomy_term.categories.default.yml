@@ -6,7 +6,6 @@ dependencies:
     - field.field.taxonomy_term.categories.field_color
     - taxonomy.vocabulary.categories
   module:
-    - options
     - text
 id: taxonomy_term.categories.default
 targetEntityType: taxonomy_term
@@ -20,12 +19,6 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_color:
-    type: list_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
 hidden:
+  field_color: true
   langcode: true

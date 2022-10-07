@@ -1,14 +1,14 @@
-uuid: bdcaacb5-0eb4-4635-9573-b3edf28b1bc9
+uuid: 62b94066-4145-41e7-812c-1760dcdaa8aa
 langcode: ru
 status: true
 dependencies:
   config:
     - field.field.media.algorithm_embedded.field_caption
-    - field.field.media.algorithm_embedded.field_media_image_1
-    - image.style.large
+    - field.field.media.algorithm_embedded.field_media_image
     - media.type.algorithm_embedded
+    - responsive_image.styles.algorithm_embedded
   module:
-    - image
+    - responsive_image
 id: media.algorithm_embedded.default
 targetEntityType: media
 bundle: algorithm_embedded
@@ -16,20 +16,18 @@ mode: default
 content:
   field_caption:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
     region: content
-  field_media_image_1:
-    type: image
+  field_media_image:
+    type: responsive_image
     label: visually_hidden
     settings:
+      responsive_image_style: algorithm_embedded
       image_link: ''
-      image_style: large
-      image_loading:
-        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

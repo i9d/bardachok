@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.image_slider
     - paragraphs.paragraphs_type.step
     - paragraphs.paragraphs_type.title_subtitle_text
     - paragraphs.paragraphs_type.two_col
@@ -24,20 +25,18 @@ settings:
   handler_settings:
     target_bundles:
       two_col: two_col
+      image_slider: image_slider
       title_subtitle_text: title_subtitle_text
     negate: 0
     target_bundles_drag_drop:
-      media:
-        weight: 5
+      image_slider:
+        weight: 6
         enabled: true
       step:
         weight: 3
         enabled: false
       title_subtitle_text:
         weight: 9
-        enabled: true
-      title_text:
-        weight: 7
         enabled: true
       title_text_landing:
         weight: 11

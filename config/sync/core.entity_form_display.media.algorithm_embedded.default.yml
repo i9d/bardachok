@@ -1,14 +1,14 @@
-uuid: ef2d263d-0c06-42a8-8ff5-393fa40f3210
+uuid: ac231574-bb9f-4f06-bb51-3faaf67d55d5
 langcode: ru
 status: true
 dependencies:
   config:
     - field.field.media.algorithm_embedded.field_caption
-    - field.field.media.algorithm_embedded.field_media_image_1
+    - field.field.media.algorithm_embedded.field_media_image
     - image.style.thumbnail
     - media.type.algorithm_embedded
   module:
-    - image_widget_crop
+    - image
     - path
 id: media.algorithm_embedded.default
 targetEntityType: media
@@ -23,27 +23,19 @@ content:
     third_party_settings: {  }
   field_caption:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_media_image_1:
-    type: image_widget_crop
+  field_media_image:
+    type: image_image
     weight: 2
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-      crop_preview_image_style: crop_thumbnail
-      crop_list:
-        - algroithm_embedded
-      crop_types_required:
-        - algroithm_embedded
-      warn_multiple_usages: true
-      show_crop_area: false
-      show_default_crop: true
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -54,7 +46,7 @@ content:
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

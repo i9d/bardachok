@@ -12,7 +12,7 @@ field_name: field_annotation
 entity_type: node
 bundle: algorithm
 label: Аннотация
-description: ''
+description: 'Краткое описание статьи, желательно уложиться в 150-160 символов'
 required: false
 translatable: false
 default_value: {  }
