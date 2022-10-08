@@ -19,7 +19,7 @@ type_settings:
       published: false
       default_revision: true
     draft:
-      label: Draft
+      label: Черновик
       weight: -5
       published: false
       default_revision: false
@@ -36,7 +36,7 @@ type_settings:
       to: archived
       weight: 2
     archived_draft:
-      label: 'Restore to Draft'
+      label: 'Восстановить в черновики'
       from:
         - archived
       to: draft
@@ -48,7 +48,7 @@ type_settings:
       to: published
       weight: 4
     create_new_draft:
-      label: 'Create New Draft'
+      label: 'Создать новый черновик'
       from:
         - draft
         - published

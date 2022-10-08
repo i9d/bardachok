@@ -3,7 +3,7 @@ langcode: ru
 status: true
 dependencies: {  }
 id: image_slider
-label: 'Слайдер изображений'
+label: Слайдер
 icon_uuid: null
 icon_default: null
 description: ''
