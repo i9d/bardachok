@@ -1,0 +1,8 @@
+uuid: 397bf121-c119-4b2d-af73-c2a1ccd9110e
+langcode: ru
+status: true
+dependencies: {  }
+id: categories
+label: Categories
+description: ''
+locked: false

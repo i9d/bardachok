@@ -1,0 +1,16 @@
+uuid: 06a6729d-314a-429a-ade1-d79dcadcc713
+langcode: ru
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+    - taxonomy.vocabulary.categories
+id: categories
+label: Categories
+vocabulary: categories
+menu: categories
+expanded: false
+depth: 0
+menu_parent: 'social:'
+description_field_name: null
+use_term_weight_order: false
