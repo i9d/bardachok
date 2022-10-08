@@ -8,3 +8,39 @@ definitions:
     weight: 0
     expanded: false
     enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__6':
+    weight: -49
+    menu_name: categories
+    parent: ''
+    enabled: true
+    expanded: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__9':
+    weight: -48
+    menu_name: categories
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__8':
+    weight: -47
+    menu_name: categories
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__11':
+    weight: -46
+    menu_name: categories
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__10':
+    weight: -45
+    menu_name: categories
+    parent: ''
+    expanded: false
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categories__7':
+    weight: -44
+    menu_name: categories
+    parent: ''
+    expanded: false
+    enabled: true

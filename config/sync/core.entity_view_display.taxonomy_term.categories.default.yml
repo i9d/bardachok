@@ -4,9 +4,81 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.categories.field_color
+    - system.menu.categories
     - taxonomy.vocabulary.categories
+    - views.view.category
+    - views.view.sponsors_top
   module:
+    - layout_builder
+    - system
     - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          061ec529-9cfe-402d-add8-2aff0997234a:
+            uuid: 061ec529-9cfe-402d-add8-2aff0997234a
+            region: second
+            configuration:
+              id: 'views_block:category-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          28462d50-4b6e-4707-a09e-043239ae45b8:
+            uuid: 28462d50-4b6e-4707-a09e-043239ae45b8
+            region: first
+            configuration:
+              id: 'system_menu_block:categories'
+              label: Categories
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              level: 1
+              depth: 0
+              expand_all_items: false
+            weight: 0
+            additional: {  }
+          2bc9f8fb-c6bd-47cc-9f6c-32a259d49dfa:
+            uuid: 2bc9f8fb-c6bd-47cc-9f6c-32a259d49dfa
+            region: second
+            configuration:
+              id: 'views_block:sponsors_top-sponsors_default'
+              label: 'Проект существует при поддержке'
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: 'Проект существует при поддержке'
+              items_per_page: none
+            weight: 1
+            additional: {  }
+          872fe448-4377-4640-9843-1c87f36928a8:
+            uuid: 872fe448-4377-4640-9843-1c87f36928a8
+            region: second
+            configuration:
+              id: 'views_block:category-block_2'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: taxonomy_term.categories.default
 targetEntityType: taxonomy_term
 bundle: categories
@@ -22,3 +94,4 @@ content:
 hidden:
   field_color: true
   langcode: true
+  search_api_excerpt: true
