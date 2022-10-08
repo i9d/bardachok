@@ -1,0 +1,17 @@
+.menu--categories {
+  .menu {
+    margin: 0;
+    .menu-item {
+      margin-bottom: 16px;
+      a {
+        @include Body_2_Regular_20pt;
+        color: $gray-500;
+        text-decoration: none;
+        &.is-active {
+          @include Body_1_Medium_20pt;
+          color: $gray-900;
+        }
+      }
+    }
+  }
+}

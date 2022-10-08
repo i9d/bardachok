@@ -25,9 +25,10 @@
 /* Forms */
 @import 'form/auth-form';
 
-/* Nodes */
-@import 'node/algorithm-full';
-@import 'node/algorithm-teaser-slider';
+/* Pages */
+@import 'page/algorithm-full';
+@import 'page/algorithm-teaser-slider';
+@import 'page/categories-full';
 
 /* Paragraphs */
 @import 'paragraph/paragraph-step';
@@ -41,3 +42,6 @@
 @import 'block/sponsors';
 @import 'block/scroll-to-up';
 @import 'block/DEPRECATED-to-main-page-button';
+
+/* Menus */
+@import 'menu/categories';

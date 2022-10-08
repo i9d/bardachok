@@ -1,0 +1,29 @@
+.taxonomy-term > .content > .layout--twocol-section--50-50 {
+  display: flex;
+
+  .layout__region--first {
+    flex: 0 1 20%;
+  }
+
+  .layout__region--second {
+    flex: 0 1 80%;
+    justify-content: space-around;
+
+    .view-category {
+      .view-content,
+      .views-infinite-scroll-content-wrapper {
+        .views-view-grid {
+          .views-row {
+            .views-col {
+              &:not(:last-child) {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+

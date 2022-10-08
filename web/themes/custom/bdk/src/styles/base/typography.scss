@@ -20,6 +20,10 @@ h3 {
   @include Body_1_Medium_20pt;
 }
 
+h4 {
+  @include Body_2_Regular_20pt;
+}
+
 p, li {
   @include Body_5_Regular_16pt;
   margin: 0;
@@ -27,7 +31,6 @@ p, li {
 
 span {
   @include Body_7_Regular_14pt;
-  color: $gray-0;
 }
 
 sup, sub {
