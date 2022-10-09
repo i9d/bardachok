@@ -66,29 +66,20 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 0
             additional: {  }
-          685e4685-29d1-4d9b-aaf0-e9e9d12f7149:
-            uuid: 685e4685-29d1-4d9b-aaf0-e9e9d12f7149
+          36afb874-a6a5-4e59-9662-bad8b695ed7d:
+            uuid: 36afb874-a6a5-4e59-9662-bad8b695ed7d
             region: second
             configuration:
-              id: 'field_block:user:user:field_bio'
-              label: Био
+              id: 'extra_field_block:user:user:extra_field_author_bio_trimmed'
+              label: 'Author Bio trimmed'
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
               formatter:
-                type: text_field_formatter
-                label: hidden
-                settings:
-                  link_to_entity: 0
-                  wrap_tag: span
-                  wrap_class: ''
-                  wrap_attributes: ''
-                  override_link_label: ''
-                  token: ''
+                settings: {  }
                 third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
         third_party_settings: {  }
 _core:
@@ -126,6 +117,8 @@ content:
     weight: 0
     region: content
 hidden:
+  extra_field_author_bio_trimmed: true
   field_categories: true
   langcode: true
   member_for: true
+  search_api_excerpt: true

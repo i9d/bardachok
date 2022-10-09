@@ -8,7 +8,7 @@ module:
   autosave_form: 0
   backup_migrate: 0
   bdk_blocks: 0
-  bdk_extrafields: 0
+  bdk_extra_field: 0
   bdk_register_overwrite: 0
   bdk_step_number_default: 0
   big_pipe: 0

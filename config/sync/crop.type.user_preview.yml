@@ -5,8 +5,8 @@ dependencies: {  }
 label: 'User Preview'
 id: user_preview
 description: ''
-aspect_ratio: '44:44'
-soft_limit_width: 44
-soft_limit_height: 44
-hard_limit_width: 44
-hard_limit_height: 44
+aspect_ratio: '70:70'
+soft_limit_width: 70
+soft_limit_height: 70
+hard_limit_width: 70
+hard_limit_height: 70
