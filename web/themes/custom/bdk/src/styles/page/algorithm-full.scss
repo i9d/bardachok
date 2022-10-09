@@ -1,13 +1,15 @@
 .node--type-algorithm.node--view-mode-full {
   margin-bottom: 120px;
   > .node__content {
+    .layout:first-child {
+      position: relative;
+    }
     img {
       border-radius: 8px;
     }
 
     .block-field-blocknodealgorithmfield-image {
       margin-bottom: 40px;
-
     }
 
     > .layout--twocol-section {
