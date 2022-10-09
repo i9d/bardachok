@@ -22,14 +22,15 @@ function bdk_preprocess_field(&$variables) {
 function bdk_preprocess_html(&$variables) {
   $color = 'default';
   if (isset($variables['node_type']) && $variables['node_type'] == 'algorithm') {
-    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
     $category_id = $node->get('field_category')->getValue()[0]['target_id'];
     $category = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($category_id);
     $color = $category->get('field_color')->value;
+    }
   }
   elseif (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
     $category = \Drupal::routeMatch()->getParameter('taxonomy_term');
-    if ($category->hasField('field_color')) {
+    if ($category && $category->hasField('field_color')) {
       $color = $category->get('field_color')->value;
     }
   }
