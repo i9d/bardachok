@@ -5,6 +5,8 @@
     span {
       padding: 5px 32px;
       border-radius: 3px;
+      @include Body_7_Regular_14pt;
+      color: $gray-0;
     }
   }
 }
