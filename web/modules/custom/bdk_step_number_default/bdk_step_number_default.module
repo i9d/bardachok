@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_step_number_default module file.
+ */
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */
+function bdk_step_number_default_field_widget_paragraphs_form_alter(&$element, &$form_state, $context) {
+  if ($element['#paragraph_type'] == 'step') {
+    $element['subform']['field_title']['widget'][0]['value']['#default_value'] = 'Шаг ' . $element["#weight"] + 1;
+  }
+}

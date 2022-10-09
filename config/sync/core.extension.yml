@@ -10,6 +10,7 @@ module:
   bdk_blocks: 0
   bdk_extrafields: 0
   bdk_register_overwrite: 0
+  bdk_step_number_default: 0
   big_pipe: 0
   blazy: 0
   block: 0

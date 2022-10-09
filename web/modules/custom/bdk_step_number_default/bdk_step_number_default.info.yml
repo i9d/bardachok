@@ -1,0 +1,5 @@
+name: Default step number
+description: Обновляет дефолтное значение для номера шага.
+package: Bardachok
+type: module
+core_version_requirement: ^9
