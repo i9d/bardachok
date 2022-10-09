@@ -117,7 +117,18 @@ display:
       cache:
         type: none
         options: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text_custom
+          empty: true
+          content: 'Здесь пока ничего нет'
+          tokenize: false
       sorts: {  }
       arguments:
         field_category:
@@ -261,6 +272,7 @@ display:
             button_text: 'Больше статей'
             automatically_load_content: false
             initially_load_all_pages: false
+      empty: {  }
       style:
         type: grid
         options:
@@ -279,6 +291,7 @@ display:
             'entity:node':
               algorithm: teaser_without_category
       defaults:
+        empty: false
         title: false
         use_ajax: false
         pager: false
@@ -355,8 +368,10 @@ display:
             button_text: 'Больше статей'
             automatically_load_content: false
             initially_load_all_pages: false
+      empty: {  }
       arguments: {  }
       defaults:
+        empty: false
         title: false
         use_ajax: false
         pager: false
