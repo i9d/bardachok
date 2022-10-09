@@ -1,10 +1,12 @@
-uuid: bb2a0c54-3208-4dec-a7bd-14515751ae77
+uuid: 38b0eebe-e3db-487c-9c32-eddffb0d1046
 langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.media.field_caption
     - media.type.algorithm_embedded
+  module:
+    - text
 id: media.algorithm_embedded.field_caption
 field_name: field_caption
 entity_type: media
@@ -12,8 +14,8 @@ bundle: algorithm_embedded
 label: Описание
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text_long

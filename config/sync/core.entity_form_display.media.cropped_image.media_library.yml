@@ -10,17 +10,18 @@ dependencies:
     - media.type.cropped_image
   module:
     - image_widget_crop
+    - text
 id: media.cropped_image.media_library
 targetEntityType: media
 bundle: cropped_image
 mode: media_library
 content:
   field_caption:
-    type: string_textfield
+    type: text_textarea
     weight: 0
     region: content
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
   field_media_image:

@@ -1,6 +1,6 @@
 uuid: 7cfb6c87-1f3e-4ef2-b960-7217c5334a33
 langcode: ru
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.algorithm_teaser
@@ -22,14 +22,6 @@ targetEntityType: media
 bundle: image
 mode: algorithm_teaser
 content:
-  field_caption:
-    type: string
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
   field_media_image:
     type: image
     label: hidden
@@ -43,7 +35,9 @@ content:
     region: content
 hidden:
   created: true
+  field_caption: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

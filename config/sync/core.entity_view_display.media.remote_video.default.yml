@@ -8,6 +8,7 @@ dependencies:
     - media.type.remote_video
   module:
     - media
+    - text
 _core:
   default_config_hash: zQoBQ0BtnMM_rlDdgftyu6eI4AVs9mo5K8xq7NFO2Zc
 id: media.remote_video.default
@@ -16,10 +17,9 @@ bundle: remote_video
 mode: default
 content:
   field_caption:
-    type: string
+    type: text_default
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
@@ -36,5 +36,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

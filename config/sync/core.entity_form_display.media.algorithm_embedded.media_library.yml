@@ -10,17 +10,18 @@ dependencies:
     - media.type.algorithm_embedded
   module:
     - image_widget_crop
+    - text
 id: media.algorithm_embedded.media_library
 targetEntityType: media
 bundle: algorithm_embedded
 mode: media_library
 content:
   field_caption:
-    type: string_textfield
+    type: text_textarea
     weight: 0
     region: content
     settings:
-      size: 60
+      rows: 1
       placeholder: ''
     third_party_settings: {  }
   field_media_image:

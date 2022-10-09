@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.media.media_library
-    - field.field.media.video.field_caption
     - field.field.media.video.field_media_video_file
     - media.type.video
   module:
@@ -16,14 +15,6 @@ targetEntityType: media
 bundle: video
 mode: media_library
 content:
-  field_caption:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_media_video_file:
     type: file_generic
     weight: 1

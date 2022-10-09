@@ -9,16 +9,16 @@ dependencies:
     - media.type.cropped_image
   module:
     - image
+    - text
 id: media.cropped_image.default
 targetEntityType: media
 bundle: cropped_image
 mode: default
 content:
   field_caption:
-    type: string
+    type: text_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content
@@ -37,5 +37,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

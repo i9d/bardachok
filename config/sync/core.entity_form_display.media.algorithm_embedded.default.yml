@@ -10,6 +10,7 @@ dependencies:
   module:
     - image
     - path
+    - text
 id: media.algorithm_embedded.default
 targetEntityType: media
 bundle: algorithm_embedded
@@ -22,11 +23,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_caption:
-    type: string_textfield
+    type: text_textarea
     weight: 0
     region: content
     settings:
-      size: 60
+      rows: 1
       placeholder: ''
     third_party_settings: {  }
   field_media_image:

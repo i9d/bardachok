@@ -9,16 +9,16 @@ dependencies:
     - responsive_image.styles.algorithm_embedded
   module:
     - responsive_image
+    - text
 id: media.algorithm_embedded.default
 targetEntityType: media
 bundle: algorithm_embedded
 mode: default
 content:
   field_caption:
-    type: string
+    type: text_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 1
     region: content

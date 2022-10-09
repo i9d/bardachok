@@ -1,18 +1,16 @@
-uuid: 21edae87-13c3-4ca5-a855-7da5a933e180
+uuid: f78f9c75-d8b3-4d35-8cc9-f50215400226
 langcode: ru
 status: true
 dependencies:
   module:
     - media
+    - text
 id: media.field_caption
 field_name: field_caption
 entity_type: media
-type: string
-settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
-module: core
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

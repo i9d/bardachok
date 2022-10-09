@@ -7,6 +7,9 @@ dependencies:
     - field.field.media.remote_video.field_caption
     - field.field.media.remote_video.field_media_oembed_video
     - media.type.remote_video
+  module:
+    - media
+    - text
 _core:
   default_config_hash: TBgPW-uaXRaICBwLaVc16rXpRiLSknDIdF9q0XL7qso
 id: media.remote_video.media_library
@@ -15,7 +18,15 @@ bundle: remote_video
 mode: media_library
 content:
   field_caption:
-    type: string_textfield
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_media_oembed_video:
+    type: oembed_textfield
     weight: 0
     region: content
     settings:
@@ -24,7 +35,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
-  field_media_oembed_video: true
   langcode: true
   name: true
   path: true

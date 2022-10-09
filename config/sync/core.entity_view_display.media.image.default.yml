@@ -9,6 +9,7 @@ dependencies:
     - media.type.image
   module:
     - image
+    - text
 _core:
   default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
 id: media.image.default
@@ -17,10 +18,9 @@ bundle: image
 mode: default
 content:
   field_caption:
-    type: string
+    type: text_default
     label: hidden
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
@@ -39,5 +39,6 @@ hidden:
   created: true
   langcode: true
   name: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true

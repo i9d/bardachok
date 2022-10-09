@@ -1,19 +1,21 @@
-uuid: 552dc5de-35e7-457a-99cf-b184e72a2e0a
+uuid: 569c2165-450b-4717-8194-1af9d486eb76
 langcode: ru
 status: true
 dependencies:
   config:
     - field.storage.media.field_caption
     - media.type.cropped_image
+  module:
+    - text
 id: media.cropped_image.field_caption
 field_name: field_caption
 entity_type: media
 bundle: cropped_image
 label: Описание
-description: 'Текст, который будет отображаться под изображением'
+description: ''
 required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text_long
