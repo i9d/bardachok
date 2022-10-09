@@ -1,5 +1,0 @@
-name: Extrafields D
-description: Кастомные экстрафилды.
-package: Bardachok
-type: module
-core_version_requirement: ^9
