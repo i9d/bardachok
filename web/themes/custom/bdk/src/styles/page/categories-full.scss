@@ -1,4 +1,5 @@
-.taxonomy-term > .content > .layout--twocol-section {
+.taxonomy-term > .content > .layout--twocol-section,
+.node--type-landing-page > .node__content > .layout--twocol-section {
   display: flex;
 
   .layout__region--first {
@@ -16,9 +17,9 @@
       .views-infinite-scroll-content-wrapper {
         .views-view-grid {
           .views-row {
-            margin-bottom: 48px;
             .views-col {
               height: 542px;
+              margin-bottom: 48px;
               &:not(:last-child) {
                 margin-right: 19px;
               }

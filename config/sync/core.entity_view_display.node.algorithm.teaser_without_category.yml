@@ -1,10 +1,10 @@
-uuid: 1fe3baab-a30e-43b9-a135-b08376b81d37
+uuid: 74a2cc1a-8502-4190-aef6-d69e97275a04
 langcode: ru
 status: true
 dependencies:
   config:
     - core.base_field_override.node.algorithm.title
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.teaser_without_category
     - field.field.node.algorithm.field_annotation
     - field.field.node.algorithm.field_category
     - field.field.node.algorithm.field_conclusion
@@ -12,8 +12,10 @@ dependencies:
     - field.field.node.algorithm.field_image
     - node.type.algorithm
   module:
+    - entity_reference_revisions
     - layout_builder
     - layout_discovery
+    - text
     - user
 third_party_settings:
   layout_builder:
@@ -24,26 +26,29 @@ third_party_settings:
         layout_id: layout_onecol
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          a80db729-403e-4f52-ae8c-606dfc467b24:
-            uuid: a80db729-403e-4f52-ae8c-606dfc467b24
+          e69f6ca0-f778-4623-8d39-eeedef9a2c05:
+            uuid: e69f6ca0-f778-4623-8d39-eeedef9a2c05
             region: content
             configuration:
               id: 'field_block:node:algorithm:field_image'
+              label: Изображение
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
                   view_mode: algorithm_teaser
-                  link: false
                 third_party_settings: {  }
-            weight: 2
+            weight: 0
             additional: {  }
-          6373adfc-d213-4784-8476-3ff531856e71:
-            uuid: 6373adfc-d213-4784-8476-3ff531856e71
+          5208c4f1-c7f3-41c3-81b5-a28883479c05:
+            uuid: 5208c4f1-c7f3-41c3-81b5-a28883479c05
             region: content
             configuration:
               id: 'field_block:node:algorithm:title'
@@ -64,10 +69,10 @@ third_party_settings:
                   override_link_label: ''
                   token: ''
                 third_party_settings: {  }
-            weight: 3
+            weight: 1
             additional: {  }
-          1107c0ec-49bf-4db5-a46f-477551da931c:
-            uuid: 1107c0ec-49bf-4db5-a46f-477551da931c
+          c68b5032-e528-4f4e-8d24-0eb10e8ea5a8:
+            uuid: c68b5032-e528-4f4e-8d24-0eb10e8ea5a8
             region: content
             configuration:
               id: 'field_block:node:algorithm:uid'
@@ -83,53 +88,58 @@ third_party_settings:
                 settings:
                   view_mode: teaser_mini
                 third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          684e4373-3e23-4643-b0b6-b3fbe807ed3f:
-            uuid: 684e4373-3e23-4643-b0b6-b3fbe807ed3f
-            region: content
-            configuration:
-              id: 'field_block:node:algorithm:field_category'
-              label: Категория
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: teaser
-                third_party_settings: {  }
-            weight: 1
+            weight: 2
             additional: {  }
         third_party_settings: {  }
-id: node.algorithm.teaser
+id: node.algorithm.teaser_without_category
 targetEntityType: node
 bundle: algorithm
-mode: teaser
+mode: teaser_without_category
 content:
   content_moderation_control:
     settings: {  }
     third_party_settings: {  }
-    weight: -20
+    weight: 0
+    region: content
+  field_annotation:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_conclusion:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
     type: entity_reference_entity_view
-    label: hidden
+    label: above
     settings:
-      view_mode: algorithm_teaser
+      view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 0
+    weight: 5
+    region: content
+  tg_comments:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
     region: content
 hidden:
-  field_annotation: true
   field_category: true
-  field_conclusion: true
-  field_content: true
   langcode: true
   links: true
   search_api_excerpt: true
-  tg_comments: true

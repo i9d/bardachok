@@ -1,0 +1,10 @@
+uuid: 5508d187-50f7-49ad-a56b-1c4fa582c7ce
+langcode: ru
+status: true
+dependencies:
+  module:
+    - node
+id: node.teaser_without_category
+label: 'Teaser without category'
+targetEntityType: node
+cache: true

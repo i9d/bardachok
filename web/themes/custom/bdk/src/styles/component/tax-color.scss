@@ -10,7 +10,8 @@
   }
 }
 
-.tax-color-blue .tax-color{
+.tax-color-blue .tax-color,
+.tax-color.blue {
   background-color: $category-blue;
 
   &:hover:not(.no-hover) {
@@ -22,7 +23,8 @@
   }
 }
 
-.tax-color-green .tax-color {
+.tax-color-green .tax-color,
+.tax-color.green {
   background-color: $category-green;
 
   &:hover:not(.no-hover) {
@@ -34,7 +36,8 @@
   }
 }
 
-.tax-color-red .tax-color {
+.tax-color-red .tax-color,
+.tax-color.red {
   background-color: $category-red;
 
   &:hover:not(.no-hover) {
@@ -46,7 +49,8 @@
   }
 }
 
-.tax-color-cyan .tax-color {
+.tax-color-cyan .tax-color,
+.tax-color.cyan {
   background-color: $category-cyan;
 
   &:hover:not(.no-hover) {
@@ -58,7 +62,8 @@
   }
 }
 
-.tax-color-purple .tax-color{
+.tax-color-purple .tax-color,
+.tax-color.purple {
   background-color: $category-purple;
 
   &:hover:not(.no-hover) {
@@ -70,7 +75,8 @@
   }
 }
 
-.tax-color-orange .tax-color {
+.tax-color-orange .tax-color,
+.tax-color.orange {
   background-color: $category-orange;
 
   &:hover:not(.no-hover) {
