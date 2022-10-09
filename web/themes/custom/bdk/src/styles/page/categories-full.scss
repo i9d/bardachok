@@ -1,12 +1,14 @@
-.taxonomy-term > .content > .layout--twocol-section--50-50 {
+.taxonomy-term > .content > .layout--twocol-section {
   display: flex;
 
   .layout__region--first {
-    flex: 0 1 20%;
+    flex: 0 1 auto;
+    width: 300px;
   }
 
   .layout__region--second {
-    flex: 0 1 80%;
+    flex: 0 1 auto;
+    width: 1004px;
     justify-content: space-around;
 
     .view-category {
@@ -14,9 +16,11 @@
       .views-infinite-scroll-content-wrapper {
         .views-view-grid {
           .views-row {
+            margin-bottom: 48px;
             .views-col {
+              height: 542px;
               &:not(:last-child) {
-                margin-right: 20px;
+                margin-right: 19px;
               }
             }
           }

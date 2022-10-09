@@ -2,7 +2,7 @@
   margin: 20px 0;
   display: flex;
 
-  .layout--twocol-section--50-50 > .layout__region {
+  .layout--twocol-section > .layout__region {
     &:not(:last-child) {
       padding-right: 22.5px;
     }

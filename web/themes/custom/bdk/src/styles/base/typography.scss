@@ -41,10 +41,6 @@ blockquote {
   font-style: italic;
 }
 
-a {
-  @include Link_Medium_16pt;
-}
-
 label {
   @include Body_4_Medium_16pt;
 }

@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_extra_field module file.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function bdk_extra_field_theme() {
+  return [
+    'bdk_author_bio_trimmed' => [
+      'variables' => [
+        'field' => NULL,
+      ],
+      'template' => 'author-bio-trimmed',
+    ],
+  ];
+}
+
