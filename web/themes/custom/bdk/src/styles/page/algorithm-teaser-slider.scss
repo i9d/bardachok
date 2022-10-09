@@ -29,19 +29,6 @@
         justify-content: space-between;
         position: relative;
 
-        .block-field-blocknodealgorithmfield-category {
-          position: absolute;
-          top: 24px;
-          left: 16px;
-          z-index: 1;
-          .field--name-field-category span {
-            padding: 4px 12px;
-            border-radius: 10px;
-            @include Body_7_Regular_14pt;
-            color: $gray-100;
-          }
-        }
-
         .field--name-field-image {
           margin-bottom: 24px;
 

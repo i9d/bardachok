@@ -1,0 +1,12 @@
+.block-field-blocknodealgorithmfield-category {
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  z-index: 1;
+  .field--name-field-category span {
+    padding: 4px 12px;
+    border-radius: 10px;
+    @include Body_7_Regular_14pt;
+    color: $gray-100;
+  }
+}

@@ -8,7 +8,7 @@ dependencies:
     - image.style.thumbnail
     - media.type.algorithm_embedded
   module:
-    - image
+    - image_widget_crop
     - path
     - text
 id: media.algorithm_embedded.default
@@ -31,12 +31,19 @@ content:
       placeholder: ''
     third_party_settings: {  }
   field_media_image:
-    type: image_image
+    type: image_widget_crop
     weight: 2
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      crop_list:
+        - algroithm_embedded
+      crop_types_required: {  }
+      warn_multiple_usages: true
+      show_crop_area: false
+      show_default_crop: true
     third_party_settings: {  }
   langcode:
     type: language_select

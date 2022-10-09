@@ -1,50 +1,39 @@
 .node--type-algorithm.node--view-mode-full {
   margin-bottom: 120px;
-  .node__content {
+  > .node__content {
     img {
       border-radius: 8px;
     }
 
-    > .layout:first-child {
+    .block-field-blocknodealgorithmfield-image {
       margin-bottom: 40px;
+
+    }
+
+    > .layout--twocol-section {
+      display: flex;
+      justify-content: space-between;
+      > .layout__region--first {
+        max-width: 744px;
+      }
       > .layout__region--second {
-        position: relative;
+        max-width: 312px;
+      }
+    }
 
-        .field--name-field-image {
-          img {
-            border-radius: 32px;
-          }
-
-          .field--name-field-caption {
-            margin-top: 20px;
-          }
-        }
-
-        .field--name-field-category a {
-          @include Body_7_Regular_14pt;
-          text-decoration: none;
-          position: absolute;
-          left: 44px;
-          top: 24px;
-          color: $c-white;
-          text-align: center;
-          padding: 4px 12px;
-          border-radius: 10px;
-          z-index: 1;
+    .field--name-field-reviews-text {
+      margin-top: 40px;
+      background-color: $blue-lighter;
+      border: 1px solid $blue-light;
+      padding: 24px;
+      border-radius: 24px;
+      p {
+        @include Body_7_Regular_14pt;
+        a {
+          font-size: 14px;
         }
       }
     }
 
-    .field--name-field-caption {
-      margin-top: 20px;
-    }
-
-    .media--type-algorithm-embedded {
-      margin: 56px 0;
-
-      img {
-        width: 100%;
-      }
-    }
   }
 }

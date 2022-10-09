@@ -2,15 +2,20 @@
   margin: 20px 0;
   display: flex;
 
-  .layout--twocol-section > .layout__region {
-    &:not(:last-child) {
-      padding-right: 22.5px;
+  .layout--twocol-section {
+    width: 100%;
+    justify-content: space-between;
+    > .layout__region {
+      flex: 0 1 50%;
+      &:not(:last-child) {
+        padding-right: 20px;
+      }
+
+      &:last-child {
+        padding-left: 20px;
+      }
     }
 
-    &:last-child {
-      padding-left: 22.5px;
-    }
+
   }
-
-
 }

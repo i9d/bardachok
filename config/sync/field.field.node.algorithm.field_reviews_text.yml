@@ -1,0 +1,24 @@
+uuid: eeae5aa2-c832-46be-9dab-6737a8e4ccce
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reviews_text
+    - node.type.algorithm
+  module:
+    - text
+id: node.algorithm.field_reviews_text
+field_name: field_reviews_text
+entity_type: node
+bundle: algorithm
+label: 'Текст для отзывов'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '<p>Если у вас получилось, отправляйте нам фото до и после на почту <a href="mailto:success@bardachok.online">success@bardachok.online</a> или рассказывайте об этом в соцсетях с хештегом #убралиБардачок</p>'
+    format: editor
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -5,7 +5,7 @@ dependencies: {  }
 label: 'Algroithm embedded'
 id: algroithm_embedded
 description: ''
-aspect_ratio: '706:388'
+aspect_ratio: '744:409'
 soft_limit_width: null
 soft_limit_height: null
 hard_limit_width: null

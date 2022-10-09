@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.algorithm.field_conclusion
     - field.field.node.algorithm.field_content
     - field.field.node.algorithm.field_image
+    - field.field.node.algorithm.field_reviews_text
     - node.type.algorithm
   module:
     - layout_builder
@@ -101,6 +102,8 @@ hidden:
   field_category: true
   field_conclusion: true
   field_content: true
+  field_reviews_text: true
   langcode: true
   links: true
+  search_api_excerpt: true
   tg_comments: true
