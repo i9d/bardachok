@@ -13,8 +13,8 @@ dependencies:
     - field.field.node.algorithm.field_reviews_text
     - node.type.algorithm
   module:
+    - bdk_layouts
     - layout_builder
-    - layout_discovery
     - user
 third_party_settings:
   layout_builder:
@@ -22,30 +22,62 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: algorithm_teaser_layout
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          a80db729-403e-4f52-ae8c-606dfc467b24:
-            uuid: a80db729-403e-4f52-ae8c-606dfc467b24
-            region: content
+          684e4373-3e23-4643-b0b6-b3fbe807ed3f:
+            uuid: 684e4373-3e23-4643-b0b6-b3fbe807ed3f
+            region: image
             configuration:
-              id: 'field_block:node:algorithm:field_image'
+              id: 'field_block:node:algorithm:field_category'
+              label: Категория
               label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: teaser
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style:
+                category_color_link: category_color_link
+                algorithm_hero_image: 0
+                author_teaser: 0
+                node_title: 0
+          a80db729-403e-4f52-ae8c-606dfc467b24:
+            uuid: a80db729-403e-4f52-ae8c-606dfc467b24
+            region: image
+            configuration:
+              id: 'field_block:node:algorithm:field_image'
+              label: Изображение
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
                 type: entity_reference_entity_view
                 label: hidden
                 settings:
                   view_mode: algorithm_teaser
-                  link: false
                 third_party_settings: {  }
-            weight: 2
-            additional: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: algorithm_hero_image
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
           6373adfc-d213-4784-8476-3ff531856e71:
             uuid: 6373adfc-d213-4784-8476-3ff531856e71
-            region: content
+            region: text
             configuration:
               id: 'field_block:node:algorithm:title'
               label: Заголовок
@@ -65,11 +97,11 @@ third_party_settings:
                   override_link_label: ''
                   token: ''
                 third_party_settings: {  }
-            weight: 3
+            weight: 0
             additional: {  }
           1107c0ec-49bf-4db5-a46f-477551da931c:
             uuid: 1107c0ec-49bf-4db5-a46f-477551da931c
-            region: content
+            region: author
             configuration:
               id: 'field_block:node:algorithm:uid'
               label: Автор
@@ -84,27 +116,13 @@ third_party_settings:
                 settings:
                   view_mode: teaser_mini
                 third_party_settings: {  }
-            weight: 4
-            additional: {  }
-          684e4373-3e23-4643-b0b6-b3fbe807ed3f:
-            uuid: 684e4373-3e23-4643-b0b6-b3fbe807ed3f
-            region: content
-            configuration:
-              id: 'field_block:node:algorithm:field_category'
-              label: Категория
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: teaser
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style:
+                author_teaser: author_teaser
+                algorithm_hero_image: 0
+                category_color_link: 0
+                node_title: 0
         third_party_settings: {  }
 id: node.algorithm.teaser
 targetEntityType: node

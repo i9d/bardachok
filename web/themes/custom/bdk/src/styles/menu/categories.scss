@@ -4,6 +4,8 @@
     .menu-item {
       margin-bottom: 16px;
       a {
+        display: flex;
+        align-items: center;
         @include Body_2_Regular_20pt;
         color: $gray-500;
         text-decoration: none;
@@ -13,5 +15,42 @@
         }
       }
     }
+
+    .menu-item--active-trail .is-active:before {
+      content: '';
+      mask: url('../../assets/images/dot.svg');
+      display: inline-block;
+      margin-right: 8px;
+      height: 8px;
+      width: 8px;
+    }
   }
+}
+
+.tax-color-default .menu--categories .menu-item--active-trail .is-active:before {
+  background: $blue-primary;
+}
+
+.tax-color-blue .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-blue;
+}
+
+.tax-color-green .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-green;
+}
+
+.tax-color-red .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-red;
+}
+
+.tax-color-cyan .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-cyan;
+}
+
+.tax-color-purple .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-purple;
+}
+
+.tax-color-orange .menu--categories .menu-item--active-trail .is-active:before {
+  background: $category-orange;
 }

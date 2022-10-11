@@ -1,0 +1,12 @@
+.layout--category-layout {
+  @include container-1304;
+  display: flex;
+  justify-content: space-between;
+
+  .layout__region--content_left {
+  }
+
+  .layout__region--content_right {
+    width: 1004px;
+  }
+}

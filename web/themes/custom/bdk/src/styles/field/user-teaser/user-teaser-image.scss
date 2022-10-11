@@ -1,0 +1,12 @@
+.layout--user-teaser-layout {
+  .layout__region--image {
+    img {
+      border-radius: 100%;
+    }
+  }
+  .layout__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

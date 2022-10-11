@@ -1,0 +1,40 @@
+.block-views-blockcategory-block-1,
+.block-views-blockcategory-block-2,
+.block-views-blockcategory-block-3,
+.block-views-blockcategory-block-4 {
+  .view-category {
+    .view-content,
+    .views-infinite-scroll-content-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      &.clearfix::after {
+        width: 332px;
+      }
+
+      .views-row {
+        margin-bottom: 48px;
+
+        .node--type-algorithm {
+          .node__content {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .pager {
+      padding: 0;
+      .pager__item {
+        padding: 0;
+
+        a {
+          @include button-primary;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

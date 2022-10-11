@@ -1,0 +1,13 @@
+.layout--algorithm-layout {
+  .field--name-field-reviews-text {
+    margin-top: 40px;
+    background-color: $blue-lighter;
+    border: 1px solid $blue-light;
+    padding: 24px;
+    border-radius: 24px;
+
+    p {
+      @include Body_7_Regular_14pt;
+    }
+  }
+}

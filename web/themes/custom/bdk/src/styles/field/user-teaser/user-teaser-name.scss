@@ -1,0 +1,8 @@
+.layout--user-teaser-layout {
+  .layout__region--name {
+    width: min-content;
+    .field--name-field-name {
+      @include Body_6_Medium_14pt;
+    }
+  }
+}

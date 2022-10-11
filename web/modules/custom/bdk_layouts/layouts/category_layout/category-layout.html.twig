@@ -1,0 +1,19 @@
+{% set classes = [
+  'layout',
+  'layout--category-layout',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+      {% if content.content_left %}
+        <div {{ region_attributes.content_left.addClass('layout__region', 'layout__region--content_left') }}>
+          {{ content.content_left }}
+        </div>
+      {% endif %}
+      {% if content.content_right %}
+        <div {{ region_attributes.content_right.addClass('layout__region', 'layout__region--content_right') }}>
+          {{ content.content_right }}
+        </div>
+      {% endif %}
+  </div>
+{% endif %}

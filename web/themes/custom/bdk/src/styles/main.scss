@@ -17,33 +17,56 @@
 @import 'component/TEMP-header';
 @import 'component/TEMP-maintenance-page';
 @import 'component/TEMP-social';
-@import 'component/user-teaser';
 @import 'component/tax-color';
-@import 'component/slider';
-@import 'component/image-slider';
-@import 'component/category-teaser';
-@import 'component/media';
+@import 'component/algorithm-teaser-card';
+
+/* Media */
+@import 'base/media';
+
 
 /* Forms */
-@import 'form/auth-form';
+@import 'form/TOREFACTOR-auth-form';
 
 /* Pages */
-@import 'page/algorithm-full';
 @import 'page/algorithm-teaser-slider';
-@import 'page/categories-full';
 
 /* Paragraphs */
 @import 'paragraph/paragraph-step';
 @import 'paragraph/paragraph-title-subtitle-text';
 @import 'paragraph/paragraph-two-column';
+@import 'paragraph/paragraph-image-slider';
 
-/* Block */
-@import 'block/donate';
+/* Blocks */
+@import 'block/TEMP-donate';
 @import 'block/social-sharing';
 @import 'block/tg-comments';
 @import 'block/sponsors';
 @import 'block/scroll-to-up';
-@import 'block/DEPRECATED-to-main-page-button';
+@import 'block/TOREFACTOR-algorithm-slider';
 
 /* Menus */
 @import 'menu/categories';
+
+/* Layouts */
+@import 'layout/algorithm_layout';
+@import 'layout/algorithm_teaser_layout';
+@import 'layout/category_layout';
+@import 'layout/user_teaser_layout';
+
+/* Fields */
+@import 'field/algorithm-full/algorithm-hero-image';
+@import 'field/algorithm-full/algorithm--title';
+@import 'field/algorithm-full/algorithm-annotation';
+@import 'field/algorithm-full/algorithm-embedded-image';
+@import 'field/algorithm-full/algorithm-conslusion';
+@import 'field/algorithm-full/algorithm-reviews-text';
+@import 'field/algorithm-teaser/algorithm-teaser-image';
+@import 'field/algorithm-teaser/algorithm-teaser-title';
+@import 'field/user-teaser/user-teaser-image';
+@import 'field/user-teaser/user-teaser-name';
+@import 'field/user-teaser/user-teaser-bio';
+@import 'field/caption';
+@import 'field/category-color-link';
+
+/* Views */
+@import 'views/algorithm-teaser';

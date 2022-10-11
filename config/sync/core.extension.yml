@@ -9,6 +9,7 @@ module:
   backup_migrate: 0
   bdk_blocks: 0
   bdk_extra_field: 0
+  bdk_layouts: 0
   bdk_register_overwrite: 0
   bdk_step_number_default: 0
   big_pipe: 0
@@ -41,6 +42,7 @@ module:
   image_widget_crop: 0
   language: 0
   layout_builder: 0
+  layout_builder_styles: 0
   layout_discovery: 0
   link: 0
   locale: 0

@@ -1,0 +1,46 @@
+/**
+ * @file
+ * Media queries.
+ */
+@media (max-width: 1320px) {
+  header .header-wrapper {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .node--id-12 {
+    .tmp-page {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 866px) {
+
+  .btn,
+  input[type="submit"] {
+    padding: 8px 24px;
+  }
+
+  // TODO: Remove later.
+  #block-social {
+    display: none;
+  }
+  .node--id-12 {
+    .tmp-page {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .layout__region {
+        max-width: 100%;
+      }
+    }
+  }
+  #block-social-2 {
+    display: flex;
+    justify-content: center;
+    margin: 24px 0;
+  }
+
+}

@@ -1,0 +1,9 @@
+.layout--user-teaser-layout {
+  display: flex;
+  height: 70px;
+  .layout__region--image {
+    margin-right: 16px;
+    height: min-content;
+  }
+
+}

@@ -1,0 +1,12 @@
+uuid: 9db0f654-a842-4a20-8efc-3261328b5608
+langcode: ru
+status: true
+dependencies: {  }
+id: temporary_page
+label: 'Temporary page'
+classes: tmp-page
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

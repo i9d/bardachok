@@ -10,6 +10,7 @@ dependencies:
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - bdk_layouts
     - image
     - layout_builder
     - user
@@ -19,15 +20,16 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_twocol_section
+        layout_id: user_teaser_layout
         layout_settings:
           label: ''
           context_mapping: {  }
-          column_widths: 50-50
+          layout_builder_styles_style:
+            temporary_page: 0
         components:
-          d95a9c37-06b0-4fbc-ac22-028012edc26d:
-            uuid: d95a9c37-06b0-4fbc-ac22-028012edc26d
-            region: first
+          4e3b0de8-99eb-4e85-a139-0f0f212699d8:
+            uuid: 4e3b0de8-99eb-4e85-a139-0f0f212699d8
+            region: image
             configuration:
               id: 'field_block:user:user:user_picture'
               label: Изображение
@@ -46,10 +48,15 @@ third_party_settings:
                     attribute: lazy
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
-          2cd657c8-c708-4051-8d11-d1d57d979e70:
-            uuid: 2cd657c8-c708-4051-8d11-d1d57d979e70
-            region: second
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
+          612b307b-29ee-419d-980e-102adfc84c07:
+            uuid: 612b307b-29ee-419d-980e-102adfc84c07
+            region: name
             configuration:
               id: 'field_block:user:user:field_name'
               label: Имя
@@ -65,10 +72,15 @@ third_party_settings:
                   link_to_entity: false
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
-          d900343c-80e5-4a8f-94e6-dd87df0e4b03:
-            uuid: d900343c-80e5-4a8f-94e6-dd87df0e4b03
-            region: second
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
+          854bd9d6-aa95-40f1-8de3-49b811925e58:
+            uuid: 854bd9d6-aa95-40f1-8de3-49b811925e58
+            region: bio
             configuration:
               id: 'field_block:user:user:field_bio'
               label: Био
@@ -83,8 +95,13 @@ third_party_settings:
                 settings:
                   link_to_entity: false
                 third_party_settings: {  }
-            weight: 1
-            additional: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
         third_party_settings: {  }
 _core:
   default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
@@ -113,7 +130,9 @@ content:
     weight: 0
     region: content
 hidden:
+  extra_field_author_bio_trimmed: true
   field_categories: true
   field_name: true
   langcode: true
   member_for: true
+  search_api_excerpt: true

@@ -1,76 +1,76 @@
-.node--type-algorithm.node--view-mode-teaser,
-.node--type-algorithm.node--view-mode-teaser-mini,
-.node--type-algorithm.node--view-mode-teaser-without-category {
-  box-shadow: 0 4px 28px rgba(226, 226, 226, 0.5);
-  background-color: $gray-100;
-  border-radius: 24px;
-  max-width: 322px;
-  margin: 0 auto;
-  padding-bottom: 24px;
-  height: 100%;
-
-  .node__content {
-    display: block;
-    height: 100%;
-
-    a {
-      &:focus {
-        outline: none
-      }
-    }
-
-    .layout {
-      height: 100%;
-
-      .layout__region--content {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-
-        .field--name-field-image {
-          margin-bottom: 24px;
-
-          img {
-            border-radius: 32px;
-          }
-        }
-
-        .block-field-blocknodealgorithmtitle {
-          margin: 0 20px;
-
-          h4 {
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-line-clamp: 4;
-            -webkit-box-orient: vertical;
-            text-overflow: ellipsis;
-            margin: 0;
-          }
-        }
-
-        .block-field-blocknodealgorithmuid {
-          position: relative;
-          margin-top: auto;
-
-          &::before {
-            display: block;
-            width: 304px;
-            left: 8.5px;
-            top: -16px;
-            content: '';
-            position: absolute;
-            border-bottom: 1px solid $gray-200;
-          }
-        }
-
-        .field--name-uid {
-          margin: 0 19px;
-        }
-      }
-    }
-
-
-  }
-}
+//.node--type-algorithm.node--view-mode-teaser,
+//.node--type-algorithm.node--view-mode-teaser-mini,
+//.node--type-algorithm.node--view-mode-teaser-without-category {
+//  box-shadow: 0 4px 28px rgba(226, 226, 226, 0.5);
+//  background-color: $gray-100;
+//  border-radius: 24px;
+//  max-width: 322px;
+//  margin: 0 auto;
+//  padding-bottom: 24px;
+//  height: 100%;
+//
+//  .node__content {
+//    display: block;
+//    height: 100%;
+//
+//    a {
+//      &:focus {
+//        outline: none
+//      }
+//    }
+//
+//    .layout {
+//      height: 100%;
+//
+//      .layout__region--content {
+//        height: 100%;
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: space-between;
+//        position: relative;
+//
+//        .field--name-field-image {
+//          margin-bottom: 24px;
+//
+//          img {
+//            border-radius: 32px;
+//          }
+//        }
+//
+//        .block-field-blocknodealgorithmtitle {
+//          margin: 0 20px;
+//
+//          h4 {
+//            overflow: hidden;
+//            display: -webkit-box;
+//            -webkit-line-clamp: 4;
+//            -webkit-box-orient: vertical;
+//            text-overflow: ellipsis;
+//            margin: 0;
+//          }
+//        }
+//
+//        .block-field-blocknodealgorithmuid {
+//          position: relative;
+//          margin-top: auto;
+//
+//          &::before {
+//            display: block;
+//            width: 304px;
+//            left: 8.5px;
+//            top: -16px;
+//            content: '';
+//            position: absolute;
+//            border-bottom: 1px solid $gray-200;
+//          }
+//        }
+//
+//        .field--name-uid {
+//          margin: 0 19px;
+//        }
+//      }
+//    }
+//
+//
+//  }
+//}

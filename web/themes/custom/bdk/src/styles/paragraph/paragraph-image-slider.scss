@@ -1,5 +1,10 @@
 .paragraph--type--image-slider {
   @include container-744;
+  margin: 40px 0;
+
+  img {
+    border-radius: 8px;
+  }
 
   .slick-dots {
     position: absolute;
@@ -9,17 +14,20 @@
     text-align: center;
     margin: 0;
     padding: 0;
+
     li {
       position: relative;
       display: inline-block;
       width: 8px;
       height: 8px;
       content: url("../../assets/images/slider/slider-dot.svg");
+
       &:not(:last-child) {
         margin-right: 12px;
       }
 
     }
+
     li.slick-active {
       content: url("../../assets/images/slider/slider-dot-active.svg");
     }

@@ -1,0 +1,24 @@
+{% set classes = [
+  'layout',
+  'layout--algorithm-teaser-layout',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass('layout__region', 'layout__region--image') }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+    {% if content.text %}
+      <div {{ region_attributes.text.addClass('layout__region', 'layout__region--text') }}>
+        {{ content.text }}
+      </div>
+    {% endif %}
+    {% if content.author %}
+      <div {{ region_attributes.author.addClass('layout__region', 'layout__region--author') }}>
+        {{ content.author }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

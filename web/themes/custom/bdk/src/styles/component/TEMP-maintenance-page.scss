@@ -5,7 +5,8 @@
     font-size: 96px;
   }
 
-  .layout--twocol-section {
+  .tmp-page {
+    @include container-1304;
     justify-content: space-between;
     margin-bottom: 55px;
     .layout__region {

@@ -13,9 +13,9 @@ dependencies:
     - field.field.node.algorithm.field_reviews_text
     - node.type.algorithm
   module:
+    - bdk_layouts
     - entity_reference_revisions
     - layout_builder
-    - layout_discovery
     - text
     - user
 third_party_settings:
@@ -24,14 +24,14 @@ third_party_settings:
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: algorithm_teaser_layout
         layout_settings:
           label: ''
           context_mapping: {  }
         components:
           e69f6ca0-f778-4623-8d39-eeedef9a2c05:
             uuid: e69f6ca0-f778-4623-8d39-eeedef9a2c05
-            region: content
+            region: image
             configuration:
               id: 'field_block:node:algorithm:field_image'
               label: Изображение
@@ -47,10 +47,15 @@ third_party_settings:
                   view_mode: algorithm_teaser
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: algorithm_hero_image
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
           5208c4f1-c7f3-41c3-81b5-a28883479c05:
             uuid: 5208c4f1-c7f3-41c3-81b5-a28883479c05
-            region: content
+            region: text
             configuration:
               id: 'field_block:node:algorithm:title'
               label: Заголовок
@@ -70,11 +75,11 @@ third_party_settings:
                   override_link_label: ''
                   token: ''
                 third_party_settings: {  }
-            weight: 1
+            weight: 0
             additional: {  }
           c68b5032-e528-4f4e-8d24-0eb10e8ea5a8:
             uuid: c68b5032-e528-4f4e-8d24-0eb10e8ea5a8
-            region: content
+            region: author
             configuration:
               id: 'field_block:node:algorithm:uid'
               label: Автор
@@ -89,8 +94,13 @@ third_party_settings:
                 settings:
                   view_mode: teaser_mini
                 third_party_settings: {  }
-            weight: 2
-            additional: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style:
+                author_teaser: author_teaser
+                algorithm_hero_image: 0
+                category_color_link: 0
+                node_title: 0
         third_party_settings: {  }
 id: node.algorithm.teaser_without_category
 targetEntityType: node

@@ -1,0 +1,8 @@
+.layout--user-teaser-layout {
+  .layout__region--bio {
+    .field--name-field-bio {
+      @include Body_7_Regular_14pt;
+      color: $gray-600;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+uuid: 8f47d67c-deba-42af-8353-cb49a56a3849
+langcode: ru
+status: true
+dependencies: {  }
+id: category_color_link
+label: 'Category color link'
+classes: category-color-link
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

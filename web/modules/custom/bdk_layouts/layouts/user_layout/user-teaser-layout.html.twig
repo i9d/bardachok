@@ -1,0 +1,26 @@
+{% set classes = [
+  'layout',
+  'layout--user-teaser-layout',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.image %}
+      <div {{ region_attributes.image.addClass('layout__region', 'layout__region--image') }}>
+        {{ content.image }}
+      </div>
+    {% endif %}
+    <div class="layout__wrapper">
+      {% if content.name %}
+        <div {{ region_attributes.name.addClass('layout__region', 'layout__region--name') }}>
+          {{ content.name }}
+        </div>
+      {% endif %}
+      {% if content.bio %}
+        <div {{ region_attributes.bio.addClass('layout__region', 'layout__region--bio') }}>
+          {{ content.bio }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

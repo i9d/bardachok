@@ -1,0 +1,12 @@
+uuid: 36caf405-0551-483c-a234-e27ed265e600
+langcode: ru
+status: true
+dependencies: {  }
+id: algorithm_hero_image
+label: 'Algorithm Hero Image'
+classes: algorithm-hero-image
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -1,0 +1,31 @@
+{% set classes = [
+  'layout',
+  'layout--algorithm-layout',
+] %}
+
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.header %}
+      <div {{ region_attributes.header.addClass('layout__region', 'layout__region--header') }}>
+        {{ content.header }}
+      </div>
+    {% endif %}
+    <div class="layout__wrapper layout__region--content">
+      {% if content.content_left %}
+        <div {{ region_attributes.content_left.addClass('layout__region', 'layout__region--content_left') }}>
+          {{ content.content_left }}
+        </div>
+      {% endif %}
+      {% if content.content_right %}
+        <div {{ region_attributes.content_right.addClass('layout__region', 'layout__region--content_right') }}>
+          {{ content.content_right }}
+        </div>
+      {% endif %}
+    </div>
+    {% if content.footer %}
+      <div {{ region_attributes.footer.addClass('layout__region', 'layout__region--footer') }}>
+        {{ content.footer }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

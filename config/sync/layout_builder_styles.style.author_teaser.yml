@@ -1,0 +1,12 @@
+uuid: 3ef059f5-7edc-4c02-9408-27e01a6a818f
+langcode: ru
+status: true
+dependencies: {  }
+id: author_teaser
+label: 'Author teaser'
+classes: author-teaser
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

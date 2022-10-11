@@ -17,32 +17,13 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
-
   &.no-scroll {
     overflow: hidden;
   }
 }
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video,
-object,
-input,
-textarea {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-audio {
-  width: 100%;
-}
-
 img,
 svg {
-  max-width: 100%;
   height: auto;
 }
 
@@ -60,7 +41,8 @@ a {
 }
 
 a:not([class]) {
-  @include Link_Medium_16pt;
+  text-decoration-line: underline;
+  color: $gray-900;
 
   &:hover {
     color: $gray-600;
@@ -68,11 +50,10 @@ a:not([class]) {
 
   &:active {
     color: $blue-dark;
-    outline: 1px solid $blue-light;
-    border-radius: 4px;
+    transition-duration: 0s;
   }
 
-  &:focus {
+  &:focus-visible {
     color: $gray-900;
     outline: 1px solid $blue-light;
     border-radius: 4px;
@@ -90,48 +71,13 @@ a:not([class]) {
   overflow: hidden;
 }
 
-.region-content,
-.region-highlighted,
-.region-footer {
-  @include container-1304;
-}
-
 em {
   font-family: sans-serif;
 }
 
 .btn,
 input[type="submit"] {
-  @include Link_Medium_16pt;
-  display: inline-block;
-  border: none;
-  border-radius: 4px;
-  background-color: $blue-primary;
-  color: $gray-0;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  padding: 12px 32px;
-
-  &:hover {
-    background-color: $blue-light;
-    color: $gray-0;
-  }
-
-  &:active {
-    background-color: $blue-dark;
-    color: $gray-0;
-  }
-
-  &:focus {
-    outline: 3px solid $blue-focus;
-    color: $gray-0;
-  }
-
-  &.disabled {
-    background-color: $blue-lighter;
-    color: $gray-0;
-  }
+  @include button-primary;
 }
 
 ol, ul {

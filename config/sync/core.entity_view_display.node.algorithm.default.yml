@@ -11,45 +11,29 @@ dependencies:
     - field.field.node.algorithm.field_image
     - field.field.node.algorithm.field_reviews_text
     - node.type.algorithm
+    - views.view.category
   module:
     - bdk_blocks
+    - bdk_layouts
     - entity_reference_revisions
     - layout_builder
-    - layout_discovery
     - text
     - user
+    - views
 third_party_settings:
   layout_builder:
     enabled: true
     allow_custom: false
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: algorithm_layout
         layout_settings:
           label: ''
+          context_mapping: {  }
         components:
-          b4d5dca5-9946-44b3-9ae7-019565ed3221:
-            uuid: b4d5dca5-9946-44b3-9ae7-019565ed3221
-            region: content
-            configuration:
-              id: 'field_block:node:algorithm:field_image'
-              label: Изображение
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: hidden
-                settings:
-                  view_mode: algorithm_image
-                third_party_settings: {  }
-            weight: 5
-            additional: {  }
           d9bd708e-fe23-4d07-ab97-29b3a43cfb20:
             uuid: d9bd708e-fe23-4d07-ab97-29b3a43cfb20
-            region: content
+            region: header
             configuration:
               id: 'field_block:node:algorithm:field_category'
               label: Категория
@@ -64,19 +48,69 @@ third_party_settings:
                 settings:
                   view_mode: teaser
                 third_party_settings: {  }
+            weight: 2
+            additional:
+              layout_builder_styles_style:
+                category_color_link: category_color_link
+                algorithm_hero_image: 0
+          f7143d6f-de00-4227-9f91-a1ae069083fd:
+            uuid: f7143d6f-de00-4227-9f91-a1ae069083fd
+            region: content_left
+            configuration:
+              id: 'field_block:node:algorithm:field_content'
+              label: 'Содержимое алгоритма'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          4369a483-bb5b-4e57-9d9f-941c9d23e3ef:
+            uuid: 4369a483-bb5b-4e57-9d9f-941c9d23e3ef
+            region: content_left
+            configuration:
+              id: 'field_block:node:algorithm:field_conclusion'
+              label: Заключение
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
             weight: 6
             additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-          column_widths: 75-25
-        components:
-          98079da1-fa29-4269-9dde-255f3785f11c:
-            uuid: 98079da1-fa29-4269-9dde-255f3785f11c
-            region: second
+          7c1dd65c-115f-4f54-99d5-983d93548bf2:
+            uuid: 7c1dd65c-115f-4f54-99d5-983d93548bf2
+            region: content_left
+            configuration:
+              id: 'field_block:node:algorithm:field_reviews_text'
+              label: 'Текст для отзывов'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 7
+            additional: {  }
+          afe65385-7d80-44d6-ae6d-eaba96cb66d1:
+            uuid: afe65385-7d80-44d6-ae6d-eaba96cb66d1
+            region: content_right
             configuration:
               id: 'field_block:node:algorithm:uid'
               label: Автор
@@ -92,60 +126,61 @@ third_party_settings:
                   view_mode: compact
                 third_party_settings: {  }
             weight: 0
-            additional: {  }
-          d080b6c2-3e9b-4d2c-ae68-799120e48cee:
-            uuid: d080b6c2-3e9b-4d2c-ae68-799120e48cee
-            region: first
+            additional:
+              layout_builder_styles_style:
+                author_teaser: author_teaser
+                algorithm_hero_image: 0
+                category_color_link: 0
+          629c283d-e345-4dcb-a410-3b45c9b1df6f:
+            uuid: 629c283d-e345-4dcb-a410-3b45c9b1df6f
+            region: content_left
             configuration:
-              id: 'field_block:node:algorithm:field_annotation'
+              id: social_sharing_block
+              label: 'Social sharing block'
               label_display: '0'
+              provider: bdk_blocks
+              context_mapping: {  }
+            weight: 8
+            additional: {  }
+          8cffcc77-7df0-4df3-9c95-117753e4917d:
+            uuid: 8cffcc77-7df0-4df3-9c95-117753e4917d
+            region: content_left
+            configuration:
+              id: 'extra_field_block:node:algorithm:tg_comments'
+              label: 'Telegram comments'
+              label_display: '0'
+              provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
               formatter:
-                type: text_default
-                label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 1
+            weight: 9
             additional: {  }
-          352177a7-7f89-4a4a-9b78-ed8bd06477d0:
-            uuid: 352177a7-7f89-4a4a-9b78-ed8bd06477d0
-            region: first
+          b4d5dca5-9946-44b3-9ae7-019565ed3221:
+            uuid: b4d5dca5-9946-44b3-9ae7-019565ed3221
+            region: header
             configuration:
-              id: 'field_block:node:algorithm:field_content'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: hidden
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          0a158004-cca6-4097-acd2-81cd034938e0:
-            uuid: 0a158004-cca6-4097-acd2-81cd034938e0
-            region: first
-            configuration:
-              id: 'field_block:node:algorithm:field_conclusion'
-              label: Заключение
+              id: 'field_block:node:algorithm:field_image'
+              label: Изображение
               label_display: '0'
               provider: layout_builder
               context_mapping:
                 entity: layout_builder.entity
                 view_mode: view_mode
               formatter:
-                type: text_default
+                type: entity_reference_entity_view
                 label: hidden
-                settings: {  }
+                settings:
+                  view_mode: algorithm_image
                 third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          282d9fa6-54ef-4d94-ae28-7754c62180ea:
-            uuid: 282d9fa6-54ef-4d94-ae28-7754c62180ea
-            region: first
+            weight: 1
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: algorithm_hero_image
+          e7fb8375-fd4a-4696-8a09-766a9f02d51b:
+            uuid: e7fb8375-fd4a-4696-8a09-766a9f02d51b
+            region: content_left
             configuration:
               id: 'field_block:node:algorithm:title'
               label: Заголовок
@@ -165,14 +200,19 @@ third_party_settings:
                   override_link_label: ''
                   token: ''
                 third_party_settings: {  }
-            weight: 0
-            additional: {  }
-          260ccf14-7ec7-485e-8ddb-e8e615e0c918:
-            uuid: 260ccf14-7ec7-485e-8ddb-e8e615e0c918
-            region: first
+            weight: 2
+            additional:
+              layout_builder_styles_style:
+                node_title: node_title
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+          aad48e16-7c2a-412a-a7ad-198691139342:
+            uuid: aad48e16-7c2a-412a-a7ad-198691139342
+            region: content_left
             configuration:
-              id: 'field_block:node:algorithm:field_reviews_text'
-              label: 'Текст для отзывов'
+              id: 'field_block:node:algorithm:field_annotation'
+              label: Аннотация
               label_display: '0'
               provider: layout_builder
               context_mapping:
@@ -183,48 +223,26 @@ third_party_settings:
                 label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            weight: 5
+            weight: 4
             additional: {  }
-          6c1e84bb-e278-4924-94f4-ea539db97e56:
-            uuid: 6c1e84bb-e278-4924-94f4-ea539db97e56
-            region: first
+          051307ee-b7b2-4b98-8774-cd86ff62d0bb:
+            uuid: 051307ee-b7b2-4b98-8774-cd86ff62d0bb
+            region: footer
             configuration:
-              id: social_sharing_block
-              label: 'Social sharing block'
-              label_display: '0'
-              provider: bdk_blocks
+              id: 'views_block:category-algorithm_slider'
+              label: ''
+              label_display: visible
+              provider: views
               context_mapping: {  }
-            weight: 6
-            additional: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          label: ''
-          context_mapping: {  }
-          column_widths: 75-25
-        components:
-          8a7b5955-9cac-48ed-883a-66b7c2f1ab69:
-            uuid: 8a7b5955-9cac-48ed-883a-66b7c2f1ab69
-            region: first
-            configuration:
-              id: 'extra_field_block:node:algorithm:tg_comments'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-            weight: 1
-            additional: {  }
-          41c0f9a5-ceb3-48bc-b764-54cd0646d871:
-            uuid: 41c0f9a5-ceb3-48bc-b764-54cd0646d871
-            region: second
-            configuration:
-              id: placeholder_block
-              label: 'Placeholder block'
-              label_display: '0'
-              provider: bdk_blocks
-              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
             weight: 0
-            additional: {  }
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
         third_party_settings: {  }
 id: node.algorithm.default
 targetEntityType: node

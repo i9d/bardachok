@@ -1,0 +1,25 @@
+.layout--algorithm-layout {
+  @include container-1304;
+
+  .layout__region--header {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .layout__region--content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    .layout__region--content_left {
+      width: 744px;
+    }
+
+    .layout__region--content_right {
+
+    }
+  }
+
+  .layout__region--footer {
+    margin-bottom: 80px;
+  }
+}

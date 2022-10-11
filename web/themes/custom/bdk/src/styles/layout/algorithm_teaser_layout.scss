@@ -1,0 +1,26 @@
+.layout--algorithm-teaser-layout {
+  @include container-322;
+
+  > .layout__region--image {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .layout__region--text {
+    margin: 0 19.5px 32px;
+  }
+
+  .layout__region--author {
+    margin: 0 19.5px 24px;
+    position: relative;
+    &::before {
+      display: block;
+      width: 100%;
+      top: -16px;
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid $gray-200;
+    }
+  }
+
+}

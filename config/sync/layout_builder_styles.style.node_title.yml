@@ -1,0 +1,12 @@
+uuid: 8e9cd483-b2e8-4ed3-8866-ad91f8b18b56
+langcode: ru
+status: true
+dependencies: {  }
+id: node_title
+label: 'Node title'
+classes: node-title
+type: component
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -13,6 +13,7 @@ function bdk_preprocess_field(&$variables) {
   if ($variables['field_name'] == 'field_category' && $variables['field_type'] == 'entity_reference') {
     $variables['content']['name'] = $variables["items"][0]["content"]["#taxonomy_term"]->getName();
     $variables['content']['color'] =  $variables["items"][0]["content"]["#taxonomy_term"]->get('field_color')->value;
+    $variables['content']['url'] = $variables["items"][0]["content"]["#taxonomy_term"]->toUrl()->toString();
   }
 }
 

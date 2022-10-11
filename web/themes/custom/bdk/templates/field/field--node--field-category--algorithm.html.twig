@@ -45,5 +45,5 @@
   label_display == 'inline' ? 'clearfix',
 ] %}
 <div{{ attributes.addClass(classes) }}>
-  <span class="tax-color no-hover {{ content.color }}">{{ content.name }}</span>
+  <a href="{{ content.url }}" class="tax-color {{ content.color }}">{{ content.name }}</a>
 </div>

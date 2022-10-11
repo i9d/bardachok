@@ -1,0 +1,65 @@
+algorithm_layout:
+  label: 'Algorithm Layout'
+  path: layouts/algorithm_layout
+  category: 'Custom Layouts'
+  template: algorithm-layout
+  default_region: content
+  icon_map:
+    - [header]
+    - [content_left, content_right]
+    - [footer]
+  regions:
+    header:
+      label: Header
+    content_left:
+      label: Content Left
+    content_right:
+      label: Content Right
+    footer:
+      label: Footer
+category_layout:
+  label: 'Category Layout'
+  path: layouts/category_layout
+  category: 'Custom Layouts'
+  template: category-layout
+  default_region: content
+  icon_map:
+    - [content_left, content_right]
+  regions:
+    content_left:
+      label: Content Left
+    content_right:
+      label: Content Right
+algorithm_teaser_layout:
+  label: 'Algorithm Teaser Layout'
+  path: layouts/algorithm_layout
+  category: 'Custom Layouts'
+  template: algorithm-teaser-layout
+  default_region: content
+  icon_map:
+    - [image]
+    - [text]
+    - [author]
+  regions:
+    image:
+      label: Image
+    text:
+      label: Text
+    author:
+      label: Author
+user_teaser_layout:
+  label: 'User Teaser Layout'
+  path: layouts/user_layout
+  category: 'Custom Layouts'
+  template: user-teaser-layout
+  default_region: content
+  icon_map:
+    - [image, name]
+    - [image, bio]
+  regions:
+    image:
+      label: Image
+    name:
+      label: Name
+    bio:
+      label: Bio
