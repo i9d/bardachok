@@ -10,7 +10,6 @@ dependencies:
     - image.style.thumbnail
   module:
     - image_widget_crop
-    - path
     - user
 _core:
   default_config_hash: FaQ9Ptcpxpg30AtiqRDtl_8zbJArHP1LPfug_s59TOA
@@ -29,7 +28,7 @@ content:
     region: content
   field_bio:
     type: string_textfield
-    weight: 2
+    weight: 3
     region: content
     settings:
       size: 60
@@ -47,17 +46,11 @@ content:
     region: content
     settings:
       size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  path:
-    type: path
-    weight: 5
-    region: content
-    settings: {  }
+      placeholder: 'Введите имя'
     third_party_settings: {  }
   user_picture:
     type: image_widget_crop
-    weight: 3
+    weight: 2
     region: content
     settings:
       progress_indicator: throbber
@@ -65,7 +58,8 @@ content:
       crop_preview_image_style: crop_thumbnail
       crop_list:
         - user_preview
-      crop_types_required: {  }
+      crop_types_required:
+        - user_preview
       warn_multiple_usages: true
       show_crop_area: false
       show_default_crop: true
@@ -73,4 +67,5 @@ content:
 hidden:
   langcode: true
   language: true
+  path: true
   timezone: true

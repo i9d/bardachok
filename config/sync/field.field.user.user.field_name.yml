@@ -12,9 +12,11 @@ entity_type: user
 bundle: user
 label: Имя
 description: ''
-required: true
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: Редактор
 default_value_callback: ''
 settings: {  }
 field_type: string

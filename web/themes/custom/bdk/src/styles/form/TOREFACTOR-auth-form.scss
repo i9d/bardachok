@@ -1,74 +1,132 @@
-#user-register-form,
-#user-login-form,
-#user-pass {
+.auth-form {
   border-radius: 64px;
-  padding: 50px;
-  max-width: 600px;
+  padding: 40px 32px;
+  max-width: 440px;
   margin: 0 auto;
+  background-color: $gray-0;
+  box-shadow: 0 4px 20px rgba(0, 33, 95, 0.05);
 
-  #edit-mail--description,
-  #edit-pass--description,
-  #edit-field-bio-0-value--description,
-  #edit-user-picture-0--description {
-    @include Description_Regular_12px;
-  }
+  .form-header {
+    margin-bottom: 64px;
+    position: relative;
 
-  .form-item {
-    display: flex;
-    flex-direction: column;
-
-    .form-required::after {
-      background-image: url("../../assets/images/required-sign.svg");
-    }
-
-    &.form-type-email {
-      .description {
-        display: none;
-      }
-    }
-
-    &.form-type-password-confirm {
-      flex-direction: row;
-      justify-content: space-between;
-      .form-item {
-        max-width: 230px;
-
-      }
-      .description {
-        display: none;
-      }
-    }
-
-    &.form-item-user-picture-0 {
-      .image-widget {
-        display: flex;
-        .image-preview {
-          display: flex;
-          align-items: center;
-        }
-        .image-widget-data {
-          margin-left: 10px;
-          .input[type="file"] {
-            background: #0a6eb4;
-          }
-        }
-      }
-      .description {
-        display: none;
-      }
-    }
-  }
-  .field--name-field-categories {
-    .form-item {
+    &::after {
       display: block;
+      width: 100%;
+      bottom: -24px;
+      content: '';
+      position: absolute;
+      border-bottom: 1px solid $gray-200;
+    }
+
+    .auth-title {
+      @include Title_3_Bold_28pt;
+      margin-bottom: 12px;
+    }
+
+  }
+  .form-item {
+    #policy_checkbox-error {
+      display: none !important;
+    }
+    position: relative;
+    .shwpd {
+      position: absolute;
+      top: 38px;
+      right: 13px;
+      width: 22px;
+      height: 22px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .eye-close {
+      background-image: url("../../assets/images/eye-closed.svg");
+    }
+    .eye-open {
+      background-image: url("../../assets/images/eye-open.svg");
     }
   }
-  .form-item-name .description,
-  .form-item-pass .description {
-    display: none;
+  .form-item-pass {
+    margin: 0;
   }
-  #edit-actions {
-    display: flex;
-    justify-content: center;
+  label.form-required {
+    @include Body_5_Regular_16pt;
   }
+
+  .form-item-policy-checkbox {
+    .form-checkbox {
+      width: min-content;
+    }
+    label {
+      @include Description_Regular_12px;
+      color: $gray-400;
+    }
+  }
+  .form-item-pass-pass2 {
+    margin: 0 !important;
+  }
+
+  //#edit-mail--description,
+  //#edit-pass--description,
+  //#edit-field-bio-0-value--description,
+  //#edit-user-picture-0--description {
+  //  @include Description_Regular_12px;
+  //}
+  //
+  //.form-item {
+  //  display: flex;
+  //  flex-direction: column;
+  //
+
+  //
+  //  &.form-type-email {
+  //    .description {
+  //      display: none;
+  //    }
+  //  }
+  //
+  //  //&.form-type-password-confirm {
+  //  //  flex-direction: row;
+  //  //  justify-content: space-between;
+  //  //  .form-item {
+  //  //    max-width: 230px;
+  //  //
+  //  //  }
+  //  //  .description {
+  //  //    display: none;
+  //  //  }
+  //  //}
+  //
+  //  &.form-item-user-picture-0 {
+  //    .image-widget {
+  //      display: flex;
+  //      .image-preview {
+  //        display: flex;
+  //        align-items: center;
+  //      }
+  //      .image-widget-data {
+  //        margin-left: 10px;
+  //        .input[type="file"] {
+  //          background: #0a6eb4;
+  //        }
+  //      }
+  //    }
+  //    .description {
+  //      display: none;
+  //    }
+  //  }
+  //}
+  //.field--name-field-categories {
+  //  .form-item {
+  //    display: block;
+  //  }
+  //}
+  //.form-item-name .description,
+  //.form-item-pass .description {
+  //  display: none;
+  //}
+  //#edit-actions {
+  //  display: flex;
+  //  justify-content: center;
+  //}
 }

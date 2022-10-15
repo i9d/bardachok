@@ -1,0 +1,11 @@
+.form-item {
+  margin: 0 0 24px !important;
+  display: block;
+  .form-required::after {
+    background-image: url("../../assets/images/required-sign.svg");
+  }
+  label.error {
+    @include Body_7_Regular_14pt;
+    color: $error;
+  }
+}

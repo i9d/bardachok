@@ -1,4 +1,4 @@
-name: Register overwrite
+name: Register overrides
 description: Изменяет форму регистрации.
 package: Bardachok
 type: module

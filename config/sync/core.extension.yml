@@ -10,7 +10,7 @@ module:
   bdk_blocks: 0
   bdk_extra_field: 0
   bdk_layouts: 0
-  bdk_register_overwrite: 0
+  bdk_register_overrides: 0
   bdk_step_number_default: 0
   big_pipe: 0
   blazy: 0
@@ -19,6 +19,8 @@ module:
   breakpoint: 0
   ckeditor: 0
   ckeditor5: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   config: 0
   content_moderation: 0
   contextual: 0
@@ -71,6 +73,7 @@ module:
   snowball_stemmer: 0
   stage_file_proxy: 0
   statistics: 0
+  status_messages: 0
   system: 0
   taxonomy: 0
   taxonomy_menu: 0
@@ -81,6 +84,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  view_password: 0
   views_infinite_scroll: 0
   views_ui: 0
   webp: 0

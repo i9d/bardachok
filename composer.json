@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -20,6 +24,7 @@
         "drupal/admin_toolbar": "^3.1",
         "drupal/autosave_form": "^1.4",
         "drupal/backup_migrate": "^5.0",
+        "drupal/clientside_validation": "^4.0",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
@@ -36,18 +41,23 @@
         "drupal/redirect": "^1.7",
         "drupal/remove_username": "^1.2",
         "drupal/search_api": "^1.26",
+        "drupal/select2": "^1.13",
         "drupal/simple_sitemap": "^4.1",
         "drupal/slick": "^2.6",
         "drupal/slick_views": "^2.6",
         "drupal/snowball_stemmer": "^2.0",
         "drupal/stage_file_proxy": "^1.2",
+        "drupal/status_messages": "^4.3",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
+        "drupal/view_password": "^6.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/webp": "^1.0@beta",
         "drush/drush": "^11.0",
         "kenwheeler/slick": "^1.8",
+        "npm-asset/select2": "^4.0",
+        "oomphinc/composer-installers-extender": "^2.0",
         "zodiacmedia/drupal-libraries-installer": "^1.5"
     },
     "conflict": {
@@ -62,11 +72,13 @@
             "drupal/core-project-message": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "zodiacmedia/drupal-libraries-installer": true,
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "oomphinc/composer-installers-extender": true
         },
         "sort-packages": true
     },
     "extra": {
+        "installer-types": ["bower-asset", "npm-asset"],
         "patches": {
             "drupal/snowball_stemmer": {
                 "#3274194 Processor unavailable when English language is disabled": "https://www.drupal.org/files/issues/2022-04-08/search-api-processor-langauges-support-3274194-3.patch"
@@ -86,7 +98,9 @@
                 "type:drupal-core"
             ],
             "web/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"

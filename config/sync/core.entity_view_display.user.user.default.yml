@@ -59,5 +59,7 @@ content:
     weight: 0
     region: content
 hidden:
+  extra_field_author_bio_trimmed: true
   langcode: true
   member_for: true
+  search_api_excerpt: true

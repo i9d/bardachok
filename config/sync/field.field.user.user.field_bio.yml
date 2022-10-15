@@ -11,10 +11,12 @@ field_name: field_bio
 entity_type: user
 bundle: user
 label: Био
-description: "Краткое описание вашей деятельности. Разделите сферы запятыми, например:\r\nЖурналист, автор телеграм-канала «Не мэр Омска»"
-required: true
+description: ''
+required: false
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: Активист
 default_value_callback: ''
 settings: {  }
 field_type: string

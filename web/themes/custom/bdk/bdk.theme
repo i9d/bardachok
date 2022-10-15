@@ -49,3 +49,10 @@ function bdk_preprocess_page(&$variables) {
     throw new NotFoundHttpException('', null, 0, );
   }
 }
+
+/**
+ * Implements theme_suggestions_form_alter().
+ */
+function bdk_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  $suggestions[] = 'form__' . $variables['element']['#form_id'];
+}

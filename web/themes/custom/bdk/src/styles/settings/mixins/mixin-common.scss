@@ -96,8 +96,8 @@
   &:focus {
     outline: 3px solid $blue-focus;
   }
+}
 
-  &.disabled {
-    background-color: $blue-lighter;
-  }
+@mixin button-disabled {
+  background-color: $blue-lighter;
 }
