@@ -25,7 +25,7 @@
 
 
 /* Forms */
-@import 'form/TOREFACTOR-auth-form';
+@import 'form/auth-form';
 @import 'form/form-item';
 
 /* Pages */
@@ -71,3 +71,4 @@
 
 /* Views */
 @import 'views/algorithm-teaser';
+@import 'views/search-default';

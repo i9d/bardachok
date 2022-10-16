@@ -1,0 +1,96 @@
+uuid: 6a0a1d46-17e4-469d-a6f4-79abd2c5c5cd
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.algorithm.title
+    - core.entity_view_mode.node.search_result
+    - field.field.node.algorithm.field_annotation
+    - field.field.node.algorithm.field_category
+    - field.field.node.algorithm.field_conclusion
+    - field.field.node.algorithm.field_content
+    - field.field.node.algorithm.field_image
+    - field.field.node.algorithm.field_reviews_text
+    - node.type.algorithm
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          layout_builder_styles_style:
+            temporary_page: 0
+        components:
+          b5328fa6-ad2d-44de-91a8-ef9f18dbe77c:
+            uuid: b5328fa6-ad2d-44de-91a8-ef9f18dbe77c
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:title'
+              label: Заголовок
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
+          070673f9-0caa-4101-9dd2-f8d7506f8f2f:
+            uuid: 070673f9-0caa-4101-9dd2-f8d7506f8f2f
+            region: content
+            configuration:
+              id: 'field_block:node:algorithm:field_annotation'
+              label: Аннотация
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style:
+                algorithm_hero_image: 0
+                author_teaser: 0
+                category_color_link: 0
+                node_title: 0
+        third_party_settings: {  }
+id: node.algorithm.search_result
+targetEntityType: node
+bundle: algorithm
+mode: search_result
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_annotation: true
+  field_category: true
+  field_conclusion: true
+  field_content: true
+  field_image: true
+  field_reviews_text: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
+  tg_comments: true

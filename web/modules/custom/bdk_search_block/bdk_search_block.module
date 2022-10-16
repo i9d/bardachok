@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Main bdk_search_block module file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function bdk_search_block_theme() {
+  return [
+    'search_default_layout' => [
+      'variables' => [
+        'content' => NULL,
+      ],
+      'template' => 'search-default-layout',
+    ],
+  ];
+}

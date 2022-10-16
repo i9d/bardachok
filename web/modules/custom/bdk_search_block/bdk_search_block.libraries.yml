@@ -1,0 +1,6 @@
+search_block:
+  js:
+    js/search-block.js: {}
+  dependencies:
+    - core/jquery
+    - core/once

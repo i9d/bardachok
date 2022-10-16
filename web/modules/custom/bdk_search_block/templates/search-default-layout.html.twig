@@ -1,0 +1,17 @@
+{% set classes = [
+  'layout',
+  'layout--search-default-layout',
+] %}
+
+{% if content %}
+  <div id="search-default-block">
+    <div class="search-button">
+      <button id="search-button"></button>
+    </div>
+    {% if content.search_view %}
+    <div id="search-view" class="visually-hidden">
+      {{ content.search_view }}
+      {% endif %}
+    </div>
+  </div>
+{% endif %}

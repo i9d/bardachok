@@ -1,0 +1,25 @@
+uuid: 672b1099-94d5-477d-8e30-99795586c82d
+langcode: ru
+status: true
+dependencies:
+  module:
+    - bdk_search_block
+    - system
+  theme:
+    - bdk
+id: bdksearchbuttonblock
+theme: bdk
+region: header_right
+weight: 0
+provider: null
+plugin: search_button_block
+settings:
+  id: search_button_block
+  label: 'BDK Search Button Block'
+  label_display: '0'
+  provider: bdk_search_block
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

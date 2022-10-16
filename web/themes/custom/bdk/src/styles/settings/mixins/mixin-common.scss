@@ -101,3 +101,10 @@
 @mixin button-disabled {
   background-color: $blue-lighter;
 }
+
+@mixin svg-button-black {
+  background-color: $gray-900;
+  &:hover {
+    background-color: $gray-600;
+  }
+}
