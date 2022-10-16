@@ -19,4 +19,4 @@
       }
     },
   };
-})(jQuery, Drupal, drupalSettings, window.Cookies, once);
+})(jQuery, Drupal, once);
