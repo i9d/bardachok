@@ -1,4 +1,8 @@
 .block-views-blockcategory-algorithm-slider {
+  .slick__slide {
+    //width: 342px !important;
+    margin-left: 20px;
+  }
   .slick__arrow {
     .slick-arrow {
       //position: absolute;
@@ -7,7 +11,7 @@
 
       &::before {
         content: "";
-        background-image: url("../../assets/images/arrow.svg");
+        background-image: url("../../assets/images/slider-arrow.svg");
         display: block;
         position: absolute;
         height: 48px;
@@ -19,14 +23,14 @@
 
     .slick-prev {
       left: -24px;
-    }
-
-    .slick-next {
-      right: -24px;
 
       &::before {
         transform: scaleX(-1);
       }
+    }
+
+    .slick-next {
+      right: -24px;
     }
   }
 }

@@ -80,7 +80,6 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-  <a href="{{ url }}" {{ content_attributes.addClass('node__content') }}>
+  <a class="full-content" href="{{ url }}" {{ content_attributes.addClass('node__content') }}></a>
     {{ content }}
-  </a>
 </article>

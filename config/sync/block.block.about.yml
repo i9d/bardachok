@@ -1,23 +1,23 @@
-uuid: 4ebf75c2-0e6b-46a9-9920-8a532995b95c
+uuid: 49b4e2ac-14ef-440f-b161-c23a1bbbf952
 langcode: ru
 status: true
 dependencies:
   content:
-    - 'block_content:basic:bf0aee88-b74f-43e6-aefe-b4185a6589af'
+    - 'block_content:basic:cac7a668-ec1d-48fc-b813-1127934b2516'
   module:
     - block_content
     - system
   theme:
     - bdk
-id: donate_2
+id: about
 theme: bdk
-region: footer
-weight: -4
+region: header_right
+weight: 0
 provider: null
-plugin: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
+plugin: 'block_content:cac7a668-ec1d-48fc-b813-1127934b2516'
 settings:
-  id: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
-  label: Donate
+  id: 'block_content:cac7a668-ec1d-48fc-b813-1127934b2516'
+  label: About
   label_display: '0'
   provider: block_content
   status: true
@@ -26,5 +26,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: false
+    negate: true
     pages: /node/12

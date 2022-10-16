@@ -34,6 +34,13 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .about-us {
+        @include Body_5_Regular_16pt;
+        &:hover {
+          color: $gray-600;
+        }
+      }
     }
   }
 }

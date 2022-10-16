@@ -247,6 +247,36 @@ display:
           validate_options: {  }
           break_phrase: false
           not: false
+        nid:
+          id: nid
+          table: search_api_index_algorithm_by_category
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options: {  }
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: true
       style:
         type: slick
         options:
@@ -262,17 +292,17 @@ display:
           vanilla: true
           layout: ''
           cache: 0
-          skin: ''
+          skin: classic
           style: ''
           grid: ''
           grid_medium: ''
           grid_small: ''
           overridables:
+            infinite: infinite
             arrows: '0'
             autoplay: '0'
             dots: '0'
             draggable: '0'
-            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
             variableWidth: '0'

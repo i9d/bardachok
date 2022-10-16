@@ -7,14 +7,20 @@ name: algorithm
 weight: 0
 label: Algorithm
 group: ''
-skin: ''
-breakpoints: null
+skin: default
+breakpoints: 0
 optimized: true
 options:
   options__active_tab: edit-options-settings
   settings:
     adaptiveHeight: true
     prevArrow: Previous
+    draggable: false
     lazyLoad: ondemand
+    respondTo: slider
     rows: 0
-    slidesToShow: 2
+    slidesToShow: 4
+    speed: 200
+    cssEase: linear
+    useTransform: false
+    variableWidth: true

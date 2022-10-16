@@ -1,0 +1,28 @@
+#block-donatebottom {
+  @include container-1304;
+  .field--name-body {
+    display: flex;
+    background-color: $gray-100;
+    box-shadow: 0 4px 30px rgba(233, 233, 233, 0.5);
+    border-radius: 48px;
+    padding: 40px 54px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+    .left {
+      flex: 0 1 35%;
+      &>h2 {
+        @include Title_2_Bold_28pt;
+        margin-bottom: 32px;
+        line-height: 64px;
+      }
+      &>p {
+        @include Body_5_Regular_16pt;
+        margin-bottom: 48px;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+}
