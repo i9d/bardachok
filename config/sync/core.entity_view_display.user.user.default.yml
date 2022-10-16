@@ -7,9 +7,7 @@ dependencies:
     - field.field.user.user.field_categories
     - field.field.user.user.field_name
     - field.field.user.user.user_picture
-    - image.style.user_preview
   module:
-    - image
     - layout_builder
     - user
 third_party_settings:
@@ -22,44 +20,13 @@ id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
-content:
-  field_bio:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_categories:
-    type: entity_reference_label
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  user_picture:
-    type: image
-    label: hidden
-    settings:
-      image_link: content
-      image_style: user_preview
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 0
-    region: content
+content: {  }
 hidden:
   extra_field_author_bio_trimmed: true
+  field_bio: true
+  field_categories: true
+  field_name: true
   langcode: true
   member_for: true
   search_api_excerpt: true
+  user_picture: true
