@@ -1,0 +1,24 @@
+uuid: d44e72b1-7295-4382-9b3a-d3a61bd614e3
+langcode: ru
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.technical_page.layout_builder__layout
+    - node.type.technical_page
+  module:
+    - user
+id: node.technical_page.teaser
+targetEntityType: node
+bundle: technical_page
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

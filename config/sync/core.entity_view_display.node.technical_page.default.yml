@@ -1,0 +1,35 @@
+uuid: fd9815ed-6f7c-4323-b7bf-8223d45875b4
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.node.technical_page.layout_builder__layout
+    - node.type.technical_page
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_builder_blank
+        layout_settings:
+          label: ''
+        components: {  }
+        third_party_settings: {  }
+id: node.technical_page.default
+targetEntityType: node
+bundle: technical_page
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

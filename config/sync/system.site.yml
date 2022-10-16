@@ -6,8 +6,8 @@ name: Бардачок
 mail: admin@bardachok.online
 slogan: ''
 page:
-  403: ''
-  404: ''
+  403: /node/34
+  404: /node/33
   front: /node/12
 admin_compact_mode: false
 weight_select_max: 100

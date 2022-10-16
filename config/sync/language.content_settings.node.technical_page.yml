@@ -1,0 +1,11 @@
+uuid: e9719287-7d20-4589-95ba-94813a3b87da
+langcode: ru
+status: true
+dependencies:
+  config:
+    - node.type.technical_page
+id: node.technical_page
+target_entity_type_id: node
+target_bundle: technical_page
+default_langcode: site_default
+language_alterable: false

@@ -21,6 +21,14 @@ function bdk_preprocess_field(&$variables) {
  * Implements template_preprocess_html().
  */
 function bdk_preprocess_html(&$variables) {
+  // Rewrite head title for user page.
+  $current_route = \Drupal::routeMatch();
+  $route_name = $current_route->getRouteName();
+  if ($route_name == 'entity.user.canonical') {
+    $variables['head_title']['title'] = 'Здесь пока ничего нет';
+  }
+
+  // Add color class for category.
   $color = 'default';
   if (isset($variables['node_type']) && $variables['node_type'] == 'algorithm') {
     if ($node = \Drupal::routeMatch()->getParameter('node')) {
@@ -35,22 +43,12 @@ function bdk_preprocess_html(&$variables) {
       $color = $category->get('field_color')->value;
     }
   }
-    $variables['attributes']['class'][] = 'tax-color-' . $color;
+  $variables['attributes']['class'][] = 'tax-color-' . $color;
+
+  // Add node-id class.
   $node = \Drupal::routeMatch()->getParameter('node');
   if (is_object($node)) {
     $variables['attributes']['class'][] = 'node-' . $node->id();
-  }
-}
-
-/**
- * Implements theme_preprocess_page().
- */
-function bdk_preprocess_page(&$variables) {
-  $current_route = \Drupal::routeMatch();
-  $route_name = $current_route->getRouteName();
-
-  if ($route_name == 'entity.user.canonical') {
-    throw new NotFoundHttpException('', null, 0, );
   }
 }
 
