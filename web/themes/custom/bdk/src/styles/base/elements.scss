@@ -96,7 +96,7 @@ input {
   background-color: $gray-100;
   border: 1px solid $gray-200;
   border-radius: 4px;
-  width: 100%;
+  max-width: 100%;
   transition: all 0s;
 
   &:focus {
@@ -108,8 +108,8 @@ input {
 input[type=checkbox] {
   position: absolute;
   opacity: 0;
-  width: 100% !important;
-  height: 100%;
+  width: 20px !important;
+  height: 20px;
 
 }
 

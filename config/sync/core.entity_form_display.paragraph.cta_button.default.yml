@@ -1,0 +1,32 @@
+uuid: 56a293c4-e3e7-4e9e-9eb1-54221085f1db
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_button.field_cta_button
+    - paragraphs.paragraphs_type.cta_button
+  module:
+    - link_attributes
+id: paragraph.cta_button.default
+targetEntityType: paragraph
+bundle: cta_button
+mode: default
+content:
+  field_cta_button:
+    type: link_attributes
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: false
+        name: false
+        target: true
+        rel: true
+        class: true
+        accesskey: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

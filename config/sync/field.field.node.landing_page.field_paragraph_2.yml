@@ -1,17 +1,17 @@
-uuid: 3a76ca34-a66e-4e23-a5c3-b0ab4f3807cd
+uuid: 9b55a09f-9967-4c15-b22e-349d1e1036a5
 langcode: ru
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraph
+    - field.storage.node.field_paragraph_2
     - node.type.landing_page
   module:
     - entity_reference_revisions
-id: node.landing_page.field_paragraph
-field_name: field_paragraph
+id: node.landing_page.field_paragraph_2
+field_name: field_paragraph_2
 entity_type: node
 bundle: landing_page
-label: Paragraph
+label: 'Paragraph 2'
 description: ''
 required: false
 translatable: false
@@ -21,27 +21,24 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles: null
-    negate: 1
+    negate: 0
     target_bundles_drag_drop:
-      cta_link:
-        weight: 8
-        enabled: false
       image_landing:
-        weight: 9
+        weight: 7
         enabled: false
       image_slider:
-        weight: 10
+        weight: 8
         enabled: false
       step:
-        weight: 11
+        weight: 9
         enabled: false
       title_subtitle_text:
-        weight: 12
+        weight: 10
         enabled: false
       title_text_landing:
-        weight: 13
+        weight: 11
         enabled: false
       two_col:
-        weight: 14
+        weight: 12
         enabled: false
 field_type: entity_reference_revisions

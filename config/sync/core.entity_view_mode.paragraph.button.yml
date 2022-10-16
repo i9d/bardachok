@@ -1,0 +1,10 @@
+uuid: 21fdba29-f779-4995-98c6-3bc9db63260b
+langcode: ru
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.button
+label: Button
+targetEntityType: paragraph
+cache: true

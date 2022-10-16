@@ -63,3 +63,16 @@ user_teaser_layout:
       label: Name
     bio:
       label: Bio
+twocol_basic_layout:
+  label: 'Twocol Basic Layout'
+  path: layouts/twocol
+  category: 'Custom Layouts'
+  template: basic-layout
+  default_region: content
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second

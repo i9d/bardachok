@@ -1,0 +1,24 @@
+uuid: c71c4d84-24be-4078-963b-749274b95cf8
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_landing.field_image
+    - paragraphs.paragraphs_type.image_landing
+  module:
+    - media_library
+id: paragraph.image_landing.default
+targetEntityType: paragraph
+bundle: image_landing
+mode: default
+content:
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

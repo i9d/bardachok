@@ -44,9 +44,12 @@ module:
   image_widget_crop: 0
   language: 0
   layout_builder: 0
+  layout_builder_admin_theme: 0
+  layout_builder_modal: 0
   layout_builder_styles: 0
   layout_discovery: 0
   link: 0
+  link_attributes: 0
   locale: 0
   media: 0
   media_library: 0
@@ -74,6 +77,7 @@ module:
   stage_file_proxy: 0
   statistics: 0
   status_messages: 0
+  svg_image: 0
   system: 0
   taxonomy: 0
   taxonomy_menu: 0

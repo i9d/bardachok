@@ -1,0 +1,8 @@
+uuid: c4c3793b-8c63-46d6-b495-097b612bd359
+langcode: ru
+status: true
+dependencies: {  }
+id: paragraph
+label: Paragraph
+revision: 0
+description: ''

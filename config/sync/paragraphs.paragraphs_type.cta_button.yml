@@ -1,0 +1,10 @@
+uuid: 80b78cf2-6874-4582-baf9-189856a59c0f
+langcode: ru
+status: true
+dependencies: {  }
+id: cta_button
+label: 'CTA Button (Landing)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

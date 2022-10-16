@@ -1,0 +1,10 @@
+uuid: d3be779d-d00b-45a6-851e-04ac5bc17669
+langcode: ru
+status: true
+dependencies: {  }
+id: image_landing
+label: 'Image (landing)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

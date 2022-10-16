@@ -1,0 +1,23 @@
+uuid: b80c0dd1-5713-4b81-b5ce-48d767448f9d
+langcode: ru
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image_landing.field_image
+    - paragraphs.paragraphs_type.image_landing
+id: paragraph.image_landing.default
+targetEntityType: paragraph
+bundle: image_landing
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true
