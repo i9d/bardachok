@@ -36,6 +36,10 @@ function bdk_preprocess_html(&$variables) {
     }
   }
     $variables['attributes']['class'][] = 'tax-color-' . $color;
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if (is_object($node)) {
+    $variables['attributes']['class'][] = 'node-' . $node->id();
+  }
 }
 
 /**

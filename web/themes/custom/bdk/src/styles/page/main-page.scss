@@ -1,21 +1,26 @@
-.node--id-30 {
-  margin-top: 103px;
+.node-30 {
+  header {
+    margin-bottom: 100px;
+  }
+  .node--id-30 {
 
-  .layout--twocol-basic-layout {
-    @include container-1304;
-    display: flex;
-
-    .layout__region--first {
+    .layout--twocol-basic-layout {
+      @include container-1304;
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-right: 100px;
 
-      .paragraph--type--title-text-landing {
-        .field--name-title h1 {
-          margin-bottom: 32px;
+      .layout__region--first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 100px;
+
+        .paragraph--type--title-text-landing {
+          .field--name-title h1 {
+            margin-bottom: 32px;
+          }
         }
       }
     }
   }
 }
+
