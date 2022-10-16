@@ -105,6 +105,12 @@ input {
   }
 }
 
+input[type=email],
+input[type=password],
+input[type=text] {
+  width: 100%;
+}
+
 input[type=checkbox] {
   position: absolute;
   opacity: 0;
@@ -118,6 +124,7 @@ input[type=checkbox] + label:not(.error) {
   align-items: center;
   user-select: none;
   flex-wrap: wrap;
+
   a {
     z-index: 1;
   }
@@ -137,21 +144,21 @@ input[type=checkbox] + label:not(.error)::before {
   background-position: center center;
 }
 
-input[type=checkbox]:checked  + label::before {
+input[type=checkbox]:checked + label::before {
   border-color: #0b76ef;
   background-image: url("../../assets/images/checked.svg");
 }
 
-.custom-checkbox:not(:disabled):not(:checked)  + label:hover::before {
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: $blue-light;
 }
 
-.custom-checkbox:not(:disabled):active  + label::before {
+.custom-checkbox:not(:disabled):active + label::before {
   background-color: $gray-200;
   border-color: $blue-primary;
 }
 
-.custom-checkbox:focus  + label::before {
+.custom-checkbox:focus + label::before {
   background-color: $gray-200;
   border-color: $blue-primary;
 }
