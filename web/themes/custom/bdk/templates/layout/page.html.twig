@@ -53,16 +53,21 @@
     </div>
   </header>
 
-  {{ page.top }}
+  <div class="layout-top">
+    {{ page.top }}
+  </div>
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
-
+    </div>
   </main>
+
+  <div class="layout-bottom">
+    {{ page.bottom }}
+  </div>
 
   {% if page.footer %}
     <footer role="contentinfo">
@@ -70,4 +75,4 @@
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>
