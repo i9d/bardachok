@@ -48,6 +48,7 @@
         "drupal/snowball_stemmer": "^2.0",
         "drupal/stage_file_proxy": "^1.2",
         "drupal/status_messages": "^4.3",
+        "drupal/svg_image": "^1.16",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
