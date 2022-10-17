@@ -11,7 +11,7 @@ dependencies:
 id: donate
 theme: bdk
 region: header_right
-weight: -3
+weight: -9
 provider: null
 plugin: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
 settings:

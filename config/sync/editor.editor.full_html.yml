@@ -50,7 +50,36 @@ settings:
           items:
             - ShowBlocks
             - Source
-  plugins: {  }
+            - tokenbrowser
+  plugins:
+    tokenbrowser:
+      token_types:
+        file: file
+        language: language
+        media: media
+        search_api_task: search_api_task
+        url: url
+        path_alias: path_alias
+        user: user
+        date: date
+        site: site
+        node: node
+        menu: menu
+        metatag: metatag
+        crop: crop
+        paragraph: paragraph
+        menu_link_content: menu_link_content
+        block_content: block_content
+        view: view
+        vocabulary: vocabulary
+        random: random
+        content_moderation_state: content_moderation_state
+        menu-link: menu-link
+        current-date: current-date
+        current-page: current-page
+        current-user: current-user
+        term: term
+        content-type: content-type
 image_upload:
   status: true
   scheme: public

@@ -1,0 +1,8 @@
+uuid: 9b51e05b-765a-492b-bc34-5743f6bff99b
+langcode: ru
+status: true
+dependencies: {  }
+id: footer-right
+label: 'Персональные данные'
+description: ''
+locked: false

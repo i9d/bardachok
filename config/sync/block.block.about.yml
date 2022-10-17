@@ -12,7 +12,7 @@ dependencies:
 id: about
 theme: bdk
 region: header_right
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:cac7a668-ec1d-48fc-b813-1127934b2516'
 settings:

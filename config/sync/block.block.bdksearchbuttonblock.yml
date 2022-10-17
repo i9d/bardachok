@@ -10,7 +10,7 @@ dependencies:
 id: bdksearchbuttonblock
 theme: bdk
 region: header_right
-weight: 0
+weight: -6
 provider: null
 plugin: search_button_block
 settings:

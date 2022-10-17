@@ -1,0 +1,8 @@
+uuid: 285f5a85-81ac-411f-a58c-87b0c0ec7ac8
+langcode: ru
+status: true
+dependencies: {  }
+id: footer-left
+label: 'Проект «Бардачок»'
+description: ''
+locked: false

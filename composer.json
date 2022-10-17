@@ -56,6 +56,7 @@
         "drupal/taxonomy_menu": "^3.5",
         "drupal/text_field_formatter": "^2.0",
         "drupal/tg_integration": "^1.0",
+        "drupal/token_filter": "^1.4",
         "drupal/view_password": "^6.0",
         "drupal/views_infinite_scroll": "^2.0",
         "drupal/webp": "^1.0@beta",

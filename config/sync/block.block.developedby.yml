@@ -1,0 +1,25 @@
+uuid: 25e36428-5a86-4e2a-aec7-eebd627d5923
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2874594-c8bf-4e85-b02f-66bb848dfb1f'
+  module:
+    - block_content
+  theme:
+    - bdk
+id: developedby
+theme: bdk
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:f2874594-c8bf-4e85-b02f-66bb848dfb1f'
+settings:
+  id: 'block_content:f2874594-c8bf-4e85-b02f-66bb848dfb1f'
+  label: 'Developed by'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

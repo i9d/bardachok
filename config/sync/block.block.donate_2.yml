@@ -12,7 +12,7 @@ dependencies:
 id: donate_2
 theme: bdk
 region: footer
-weight: -4
+weight: -7
 provider: null
 plugin: 'block_content:bf0aee88-b74f-43e6-aefe-b4185a6589af'
 settings:

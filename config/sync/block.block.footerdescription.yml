@@ -1,0 +1,25 @@
+uuid: a17da986-6ab7-4da4-b6e4-2707d3e725e9
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0059ede8-ab58-4edc-bf51-cdeef5d403de'
+  module:
+    - block_content
+  theme:
+    - bdk
+id: footerdescription
+theme: bdk
+region: footer_top
+weight: -9
+provider: null
+plugin: 'block_content:0059ede8-ab58-4edc-bf51-cdeef5d403de'
+settings:
+  id: 'block_content:0059ede8-ab58-4edc-bf51-cdeef5d403de'
+  label: 'Footer Description'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

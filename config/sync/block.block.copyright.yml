@@ -1,0 +1,30 @@
+uuid: c5366e16-a9af-48e8-81a2-0c4dff0aa359
+langcode: ru
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f4b30092-daf3-4875-97c8-b988c65feeb2'
+  module:
+    - block_content
+    - system
+  theme:
+    - bdk
+id: copyright
+theme: bdk
+region: footer_bottom
+weight: -8
+provider: null
+plugin: 'block_content:f4b30092-daf3-4875-97c8-b988c65feeb2'
+settings:
+  id: 'block_content:f4b30092-daf3-4875-97c8-b988c65feeb2'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/12\r\n/main"

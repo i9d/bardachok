@@ -8,8 +8,8 @@ dependencies:
     - bdk
 id: scrolltoupblock
 theme: bdk
-region: footer
-weight: 0
+region: bottom
+weight: -6
 provider: null
 plugin: scroll_to_up_block
 settings:

@@ -348,28 +348,6 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      pager:
-        type: infinite_scroll
-        options:
-          offset: 0
-          items_per_page: 9
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: ''
-            automatically_load_content: false
-            initially_load_all_pages: false
       style:
         type: default
         options:
@@ -384,7 +362,6 @@ display:
             'entity:node':
               algorithm: teaser_without_category
       defaults:
-        pager: false
         style: false
         row: false
       display_description: ''
@@ -395,7 +372,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url
-        - url.query_args
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_category'
@@ -474,32 +450,9 @@ display:
     position: 1
     display_options:
       title: 'First part (without category)'
-      pager:
-        type: infinite_scroll
-        options:
-          offset: 0
-          items_per_page: 9
-          total_pages: null
-          id: 0
-          tags:
-            next: 'Next ›'
-            previous: '‹ Previous'
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          views_infinite_scroll:
-            button_text: ''
-            automatically_load_content: false
-            initially_load_all_pages: false
       arguments: {  }
       defaults:
         title: false
-        pager: false
         style: true
         row: true
         arguments: false
@@ -510,7 +463,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_category'

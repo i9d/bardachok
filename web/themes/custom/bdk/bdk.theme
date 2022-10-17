@@ -53,6 +53,16 @@ function bdk_preprocess_html(&$variables) {
 }
 
 /**
+ * Implements template_preprocess_page().
+ */
+function bdk_preprocess_page(&$variables) {
+  if (\Drupal::request()->getRequestUri() == '/') {
+    unset($variables['page']['footer_top']);
+    unset($variables['page']['footer_bottom']);
+  }
+}
+
+/**
  * Implements theme_suggestions_form_alter().
  */
 function bdk_theme_suggestions_form_alter(array &$suggestions, array $variables) {
