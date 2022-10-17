@@ -11,7 +11,7 @@
       width: 100%;
 
       &.clearfix::after {
-        width: 332px;
+        width: 322px;
       }
 
       .views-row {
@@ -30,5 +30,12 @@
         }
       }
     }
+  }
+}
+
+.block-views-blockcategory-block-1,
+.block-views-blockcategory-block-3 {
+  .pager {
+    display: none;
   }
 }
