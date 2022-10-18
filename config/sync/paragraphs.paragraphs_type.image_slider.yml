@@ -6,5 +6,5 @@ id: image_slider
 label: Слайдер
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Слайдер, состоящий из Медиа. Вы можете загрузить несколько изображений/видео'
 behavior_plugins: {  }

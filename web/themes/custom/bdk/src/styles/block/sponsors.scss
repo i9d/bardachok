@@ -30,3 +30,13 @@
   }
 }
 
+.layout--category-layout .block-views-blocksponsors-top-sponsors-default {
+  max-width: 100%;
+  h2 {
+    //@include Subhead_1_Semibold_24pt;
+    width: 256px;
+    margin: 60px auto 60px;
+    text-align: center;
+  }
+}
+

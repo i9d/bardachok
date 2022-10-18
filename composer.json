@@ -84,7 +84,10 @@
         "sort-packages": true
     },
     "extra": {
-        "installer-types": ["bower-asset", "npm-asset"],
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "patches": {
             "drupal/snowball_stemmer": {
                 "#3274194 Processor unavailable when English language is disabled": "https://www.drupal.org/files/issues/2022-04-08/search-api-processor-langauges-support-3274194-3.patch"

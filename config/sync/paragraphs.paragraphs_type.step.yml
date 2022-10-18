@@ -6,5 +6,5 @@ id: step
 label: Шаг
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Шаг алгоритма. Используйте отдельный параграф для каждого из шагов'
 behavior_plugins: {  }

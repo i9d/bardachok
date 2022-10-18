@@ -58,7 +58,9 @@ function bdk_preprocess_html(&$variables) {
 function bdk_preprocess_page(&$variables) {
   $ignore_footer = [
     '/',
-    '/main'
+    '/main',
+    '/user/login',
+    '/user/register',
   ];
   if (in_array(\Drupal::request()->getRequestUri(), $ignore_footer)) {
     unset($variables['page']['footer_top']);

@@ -331,7 +331,7 @@ display:
       display_description: ''
       header: {  }
       display_extenders: {  }
-      block_hide_empty: false
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

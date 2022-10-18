@@ -11,8 +11,8 @@ field_name: field_image_slide
 entity_type: paragraph
 bundle: image_slider
 label: Слайд
-description: ''
-required: false
+description: 'Может содержать в себе до 6 элементов Медиа'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

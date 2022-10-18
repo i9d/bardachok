@@ -10,7 +10,7 @@ field_name: field_title
 entity_type: paragraph
 bundle: title_subtitle_text
 label: Заголовок
-description: ''
+description: 'Заголовок данной секции. Необязательное поле'
 required: false
 translatable: true
 default_value: {  }

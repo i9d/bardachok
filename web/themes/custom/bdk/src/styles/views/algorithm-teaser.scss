@@ -3,6 +3,12 @@
 .block-views-blockcategory-block-3,
 .block-views-blockcategory-block-4 {
   .view-category {
+    .view-empty {
+      @include Title_2_Bold_28pt;
+      margin: 0 auto 300px;
+      text-align: center;
+    }
+
     .view-content,
     .views-infinite-scroll-content-wrapper {
       display: flex;

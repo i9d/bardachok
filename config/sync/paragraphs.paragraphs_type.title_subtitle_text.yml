@@ -6,5 +6,5 @@ id: title_subtitle_text
 label: 'Текстовый параграф'
 icon_uuid: null
 icon_default: null
-description: ''
+description: 'Элемент, содержащий в себе заголовок, подзаголовок и текст'
 behavior_plugins: {  }

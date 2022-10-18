@@ -1,0 +1,5 @@
+name: Admin overrides
+description: Кастомизация админки.
+package: Bardachok
+type: module
+core_version_requirement: ^9

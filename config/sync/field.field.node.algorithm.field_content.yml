@@ -13,8 +13,8 @@ field_name: field_content
 entity_type: node
 bundle: algorithm
 label: 'Содержимое алгоритма'
-description: ''
-required: false
+description: 'Основная часть статьи. Опишите здесь все, за исключением аннотации и заключения'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -25,14 +25,23 @@ settings:
       step: step
     negate: 0
     target_bundles_drag_drop:
-      media:
-        weight: 5
+      cta_button:
+        weight: 8
+        enabled: false
+      image_landing:
+        weight: 9
+        enabled: false
+      image_slider:
+        weight: 10
         enabled: false
       step:
         weight: 6
         enabled: true
-      title_text:
-        weight: 7
+      title_subtitle_text:
+        weight: 12
+        enabled: false
+      title_text_landing:
+        weight: 13
         enabled: false
       two_col:
         weight: 8

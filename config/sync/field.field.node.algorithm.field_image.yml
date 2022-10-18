@@ -11,8 +11,8 @@ field_name: field_image
 entity_type: node
 bundle: algorithm
 label: Изображение
-description: ''
-required: false
+description: 'Главное изображение статьи. Отображается в шапке, а также на карточке'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

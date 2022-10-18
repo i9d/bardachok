@@ -8,6 +8,7 @@ module:
   automated_cron: 0
   autosave_form: 0
   backup_migrate: 0
+  bdk_admin: 0
   bdk_blocks: 0
   bdk_extra_field: 0
   bdk_layouts: 0
