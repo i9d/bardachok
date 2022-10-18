@@ -55,7 +55,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'Нет резульаттов'
+          content: '<h2>Результатов не найдено. Попробуйте сформулировать свой запрос другими словами.</h2>'
           tokenize: false
       sorts: {  }
       arguments: {  }

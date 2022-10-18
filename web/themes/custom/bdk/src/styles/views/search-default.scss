@@ -46,7 +46,11 @@
           }
         }
       }
-
+      .view-empty h2 {
+        @include Body_1_Medium_20pt;
+        text-align: center;
+        padding: 50px 32px;
+      }
       .view-content,
       .view-empty {
         overflow-y: scroll;
