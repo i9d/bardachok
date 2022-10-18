@@ -80,7 +80,7 @@
           &:not(:last-child)::after { //Abluo
             display: block;
             width: 100%;
-            top: 0;
+            bottom: 0;
             content: '';
             position: absolute;
             border-bottom: 1px solid $gray-200;

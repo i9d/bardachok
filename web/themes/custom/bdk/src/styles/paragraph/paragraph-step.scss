@@ -6,6 +6,8 @@
       border-radius: 3px;
       @include Body_7_Regular_14pt;
       color: $gray-0;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 }

@@ -20,6 +20,11 @@
     top: 0;
     bottom: 0;
     z-index: 1;
+    border-radius: 32px;
+    opacity: 0.2;
+    &:hover {
+      background: $gray-300;
+    }
   }
 
   .node__content {

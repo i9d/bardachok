@@ -1,15 +1,15 @@
 .block-views-blockcategory-algorithm-slider {
   .slick__slide {
     //width: 342px !important;
+    max-width: 322px;
     margin-left: 20px;
   }
   .slick__arrow {
     .slick-arrow {
-      //position: absolute;
       height: 48px;
       width: 48px;
-
       &::before {
+        opacity: 1 !important;
         content: "";
         background-image: url("../../assets/images/slider-arrow.svg");
         display: block;
@@ -17,7 +17,11 @@
         height: 48px;
         width: 48px;
         top: 0;
-
+      }
+      &:hover {
+        &::before {
+          opacity: 0.8 !important;
+        }
       }
     }
 
