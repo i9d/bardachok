@@ -1,10 +1,14 @@
 .form-item {
+  transition: 0s;
   margin: 0 0 24px !important;
   display: block;
   .form-required::after {
     background-image: url("../../assets/images/required-sign.svg");
   }
-  label.error {
+  .form-item--error-message {
+    &:before {
+      display: none;
+    }
     @include Body_7_Regular_14pt;
     color: $error;
   }
