@@ -1,0 +1,20 @@
+uuid: 437d02e0-7935-4ca3-9a81-974168b9c24c
+langcode: ru
+status: true
+dependencies:
+  theme:
+    - bdk_admin
+id: bdk_admin_tabs
+theme: bdk_admin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Вкладки
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

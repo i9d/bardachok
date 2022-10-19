@@ -1,0 +1,22 @@
+uuid: b659990b-8c43-41ec-8360-5c15c501224e
+langcode: ru
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bdk_admin
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bdk_admin_content
+theme: bdk_admin
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Содержимое страницы'
+  label_display: '0'
+  provider: system
+visibility: {  }
