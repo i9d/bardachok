@@ -1,28 +1,28 @@
-uuid: e488bf51-61a7-4019-97dd-801b6dd3d1aa
-langcode: en
+uuid: dcc440c9-4dba-4f5e-86b6-7a115a84ad2b
+langcode: ru
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+  config:
+    - system.menu.editor-panel
   module:
-    - block_content
+    - system
     - user
   theme:
     - claro
 id: editorpanel_2
 theme: claro
-region: breadcrumb
+region: header
 weight: -4
 provider: null
-plugin: 'block_content:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+plugin: 'system_menu_block:editor-panel'
 settings:
-  id: 'block_content:55868deb-4bb1-48c4-94e6-fb082d2d4c9b'
+  id: 'system_menu_block:editor-panel'
   label: 'Editor panel'
   label_display: '0'
-  provider: block_content
-  status: true
-  info: ''
-  view_mode: full
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
 visibility:
   user_role:
     id: user_role
@@ -31,3 +31,5 @@ visibility:
       user: '@user.current_user_context:current_user'
     roles:
       content_editor: content_editor
+      moderator: moderator
+      administrator: administrator

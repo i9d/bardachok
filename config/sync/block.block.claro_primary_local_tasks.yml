@@ -9,12 +9,12 @@ _core:
 id: claro_primary_local_tasks
 theme: claro
 region: header
-weight: -4
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: 'Primary tabs'
+  label: 'Главные вкладки'
   label_display: '0'
   provider: core
   primary: true

@@ -1,0 +1,8 @@
+uuid: d8e12b56-106c-4c6b-9d7b-4986afc2d654
+langcode: ru
+status: true
+dependencies: {  }
+id: editor-panel
+label: 'Editor panel'
+description: ''
+locked: false

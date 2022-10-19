@@ -9,12 +9,12 @@ _core:
 id: claro_page_title
 theme: claro
 region: header
-weight: -5
+weight: -3
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
-  label: 'Page title'
+  label: 'Заголовок страницы'
   label_display: '0'
   provider: core
 visibility: {  }
