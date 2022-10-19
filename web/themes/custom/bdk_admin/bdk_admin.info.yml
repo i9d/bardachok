@@ -1,0 +1,23 @@
+name: Bardachok Admin
+type: theme
+description: 'Bardachok admin theme.'
+core_version_requirement: ^9
+# Defines the base theme
+base theme: claro
+# Defines libraries group in which we can add css/js.
+libraries:
+  - bdk_admin/global-styling
+# Regions
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first
+
