@@ -61,6 +61,7 @@ function bdk_preprocess_page(&$variables) {
     '/main',
     '/user/login',
     '/user/register',
+    '/user/password',
   ];
   if (in_array(\Drupal::request()->getRequestUri(), $ignore_footer)) {
     unset($variables['page']['footer_top']);
