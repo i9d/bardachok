@@ -14,8 +14,8 @@ use Drupal\Core\Render\Element\PasswordConfirm;
 function bdk_register_overrides_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['account']['mail']['#attributes']['placeholder'] = 'Введите e-mail';
   $form['account']['mail']['#title'] = 'Ваш e-mail';
-  $form['account']['mail']['#required_error'] = 'Введите ваш e-mail';
-  $form['account']['mail']['#email_error'] = 'Введите ваш действительный e-mail';
+//  $form['account']['mail']['#required_error'] = 'Введите ваш e-mail';
+//  $form['account']['mail']['#email_error'] = 'Введите ваш действительный e-mail';
   unset($form['account']['mail']['#description']);
 
   $form['account']['pass']['#process'][] = 'form_user_edit_process_pass';
@@ -44,11 +44,11 @@ function form_user_edit_process_pass(&$element, FormStateInterface $form_state, 
   $element = PasswordConfirm::processPasswordConfirm($element, $form_state, $complete_form);
   $element['pass1']['#title'] = 'Ваш пароль';
   $element['pass1']['#attributes']['placeholder'] = 'Введите пароль';
-  $element['pass1']['#required_error'] = 'Введите ваш пароль';
+//  $element['pass1']['#required_error'] = 'Введите ваш пароль';
 
   $element['pass2']['#title'] = 'Повторите пароль';
   $element['pass2']['#attributes']['placeholder'] = 'Введите пароль';
-  $element['pass2']['#required_error'] = 'Введите повторно ваш пароль';
+//  $element['pass2']['#required_error'] = 'Введите повторно ваш пароль';
   unset($element['#description']);
   return $element;
 }
@@ -71,6 +71,18 @@ function bdk_register_overrides_form_user_login_form_alter(&$form, FormStateInte
 
 function form_validate($form, FormStateInterface $form_state) {
   if (!$form_state->getValue('policy_checkbox')) {
-    $form_state->setErrorByName('policy_checkbox', 'Вы должны согласиться с политикой конфиденциальности и условиями пользования.');
+    $form_state->setErrorByName('policy_checkbox', 'Вы должны дать согласие.');
   }
+}
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function bdk_register_overrides_form_user_pass_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['name']['#attributes']['placeholder'] = 'Введите e-mail';
+  $form['name']['#title'] = 'Ваш e-mail';
+  $form['name']['#required_error'] = 'Введите ваш e-mail';
+  $form['name']['#email_error'] = 'Введите ваш действительный e-mail';
+  unset($form['mail']);
 }
