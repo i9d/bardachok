@@ -21,9 +21,10 @@ function bdk_preprocess_field(&$variables) {
  * Implements template_preprocess_html().
  */
 function bdk_preprocess_html(&$variables) {
-  // Rewrite head title for user page.
   $current_route = \Drupal::routeMatch();
   $route_name = $current_route->getRouteName();
+
+  // Rewrite head title for user page.
   if ($route_name == 'entity.user.canonical') {
     $variables['head_title']['title'] = 'Здесь пока ничего нет';
   }
@@ -31,14 +32,14 @@ function bdk_preprocess_html(&$variables) {
   // Add color class for category.
   $color = 'default';
   if (isset($variables['node_type']) && $variables['node_type'] == 'algorithm') {
-    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    if ($node =$current_route->getParameter('node')) {
     $category_id = $node->get('field_category')->getValue()[0]['target_id'];
     $category = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($category_id);
     $color = $category->get('field_color')->value;
     }
   }
-  elseif (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
-    $category = \Drupal::routeMatch()->getParameter('taxonomy_term');
+  elseif ($route_name == 'entity.taxonomy_term.canonical') {
+    $category = $current_route->getParameter('taxonomy_term');
     if ($category && $category->hasField('field_color')) {
       $color = $category->get('field_color')->value;
     }
@@ -46,7 +47,7 @@ function bdk_preprocess_html(&$variables) {
   $variables['attributes']['class'][] = 'tax-color-' . $color;
 
   // Add node-id class.
-  $node = \Drupal::routeMatch()->getParameter('node');
+  $node = $current_route->getParameter('node');
   if (is_object($node)) {
     $variables['attributes']['class'][] = 'node-' . $node->id();
   }
