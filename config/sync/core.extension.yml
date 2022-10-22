@@ -22,6 +22,8 @@ module:
   breakpoint: 0
   ckeditor: 0
   ckeditor5: 0
+  clientside_validation: 0
+  clientside_validation_jquery: 0
   config: 0
   content_moderation: 0
   contextual: 0
@@ -43,7 +45,6 @@ module:
   history: 0
   image: 0
   image_widget_crop: 0
-  inline_form_errors: 0
   language: 0
   layout_builder: 0
   layout_builder_admin_theme: 0
@@ -105,5 +106,4 @@ theme:
   stable: 0
   classy: 0
   bdk: 0
-  bdk_admin: 0
 profile: standard

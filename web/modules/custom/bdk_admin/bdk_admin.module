@@ -27,3 +27,15 @@ function _allowed_formats_remove_textarea_help($form_element, FormStateInterface
 
   return $form_element;
 }
+
+
+/**
+ * Implements hook_page_attachments().
+ */
+function bdk_admin_page_attachments(array &$attachments) {
+  $theme = \Drupal::theme()->getActiveTheme()->getName();
+  if ($theme == 'claro') {
+    $attachments['#attached']['library'][] = 'bdk_admin/custom_styles';
+  }
+}
+

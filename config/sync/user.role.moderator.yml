@@ -98,5 +98,6 @@ permissions:
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view post access counter'
+  - 'view the administration theme'
   - 'view unpublished paragraphs'
   - 'view user email addresses'

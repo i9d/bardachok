@@ -22,7 +22,6 @@ dependencies:
     - node
     - path
     - system
-    - taxonomy
 _core:
   default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
 id: content_editor
@@ -34,7 +33,6 @@ permissions:
   - 'access contextual links'
   - 'access media overview'
   - 'access site in maintenance mode'
-  - 'access taxonomy overview'
   - 'change own username'
   - 'create algorithm content'
   - 'create algorithm_embedded media'

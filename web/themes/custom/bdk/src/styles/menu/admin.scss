@@ -1,3 +1,25 @@
-.block-editorpanel .menu {
+#block-editorpanel > .menu {
   display: flex;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  flex-direction: row;
+  z-index: 50;
+  margin: 0;
+  opacity: 0.9;
+  a {
+    border-radius: 0;
+    background-color: #EEEEEE;
+    padding: 5px 15px;
+    color: #101010;
+    &:hover {
+      background-color: #D0D0D0;
+    }
+    &.is-active {
+      color: #696969;
+    }
+    &:active, &:focus {
+      outline: none;
+    }
+  }
 }
