@@ -1,0 +1,12 @@
+uuid: 39b583a4-b593-4cc4-932e-d21a43ccc032
+langcode: ru
+status: true
+dependencies: {  }
+id: default_content_container
+label: 'Default content container'
+classes: default_content_container
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0
