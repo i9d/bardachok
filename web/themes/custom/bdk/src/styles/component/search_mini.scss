@@ -1,0 +1,42 @@
+.search-mini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .layout__region--first {
+    margin-right: 10px;
+    .search-mini-form {
+      #search-mini-form {
+        position: relative;
+
+        .form-search {
+          width: 303px;
+          height: 24px;
+          padding: 10px 48px 10px 16px;
+        }
+
+        #edit-actions {
+          position: absolute;
+          top: 0;
+          right: 5px;
+          height: 44px;
+          width: 44px;
+
+          .form-submit {
+            height: 44px;
+            width: 44px;
+            padding: 0;
+            mask: url("../../assets/images/search.svg") no-repeat center;
+            background-color: $gray-900;
+
+            &:hover, &:focus, &:active {
+              background-color: $gray-600;
+              outline: none;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

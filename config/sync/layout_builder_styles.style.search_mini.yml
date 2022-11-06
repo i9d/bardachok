@@ -1,0 +1,12 @@
+uuid: f29a2b10-0c4c-4fa5-b732-e175fc5124e8
+langcode: ru
+status: true
+dependencies: {  }
+id: search_mini
+label: 'Search mini'
+classes: search-mini
+type: section
+group: default
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -26,7 +26,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 15
+          items_per_page: 5
       exposed_form:
         type: input_required
         options:
@@ -147,6 +147,37 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      defaults:
+        use_more: false
+        use_more_always: false
+        use_more_text: false
+        link_display: false
+        link_url: false
+      use_more: true
+      use_more_always: false
+      use_more_text: 'Посмотреть больше результатов'
+      link_display: custom_url
+      link_url: /search
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+      tags:
+        - 'config:search_api.index.content_default'
+  search_full_block:
+    id: search_full_block
+    display_title: 'Block for page'
+    display_plugin: block
+    position: 3
+    display_options:
+      defaults:
+        use_ajax: false
+      use_ajax: false
+      display_description: ''
+      exposed_block: true
       display_extenders: {  }
     cache_metadata:
       max-age: -1

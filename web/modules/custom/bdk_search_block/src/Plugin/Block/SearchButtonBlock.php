@@ -5,7 +5,7 @@ namespace Drupal\bdk_search_block\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'Hello' Block.
+ * Provides a 'Search Button' Block.
  *
  * @Block(
  *   id = "search_button_block",
