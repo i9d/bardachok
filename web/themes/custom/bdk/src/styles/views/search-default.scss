@@ -90,6 +90,15 @@
             border-bottom: 1px solid $gray-200;
           }
         }
+
+        .more-link {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 24px;
+          a {
+            @include button-primary;
+          }
+        }
       }
     }
   }

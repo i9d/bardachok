@@ -1,0 +1,67 @@
+.block-views-exposed-filter-blocksearch-content-search-full-block {
+  .form--inline {
+    display: flex;
+    align-items: center;
+
+    #edit-actions {
+      margin: 0 0 24px 24px;
+    }
+  }
+}
+
+.block-views-blocksearch-content-search-full-block {
+  margin-bottom: 150px;
+  .view-content,
+  .view-empty {
+    .views-row {
+      position: relative;
+      padding: 24px 0;
+
+      .node--type-algorithm.node--view-mode-search-result {
+        > a {
+          text-decoration: none;
+        }
+
+        .field--name-title {
+          @include Body_1_Medium_20pt;
+        }
+
+        .field--name-field-annotation p {
+          @include Body_2_Regular_20pt;
+        }
+      }
+
+      &:not(:last-child)::after { //Abluo
+        display: block;
+        width: 100%;
+        bottom: 0;
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid $gray-200;
+      }
+    }
+
+    .more-link {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+
+      a {
+        @include button-primary;
+      }
+    }
+  }
+
+  .pager {
+    padding: 0;
+
+    .pager__item {
+      padding: 0;
+
+      a {
+        @include button-primary;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ dependencies:
     - search_api.index.content_default
   module:
     - search_api
+    - views_infinite_scroll
 id: search_content
 label: 'Search Content'
 module: views
@@ -60,6 +61,44 @@ display:
       sorts: {  }
       arguments: {  }
       filters:
+        status_1:
+          id: status_1
+          table: search_api_index_content_default
+          field: status_1
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api_boolean
+          operator: '='
+          value: '1'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
         search_api_fulltext:
           id: search_api_fulltext
           table: search_api_index_content_default
@@ -113,6 +152,10 @@ display:
             - field_subtitle
             - field_text
             - title
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: default
       row:
@@ -173,17 +216,43 @@ display:
     display_plugin: block
     position: 3
     display_options:
+      pager:
+        type: infinite_scroll
+        options:
+          offset: 0
+          items_per_page: 5
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          views_infinite_scroll:
+            button_text: 'Загрузить ещё'
+            automatically_load_content: false
+            initially_load_all_pages: false
       defaults:
         use_ajax: false
-      use_ajax: false
+        pager: false
+      use_ajax: true
       display_description: ''
       exposed_block: true
-      display_extenders: {  }
+      display_extenders:
+        ajax_history:
+          enable_history: true
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_interface'
         - url
+        - url.query_args
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.content_default'

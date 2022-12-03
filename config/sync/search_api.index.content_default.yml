@@ -70,6 +70,14 @@ field_settings:
     datasource_id: 'entity:node'
     property_path: status
     type: boolean
+    dependencies:
+      module:
+        - node
+  status_1:
+    label: Published
+    datasource_id: 'entity:node'
+    property_path: status
+    type: boolean
     indexed_locked: true
     type_locked: true
     dependencies:
