@@ -18,6 +18,7 @@ header {
     .region-header-left {
       .block-system-branding-block {
         display: flex;
+
         .site-name a {
           color: $gray-900;
           font-family: 'CraftworkGrotesk', sans-serif;
@@ -37,10 +38,24 @@ header {
 
       .about-us {
         @include Body_5_Regular_16pt;
+
         &:hover {
           color: $gray-600;
         }
       }
+
+      @media (max-width: 1020px) {
+        width: 50%;
+      }
+
+      @media (max-width: 700px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1340px) {
+      margin-left: 40px;
+      margin-right: 40px;
     }
   }
 }
